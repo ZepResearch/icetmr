@@ -1,0 +1,73 @@
+import { Geist, Geist_Mono } from "next/font/google";
+import "./globals.css";
+import Nav from "@/components/Nav";
+import ConferenceFooter from "@/components/Footer";
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+export const metadata = {
+  title: "Emerging Trends Conf. | ICETMR 2025 | Bali, Indonesia",
+  description:
+    "Join global experts at ICETMR 2025, a premier conference dedicated to exploring emerging trends and multidisciplinary research in Bali, Indonesia.",
+  keywords: [
+    "ICETMR",
+    "multidisciplinary research",
+    "emerging trends",
+    "research conference",
+    "Bali conference",
+    "international conference",
+    "academic conference",
+    "research collaboration",
+  ],
+  authors: [{ name: "ICETMR Organizing Committee", url: "https://emergingtrendsconference.com" }],
+  creator: "ICETMR",
+  openGraph: {
+    title: "International Conference on Emerging Trends in Multidisciplinary Research October | 10th - 11th 2025 Bali, Indonesia",
+    description:
+      "Join leading researchers and academics at ICETMR 2025 in Bali — where multidisciplinary research meets innovation to address global challenges.",
+    url: "https://emergingtrendsconference.com",
+    siteName: "ICETMR",
+    images: [
+      {
+        url: "https://emergingtrendsconference.com/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "ICETMR Conference Banner",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "ICETMR 2025",
+    description:
+      "The premier international conference on emerging trends in multidisciplinary research, October 10-11, 2025 in Bali, Indonesia.",
+    creator: "@icetmr", // Update to your actual handle
+    images: ["https://emergingtrendsconference.com/og-image.png"],
+  },
+  metadataBase: new URL("https://emergingtrendsconference.com"),
+};
+
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        <Nav/>
+        {children}
+        <ConferenceFooter/>
+      </body>
+    </html>
+  );
+}
