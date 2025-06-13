@@ -81,52 +81,52 @@ export default function RegistrationPage() {
           ]
         }
       ],
-      indian: [
-        {
-          category: "Academicians",
-          earlyBird: { price: 9500, currency: "INR" },
-          regular: { price: 10000, currency: "INR" },
-          scopusQ3Q4: { price: 40000, currency: "INR" },
-          scopusQ1Q2: { price: 100000, currency: "INR" },
-          features: [
-            "Full conference access",
-            "VIP networking dinner",
-            "Priority seating",
-            "Exclusive roundtable sessions",
-            "Physical workshop materials",
-            "Certificate of participation"
-          ]
-        },
-        {
-          category: "Students",
-          earlyBird: { price: 8500, currency: "INR" },
-          regular: { price: 9000, currency: "INR" },
-          scopusQ3Q4: { price: 38000, currency: "INR" },
-          scopusQ1Q2: { price: 98000, currency: "INR" },
-          features: [
-            "Full conference access",
-            "Student networking sessions",
-            "Workshop materials",
-            "Lunch and refreshments",
-            "Certificate of participation",
-            "Career guidance sessions"
-          ]
-        },
-        {
-          category: "Listeners",
-          earlyBird: { price: 3000, currency: "INR" },
-          regular: { price: 4000, currency: "INR" },
-          scopusQ3Q4: null,
-          scopusQ1Q2: null,
-          features: [
-            "Conference access",
-            "Networking opportunities",
-            "Lunch and refreshments",
-            "Certificate of attendance",
-            "Access to presentation materials"
-          ]
-        }
-      ]
+      // indian: [
+      //   {
+      //     category: "Academicians",
+      //     earlyBird: { price: 9500, currency: "INR" },
+      //     regular: { price: 10000, currency: "INR" },
+      //     scopusQ3Q4: { price: 40000, currency: "INR" },
+      //     scopusQ1Q2: { price: 100000, currency: "INR" },
+      //     features: [
+      //       "Full conference access",
+      //       "VIP networking dinner",
+      //       "Priority seating",
+      //       "Exclusive roundtable sessions",
+      //       "Physical workshop materials",
+      //       "Certificate of participation"
+      //     ]
+      //   },
+      //   {
+      //     category: "Students",
+      //     earlyBird: { price: 8500, currency: "INR" },
+      //     regular: { price: 9000, currency: "INR" },
+      //     scopusQ3Q4: { price: 38000, currency: "INR" },
+      //     scopusQ1Q2: { price: 98000, currency: "INR" },
+      //     features: [
+      //       "Full conference access",
+      //       "Student networking sessions",
+      //       "Workshop materials",
+      //       "Lunch and refreshments",
+      //       "Certificate of participation",
+      //       "Career guidance sessions"
+      //     ]
+      //   },
+      //   {
+      //     category: "Listeners",
+      //     earlyBird: { price: 3000, currency: "INR" },
+      //     regular: { price: 4000, currency: "INR" },
+      //     scopusQ3Q4: null,
+      //     scopusQ1Q2: null,
+      //     features: [
+      //       "Conference access",
+      //       "Networking opportunities",
+      //       "Lunch and refreshments",
+      //       "Certificate of attendance",
+      //       "Access to presentation materials"
+      //     ]
+      //   }
+      // ]
     },
     virtual: {
       foreign: [
@@ -491,7 +491,7 @@ export default function RegistrationPage() {
               </div>
 
               {/* Indian Participants */}
-              <div>
+              {/* <div>
                 <h4 className="text-xl font-bold text-gray-900  mb-6 text-center">
                   <MapPin className="inline mr-2 h-5 w-5" />
                   Indian Participants
@@ -501,7 +501,7 @@ export default function RegistrationPage() {
                     renderPricingCard(categoryData, "indian", "physical")
                   )}
                 </div>
-              </div>
+              </div> */}
             </TabsContent>
 
             <TabsContent value="virtual" className="mt-0">

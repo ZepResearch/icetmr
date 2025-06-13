@@ -23,6 +23,7 @@ async function getTimelineData() {
     // Fetch all records from ICAIR_dates collection
     const records = await pb.collection("ICETMR_dates").getFullList({
       sort: "created", // Sort by creation date
+      
     })
 
     return records
