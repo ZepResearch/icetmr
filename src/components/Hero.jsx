@@ -62,7 +62,7 @@ export default function Hero() {
                 className="mx-auto  overflow-hidden rounded-xl object-cover object-bottom  lg:order-last select-none pointer-events-none "
               />
             
-              <div className="absolute bottom-4 right-4  rounded-full shadow-lg backdrop-blur-sm hover:shadow-amber-400/50 hover:shadow-md">
+              <div className="absolute bottom-4 right-4  rounded-full shadow-lg backdrop-blur-sm ">
                 <div className="flex items-center gap-4 bg-white/80 border border-gray-200 rounded-xl shadow-sm px-5 py-4 max-w-xs">
               <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-lg bg-gradient-to-br from-slate-100 via-gray-100 to-neutral-50/60">
                 <Lectern/>
