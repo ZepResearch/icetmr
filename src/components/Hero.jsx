@@ -1,7 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { ArrowUpRight, Calendar1, ChevronDown, MapPin } from "lucide-react"
+import { ArrowUpRight, Calendar1, ChevronDown, Lectern, MapPin } from "lucide-react"
 import { ReserveButton } from "./reserve-button"
 
 export default function Hero() {
@@ -19,7 +19,7 @@ export default function Hero() {
                 Join us to explore the cutting-edge advancements and interdisciplinary connections shaping the future of
                 research across diverse fields.
               </p>
-              
+          
             <div className="flex sm:flex-row flex-col-reverse items-start sm:items-center justify-start gap-3 px-4 max-w-4xl backdrop-blur-sm bg-gray-50/30 py-4 rounded-3xl ">
               <img
                 src="/assets/scopus.png"
@@ -61,14 +61,18 @@ export default function Hero() {
                 alt="Brain network representing multidisciplinary research"
                 className="mx-auto  overflow-hidden rounded-xl object-cover object-bottom  lg:order-last select-none pointer-events-none "
               />
-              <Button
-                variant="outline"
-                size="icon"
-                className="absolute bottom-4 right-4 w-12 h-12 rounded-full shadow-lg bg-white/80 backdrop-blur-sm"
-              >
-                <ChevronDown className="w-6 h-6" />
-                <span className="sr-only">Scroll down</span>
-              </Button>
+            
+              <div className="absolute bottom-4 right-4  rounded-full shadow-lg backdrop-blur-sm hover:shadow-amber-400/50 hover:shadow-md">
+                <div className="flex items-center gap-4 bg-white/80 border border-gray-200 rounded-xl shadow-sm px-5 py-4 max-w-xs">
+              <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-lg bg-gradient-to-br from-slate-100 via-gray-100 to-neutral-50/60">
+                <Lectern/>
+              </div>
+              <div>
+                <div className="font-semibold text-gray-800 text-base">Conference Mode</div>
+                <div className="text-sm text-gray-600 text-center">Virtual <span className="mx-1">+</span> Physical <br />(Hybrid)</div>
+              </div>
+            </div>
+              </div>
             </div>
           </div>
         </section>

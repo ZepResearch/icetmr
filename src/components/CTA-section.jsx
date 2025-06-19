@@ -9,44 +9,44 @@ function CtaHighlight() {
     {
       id: 'awards',
       title: 'Awards',
-      description: 'Recognizing groundbreaking contributions in AI and robotics innovation, technological advancement, and future-shaping research that drives positive global impact.',
+      description: 'Recognizing groundbreaking contributions in Emerging Trends in Multidisciplinary Research, technological advancement, and future-shaping research that drives positive global impact.',
       href: '/awards',
       icon: <Trophy/>
     },
     {
       id: 'venue',
       title: 'Venue',
-      description: 'Join us in Singapore at the Marina Bay Sands Convention Centre for the in-person experience or participate virtually through our interactive conference platform.',
+      description: 'Experience the conference live in Singapore or connect virtually through our dynamic online platform—choose the way that suits you best.',
       href: '/venue',
       icon: <MapPin/>
     },
     {
       id: 'sponsorship',
       title: 'Sponsorship',
-      description: 'Partner with RobotechSummit to showcase your organization\'s commitment to AI and robotics innovation and gain visibility among industry leaders.',
+      description: 'Partner with ICETMR to showcase your organization\'s commitment toEmerging Trends in Multidisciplinary Research and gain visibility among industry leaders.',
       href: '/sponsorship',
       icon: <Presentation/>
     },
     {
       id: 'committee',
       title: 'Committee',
-      description: 'Meet our distinguished panel of AI and robotics experts, researchers, and thought leaders guiding the conference\'s vision and quality standards.',
+      description: 'Meet our distinguished panel of Emerging Trends experts, researchers, and thought leaders guiding the conference\'s vision and quality standards.',
       href: '/committee',
       icon: <Users/>
     },
     {
       id: 'schedule',
       title: 'Schedule',
-      description: 'Explore our comprehensive 3-day agenda featuring keynotes, panel discussions, workshops, and networking events on AI and robotics innovation.',
+      description: 'Explore our comprehensive 3-day agenda featuring keynotes, panel discussions, workshops, and networking events on Emerging Trends in Multidisciplinary Research.',
       href: '/schedule',
       icon: <Calendar/>
     },
     {
-      id: 'gallery',
-      title: 'Gallery',
-      description: 'Explore our photo gallery showcasing highlights from RobotechSummit conferences. View images from keynote presentations and memorable moments from past events.',
-      href: '/gallery',
-      icon: <Image/>
+      id: 'organizer',
+      title: 'Organizer',
+      description: 'Learn more about the organizing team behind ICETMR and their commitment to advancing Emerging Trends in Multidisciplinary Research.',
+      href: '/about-organizers',
+      icon: <Users/>
     }
   ]
 
