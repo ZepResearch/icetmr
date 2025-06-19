@@ -258,7 +258,7 @@ export const userConfirmationTemplate = (data) => `
             <p>© ${new Date().getFullYear()} International Conference on Emerging Trends in Multidisciplinary Research</p>
             <p>This is an automated confirmation. Please do not reply to this email.</p>
             <div class="social-links">
-                <a href="https://www.icetmr.com/">Website</a> |
+                <a href="https://www.zepresearch.com/">Website</a> |
                 <a href="https://www.linkedin.com/company/zep-research/">LinkedIn</a> |
                 <a href="https://x.com/Zepresearch">Twitter</a>
             </div>

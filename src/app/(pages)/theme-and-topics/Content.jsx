@@ -3,77 +3,61 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, FileText, Globe, Lightbulb, Users, Shield, BookOpen, Brain, Microscope } from 'lucide-react'
+import { ArrowRight,  Shield, Cpu, Crown, Leaf, Heart } from 'lucide-react'
 
 export default function ThemeAndTopicsPage() {
-  const researchAreas = [
-    {
-      icon: <Brain className="h-8 w-8 text-gray-700" />,
-      title: "Cognitive Sciences & Psychology",
-      topics: [
-        "Behavioral Economics & Decision Making",
-        "Neuroscience & Mental Health Research",
-        "Educational Psychology & Learning",
-        "Social Psychology & Cultural Studies",
-        "Cognitive Behavioral Interventions",
-      ],
-    },
-    {
-      icon: <Microscope className="h-8 w-8 text-gray-700" />,
-      title: "Biomedical & Health Sciences",
-      topics: [
-        "Public Health & Epidemiology",
-        "Medical Technology & Innovations",
-        "Healthcare Policy & Management",
-        "Therapeutic Research & Drug Development",
-        "Digital Health & Telemedicine",
-      ],
-    },
-    {
-      icon: <Lightbulb className="h-8 w-8 text-gray-700" />,
-      title: "Technology & Engineering",
-      topics: [
-        "Artificial Intelligence & Machine Learning",
-        "Sustainable Engineering Solutions",
-        "Internet of Things & Smart Systems",
-        "Robotics & Automation",
-        "Data Science & Analytics",
-      ],
-    },
-    {
-      icon: <Users className="h-8 w-8 text-gray-700" />,
-      title: "Social Sciences & Humanities",
-      topics: [
-        "Anthropology & Cultural Studies",
-        "Sociology & Community Development",
-        "Political Science & Governance",
-        "Philosophy & Ethics",
-        "Language & Literature Studies",
-      ],
-    },
-    {
-      icon: <Globe className="h-8 w-8 text-gray-700" />,
-      title: "Environmental & Earth Sciences",
-      topics: [
-        "Climate Change & Environmental Policy",
-        "Biodiversity & Conservation Biology",
-        "Sustainable Development Research",
-        "Renewable Energy Systems",
-        "Environmental Impact Assessment",
-      ],
-    },
-    {
-      icon: <BookOpen className="h-8 w-8 text-gray-700" />,
-      title: "Education & Learning Sciences",
-      topics: [
-        "Pedagogical Innovations & Teaching Methods",
-        "Educational Technology & E-Learning",
-        "Curriculum Development & Assessment",
-        "Higher Education Research",
-        "Lifelong Learning & Adult Education",
-      ],
-    },
-  ]
+  const topics = [
+  {
+    icon: <Cpu className="h-8 w-8 text-gray-700" />,
+    title: "Future of Technology and Innovation",
+    topics: [
+      "Emerging Tech Trends (AI, Blockchain, Quantum Computing)",
+      "The Role of 5G and Beyond in Smart Connectivity",
+      "Sustainability and Green Tech Innovations",
+      "The Rise of Spatial Computing and Immersive Experiences (AR/VR/XR)",
+    ],
+  },
+  {
+    icon: <Crown className="h-8 w-8 text-gray-700" />,
+    title: "Next-Generation Leadership",
+    topics: [
+      "Leading in a Disruptive World",
+      "Building Adaptive and Resilient Teams",
+      "Diversity, Equity, and Inclusion for the Future",
+      "Mindful Leadership: Emotional Intelligence at Scale",
+    ],
+  },
+  {
+    icon: <Shield className="h-8 w-8 text-gray-700" />,
+    title: "Data, Cybersecurity and Trust",
+    topics: [
+      "Data-Driven Decision Making for 2030",
+      "Building Cyber-Resilient Organizations",
+      "Digital Identity and Trust Frameworks",
+      "Navigating the Ethics of Data and AI",
+    ],
+  },
+  {
+    icon: <Leaf className="h-8 w-8 text-gray-700" />,
+    title: "Sustainability and Impact",
+    topics: [
+      "ESG (Environmental, Social, Governance) in Action",
+      "Climate Tech: Innovations Saving the Planet",
+      "Corporate Responsibility and the Circular Economy",
+      "Measuring Impact Beyond Profit",
+    ],
+  },
+  {
+    icon: <Heart className="h-8 w-8 text-gray-700" />,
+    title: "Social Innovation & Global Impact",
+    topics: [
+      "Community Resilience & Policy Innovation",
+      "Interdisciplinary Approaches to Inequality",
+      "Youth Empowerment & Civic Tech",
+      "Migration, Identity & Global Mobility",
+    ],
+  },
+]
 
   const submissionSteps = [
     {
@@ -191,14 +175,14 @@ export default function ThemeAndTopicsPage() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What We'll Cover</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6"> Session & Tracks</h2>
             <p className="text-gray-600">
               Research topics and areas that can be selected for paper submissions across multiple disciplines
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {researchAreas.map((area, index) => (
+            {topics.map((area, index) => (
               <div key={index} className="bg-gray-50 rounded-3xl p-8 shadow-sm h-full border border-gray-100">
                 <div className="bg-white rounded-2xl p-4 inline-block mb-4 shadow-sm">{area.icon}</div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">{area.title}</h3>
