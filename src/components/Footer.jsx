@@ -168,11 +168,11 @@ export default function ConferenceFooter() {
             <div className="flex items-center space-x-3 mb-6">
             <Link href={"/"}>
         <div className="flex items-center space-x-2">
-          <div className="w-10 h-10 bg-gradient-to-tl from-pink-500 via-red-500 to-yellow-500   rounded-lg flex items-center justify-center">
-            {/* <Image src={"/assets/logo.png"} alt='logo' height={500} width={500} className="w-6 h-6 text-white" /> */}
-            <TrendingUp className="w-6 h-6 text-white" />
-          </div>
-          <span className="text-xl font-semibold text-gray-50 ">Emerging Trends <span className="bg-clip-text text-transparent bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500  " >Conf.</span></span>
+          {/* <div className="w-10 h-10 bg-gradient-to-tl from-pink-500 via-red-500 to-yellow-500   rounded-lg flex items-center justify-center"> */}
+            <Image src={"/logowhite.svg"} alt='logo' height={500} width={400} className=" text-white" />
+            {/* <TrendingUp className="w-6 h-6 text-white" /> */}
+          {/* </div> */}
+          {/* <span className="text-xl font-semibold text-gray-50 ">Emerging Trends <span className="bg-clip-text text-transparent bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500  " >Conf.</span></span> */}
         </div>
           </Link>
             </div>
