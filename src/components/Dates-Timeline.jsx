@@ -1,7 +1,8 @@
-
+'use client'
 import { pb } from "@/lib/pocketbase"
 import { cn } from "@/lib/utils"
 import { Calendar, Clock, FileText, UserCheck } from "lucide-react"
+import { useEffect, useState } from "react"
 
 // Define the type for our timeline data
 
@@ -14,23 +15,51 @@ const getIconForTitle = (title) => {
   if (lowerTitle.includes("paper")) return Calendar
   return Clock
 }
-
+// const records = await pb.collection("ICETMR_dates").getFullList({
 // Server Component to fetch data
-async function getTimelineData() {
-  try {
-    // Fetch all records from ICETMR_dates collection
-    const records = await pb.collection("ICETMR_dates").getFullList({
-      sort: "created", // Sort by creation date
-    })
-    return records
-  } catch (error) {
-    console.error("Failed to fetch timeline data:", error)
-    return []
-  }
-}
 
-export default async function ConferenceTimeline() {
-  const timelineItems = await getTimelineData()
+export default  function ConferenceTimeline() {
+  const [timelineItems, setTimeline] = useState([])
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState(null)
+
+  useEffect(() => {
+    async function fetchDates() {
+      try {
+        setLoading(true)
+        // Fetch all records from ICGEWEE_dates collection and sort by created date
+        const records = await pb.collection("ICETMR_dates").getFullList({
+          sort: "created",
+           requestKey: null
+        })
+        setTimeline(records)
+      } catch (err) {
+        console.error("Error fetching dates:", err)
+        setError("Failed to load timeline dates")
+      } finally {
+        setLoading(false)
+      }
+    }
+
+    fetchDates()
+  }, [])
+
+  if (loading) {
+    return (
+      <div className="flex justify-center items-center min-h-[400px]">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
+      </div>
+    )
+  }
+
+  if (error) {
+    return (
+      <div className="text-center text-red-500 p-4">
+        {error}
+      </div>
+    )
+  }
+
 
   return (
     <div className="min-h-full relative bg-gray-50 py-24 px-4">

@@ -16,7 +16,7 @@ function CtaHighlight() {
     {
       id: 'venue',
       title: 'Venue',
-      description: 'Experience the conference live in Singapore or connect virtually through our dynamic online platform—choose the way that suits you best.',
+      description: 'Experience the conference live in Bali, Indonesia or connect virtually through our dynamic online platform—choose the way that suits you best.',
       href: '/venue',
       icon: <MapPin/>
     },
@@ -37,7 +37,7 @@ function CtaHighlight() {
     {
       id: 'schedule',
       title: 'Schedule',
-      description: 'Explore our comprehensive 3-day agenda featuring keynotes, panel discussions, workshops, and networking events on Emerging Trends in Multidisciplinary Research.',
+      description: 'Explore our comprehensive 2-day agenda featuring keynotes, panel discussions, workshops, and networking events on Emerging Trends in Multidisciplinary Research.',
       href: '/schedule',
       icon: <Calendar/>
     },
