@@ -44,7 +44,7 @@ export default function AwardsPage() {
         </div>
       </section>
 
-      {/* Awards Introduction */}
+        {/* Scholarship Introduction */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="relative bg-white rounded-3xl overflow-hidden shadow-lg border border-gray-100">
@@ -56,42 +56,67 @@ export default function AwardsPage() {
               <div className="max-w-3xl mx-auto text-center">
                 <div className="inline-flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500 p-0.5 mb-6">
                   <div className="flex h-full w-full items-center justify-center rounded-full bg-white">
-                    <Award className="h-8 w-8 text-gray-800" />
+                    <GraduationCap className="h-8 w-8 text-gray-800" />
                   </div>
                 </div>
 
-                <h2 className="text-2xl md:text-3xl font-bold mb-6 text-gray-900">Excellence in Research</h2>
+                <h2 className="text-2xl md:text-3xl font-bold mb-6 text-gray-900">
+                  Zep Research Grants and Scholarships
+                </h2>
 
                 <div className="space-y-6 text-gray-700">
                   <p>
-                    ICETMR 2025 is proud to recognize outstanding contributions to multidisciplinary research and 
-                    emerging trends across various fields. Our awards celebrate innovative approaches, rigorous methodology, and
-                    effective communication of complex ideas that address contemporary challenges through interdisciplinary collaboration.
+                    Zep Research is dedicated to helping young scholars achieve their research and academic goals, while
+                    also encouraging them to apply the principles of interdisciplinary study to their work. We offer
+                    full or partial scholarships covering conference registration fees to select postgraduate students
+                    and early career academics who might not otherwise have the financial resources to attend our
+                    academic conferences.
                   </p>
 
                   <p>
-                    Winners will be announced during the closing ceremony on October 11, 2025 in beautiful Bali, Indonesia. All conference
-                    participants are eligible for consideration, with special categories for student researchers.
+                    Awards are based on the appropriateness of the educational opportunity in relation to the
+                    applicant&apos;s field of study, financial need, and contributions to their community and to Zep
+                    Research&apos;s mission of interdisciplinarity. Scholarships will be awarded based on the availability of
+                    funds from Zep Research and will vary with each conference.
                   </p>
+
+                  <div className="bg-gradient-to-r from-pink-50 to-yellow-50 rounded-xl p-6 border border-pink-100">
+                    <h3 className="font-semibold text-gray-900 mb-3">How Recipients Are Selected</h3>
+                    <p className="text-sm text-gray-700 mb-4">
+                      The Conference Program Committee of ICETMR will award scholarships to eligible applicants who have
+                      submitted exceptional abstracts that have passed the blind peer review process and been accepted
+                      for presentation at the conference. Additional scholarships are available for those who present
+                      their research work exceptionally during the conference.
+                    </p>
+                    <div className="bg-white rounded-lg p-4 border border-pink-200">
+                      <p className="font-medium text-gray-900">
+                        Special Award: A 50% fee refund will be provided to the best paper and best presenter
+                        recipients.
+                      </p>
+                    </div>
+                  </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-10">
+                <div className="grid grid-cols-1 md:grid-cols-1 gap-4 mt-10">
                   <div className="bg-gray-50 rounded-xl border border-gray-200 p-4">
-                    <div className="text-3xl font-bold bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500 bg-clip-text text-transparent mb-1">3</div>
-                    <div className="text-gray-700">Award Categories</div>
+                    <div className="text-3xl font-bold bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500 bg-clip-text text-transparent mb-1">
+                      50%
+                    </div>
+                    <div className="text-gray-700">Fee Refund Available</div>
                   </div>
 
-                  <div className="bg-gray-50 rounded-xl border border-gray-200 p-4">
-                    <div className="text-3xl font-bold bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500 bg-clip-text text-transparent mb-1">5+</div>
-                    <div className="text-gray-700">Expert Judges</div>
-                  </div>
+                  {/* <div className="bg-gray-50 rounded-xl border border-gray-200 p-4">
+                    <div className="text-3xl font-bold bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500 bg-clip-text text-transparent mb-1">
+                      Full
+                    </div>
+                    <div className="text-gray-700">Scholarships Offered</div>
+                  </div> */}
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-
+</section>
       {/* Award Categories */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
@@ -117,7 +142,7 @@ export default function AwardsPage() {
                     </div>
                   </div>
 
-                  <h3 className="text-2xl font-bold text-gray-900 text-center mb-4">Best Talk Award</h3>
+                  <h3 className="text-2xl font-bold text-gray-900 text-center mb-4">BEST PAPER PRESENTATION AWARD</h3>
 
                   <div className="space-y-4 text-gray-700 flex-grow">
                     <p>
@@ -160,7 +185,7 @@ export default function AwardsPage() {
                     </div>
                   </div>
 
-                  <h3 className="text-2xl font-bold text-gray-900 text-center mb-4">Top Paper Award</h3>
+                  <h3 className="text-2xl font-bold text-gray-900 text-center mb-4">BEST PAPER AWARD</h3>
 
                   <div className="space-y-4 text-gray-700 flex-grow">
                     <p>
@@ -203,7 +228,7 @@ export default function AwardsPage() {
                     </div>
                   </div>
 
-                  <h3 className="text-2xl font-bold text-gray-900 text-center mb-4">Best Student Award</h3>
+                  <h3 className="text-2xl font-bold text-gray-900 text-center mb-4">Best International student presentation Award</h3>
 
                   <div className="space-y-4 text-gray-700 flex-grow">
                     <p>
