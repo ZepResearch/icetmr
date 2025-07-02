@@ -44,7 +44,10 @@ const SpeakerCard = ({ speaker, onMoreInfo }) => {
             <MapPin className="h-3.5 w-3.5" />
             <span>{speaker.country}</span>
           </div>
-
+          <div className="flex items-center gap-2 text-gray-600 text-sm mb-1 mt-2">
+              <GraduationCap className="h-4 w-4" />
+              <span>{speaker.college}</span>
+            </div>
           <Button
             onClick={() => onMoreInfo(speaker)}
             className="w-full bg-neutral-900 hover:from-pink-600 hover:via-red-600 hover:to-yellow-600 text-white font-medium border-0 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
