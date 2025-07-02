@@ -34,7 +34,6 @@ const SpeakerCard = ({ speaker, onMoreInfo }) => {
             fill 
             className="object-contain" 
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 via-gray-900/30 to-transparent"></div>
         </div>
 
         {/* Speaker info */}
@@ -96,7 +95,6 @@ const SpeakerDrawer = ({ isOpen, onClose, speaker }) => (
                 fill 
                 className="object-contain" 
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 via-gray-900/40 to-transparent"></div>
             </div>
 
             {/* Speaker info */}
