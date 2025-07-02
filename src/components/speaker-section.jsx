@@ -41,12 +41,13 @@ const SpeakerCard = ({ speaker, onMoreInfo }) => {
           <h3 className="text-xl font-bold text-gray-900 mb-1">{speaker.name}</h3>
           <p className="text-gray-700 font-medium mb-1">{speaker.role}</p>
           <div className="flex items-center gap-1.5 text-gray-600 text-sm ">
-            <MapPin className="h-3.5 w-3.5" />
-            <span>{speaker.country}</span>
-          </div>
-          <div className="flex items-center gap-1.5 text-gray-600 text-sm mb-4">
               <GraduationCap className="h-4 w-4" />
               <span>{speaker.college}</span>
+            
+          </div>
+          <div className="flex items-center gap-1.5 text-gray-600 text-sm mb-4">
+            <MapPin className="h-3.5 w-3.5" />
+            <span>{speaker.country}</span>
             </div>
           <Button
             onClick={() => onMoreInfo(speaker)}
