@@ -112,7 +112,7 @@ export default function ConferenceFAQ() {
           </a>
           <span  className="inline-flex gap-2 items-center mt-4 ">
             <Phone/>
-            +91 78488 54815
+           +91 92373 88328
           </span>
           <Link href={'/contact'}>
           <Button className={'mt-4 ml-8 '} >
