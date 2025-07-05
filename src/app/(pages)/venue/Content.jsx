@@ -338,15 +338,14 @@ Bali 80361, Indonesia
 
                 <div className="space-y-6 text-gray-600">
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-800 mb-2">Resort Dining at Grand Hyatt Bali:</h3>
-                    <ul className="list-disc pl-6 space-y-1">
-                      <li><strong>Pasar Senggol:</strong> All-day dining with international buffet and à la carte options.</li>
-                      <li><strong>Salsa Verde:</strong> Italian restaurant featuring authentic Mediterranean cuisine.</li>
-                      <li><strong>Nampu:</strong> Japanese restaurant offering sushi, sashimi, and teppanyaki.</li>
-                      <li><strong>Watercourt:</strong> Poolside dining with light meals and tropical cocktails.</li>
-                      <li><strong>24-hour room service:</strong> Enjoy dining in the comfort of your room at any time.</li>
-                    </ul>
-                  </div>
+                 <h3 className="text-xl font-semibold text-gray-800 mb-2">Dining at Melasti Kuta Beach Hotel & Spa:</h3>
+<ul className="list-disc pl-6 space-y-1">
+  <li><strong>Melasti Restaurant:</strong> Offers a mix of Balinese, Indonesian, and international cuisine in a relaxed setting.</li>
+  <li><strong>Beachfront Café:</strong> Casual dining with ocean views, serving light bites, grills, and refreshing drinks.</li>
+  <li><strong>Pool Bar:</strong> Tropical cocktails and snacks served by the poolside, perfect for relaxing under the sun.</li>
+  <li><strong>Lobby Lounge:</strong> Comfortable lounge for coffee, tea, and pastries throughout the day.</li>
+  <li><strong>24-hour room service:</strong> Savor a variety of dishes from the comfort of your room, anytime.</li>
+</ul>
                   <div className="mt-6">
                     <h3 className="text-xl font-semibold text-gray-800 mb-2">Nearby Restaurants:</h3>
                     <ul className="list-disc pl-6 space-y-1">
