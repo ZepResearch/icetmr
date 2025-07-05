@@ -64,8 +64,7 @@ export default function VenuePage() {
 
                   <div className="space-y-6 text-gray-600">
                     <p>
-                      The venue for the International Conference on Emerging Trends in Multidisciplinary Research 2025 will be announced soon. Stay tuned for updates on our conference location and facilities.
-                    </p>
+The International Conference on Emerging Trends in Multidisciplinary Research 2025 will be held at Melasti Kuta Beach Hotel & Spa, Bali. Located in the heart of Kuta, this beachfront venue offers a seamless blend of modern amenities and authentic Balinese hospitality—perfect for collaboration, innovation, and relaxation.                      </p>
 
                     <div className="space-y-4">
                       <h3 className="text-xl font-medium text-gray-800">Venue Features</h3>
@@ -75,37 +74,37 @@ export default function VenuePage() {
                           <div className="h-6 w-6 rounded-full bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500 flex items-center justify-center shrink-0 mt-0.5">
                             <span className="text-xs font-bold text-white">✓</span>
                           </div>
-                          <span>State-of-the-art conference facilities with advanced AV technology</span>
+                          <span>Contemporary conference spaces with advanced AV technology </span>
                         </li>
                         <li className="flex items-start gap-3">
                           <div className="h-6 w-6 rounded-full bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500 flex items-center justify-center shrink-0 mt-0.5">
                             <span className="text-xs font-bold text-white">✓</span>
                           </div>
-                          <span>Multiple dining venues featuring international and local cuisine</span>
+                          <span>On-site dining offering Balinese and international cuisine  </span>
                         </li>
                         <li className="flex items-start gap-3">
                           <div className="h-6 w-6 rounded-full bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500 flex items-center justify-center shrink-0 mt-0.5">
                             <span className="text-xs font-bold text-white">✓</span>
                           </div>
-                          <span>Complimentary high-speed WiFi throughout the resort</span>
+                          <span>Complimentary high-speed WiFi throughout the venue  </span>
                         </li>
                         <li className="flex items-start gap-3">
                           <div className="h-6 w-6 rounded-full bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500 flex items-center justify-center shrink-0 mt-0.5">
                             <span className="text-xs font-bold text-white">✓</span>
                           </div>
-                          <span>Spa, fitness center, and multiple swimming pools</span>
+                          <span>Spa, fitness center, and luxurious poolside lounges  </span>
                         </li>
                         <li className="flex items-start gap-3">
                           <div className="h-6 w-6 rounded-full bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500 flex items-center justify-center shrink-0 mt-0.5">
                             <span className="text-xs font-bold text-white">✓</span>
                           </div>
-                          <span>Direct beach access with pristine white sand beaches</span>
+                          <span>Direct access to Kuta Beach with vibrant coastal views  </span>
                         </li>
                         <li className="flex items-start gap-3">
                           <div className="h-6 w-6 rounded-full bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500 flex items-center justify-center shrink-0 mt-0.5">
                             <span className="text-xs font-bold text-white">✓</span>
                           </div>
-                          <span>Close proximity to cultural attractions and shopping centers</span>
+                          <span>Minutes from cultural landmarks, shops, and nightlife</span>
                         </li>
                       </ul>
                     </div>
@@ -116,7 +115,9 @@ export default function VenuePage() {
                         <h3 className="text-lg font-medium text-gray-800">Address</h3>
                       </div>
                       <p className="text-gray-600">
-                         Bali , Indonesia [detailed Venue will declared soon.]
+                       Melasti Kuta Beach Hotel & Spa,  <br />
+Jl. Kartika Plaza No.5, Kuta, Kec. Kuta, Kabupaten Badung,  <br />
+Bali 80361, Indonesia
                       </p>
                     </div>
                   </div>
@@ -149,7 +150,7 @@ export default function VenuePage() {
                     {/* Venue name overlay */}
                     <div className="absolute bottom-0 left-0 right-0 p-6">
                       <h3 className="text-2xl font-bold text-white mb-1">Bali</h3>
-                      <p className="text-white/90">Luxury resort in the heart of Bali, Indonesia </p>
+                      <p className="text-white/90">Melasti Kuta Beach Hotel & Spa </p>
                     </div>
                   </div>
                 </div>
@@ -172,7 +173,8 @@ export default function VenuePage() {
 
             <div className="relative rounded-2xl overflow-hidden h-[500px] w-full">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3942.7858168816487!2d115.22847431138448!3d-8.798619091357847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd244c13ee9d753%3A0xf5bd99c47b5bf64d!2sGrand%20Hyatt%20Bali!5e0!3m2!1sen!2sid!4v1641234567890!5m2!1sen!2sid"
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31549.01608938447!2d115.1377004!3d-8.726922!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd246a376b6c5bb%3A0xbc9328f54a331760!2sMelasti%20Kuta%20Beach%20Hotel%20%26%20Spa!5e0!3m2!1sen!2sin!4v1751621131304!5m2!1sen!2sin"      
+                
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
