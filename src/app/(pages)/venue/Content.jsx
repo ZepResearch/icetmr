@@ -338,7 +338,7 @@ Bali 80361, Indonesia
 
                 <div className="space-y-6 text-gray-600">
                   <div>
-                 <h3 className="text-xl font-semibold text-gray-800 mb-2">Dining at Melasti Kuta Beach Hotel & Spa:</h3>
+              <h3 className="text-xl font-semibold text-gray-800 mb-2">Dining at Melasti Kuta Beach Hotel & Spa:</h3>
 <ul className="list-disc pl-6 space-y-1">
   <li><strong>Melasti Restaurant:</strong> Offers a mix of Balinese, Indonesian, and international cuisine in a relaxed setting.</li>
   <li><strong>Beachfront Café:</strong> Casual dining with ocean views, serving light bites, grills, and refreshing drinks.</li>
@@ -346,6 +346,7 @@ Bali 80361, Indonesia
   <li><strong>Lobby Lounge:</strong> Comfortable lounge for coffee, tea, and pastries throughout the day.</li>
   <li><strong>24-hour room service:</strong> Savor a variety of dishes from the comfort of your room, anytime.</li>
 </ul>
+                  </div>
                   <div className="mt-6">
                     <h3 className="text-xl font-semibold text-gray-800 mb-2">Nearby Restaurants:</h3>
                     <ul className="list-disc pl-6 space-y-1">
