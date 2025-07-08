@@ -62,14 +62,14 @@ export default function Hero() {
                 className="mx-auto  overflow-hidden rounded-xl object-cover object-bottom  lg:order-last select-none pointer-events-none "
               />
             
-              <div className="absolute bottom-4 right-4  rounded-full shadow-lg backdrop-blur-sm ">
-                <div className="flex items-center gap-4 bg-white/80 border border-gray-200 rounded-xl shadow-sm px-5 py-4 max-w-xs">
-              <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-lg bg-gradient-to-br from-slate-100 via-gray-100 to-neutral-50/60">
-                <Lectern/>
+              <div className="absolute bottom-4 right-4  rounded-full shadow-lg backdrop-blur-sm  drop-shadow-2xl ">
+                <div className="flex items-center gap-4 bg-white/80 border border-gray-200 rounded-xl shadow-sm px-15 py-4 max-w-xs ">
+              <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-lg bg-gradient-to-br from-slate-100 via-gray-100 to-neutral-50/60 shadow-rose-400 shadow">
+                <Lectern className="text-rose-500"/>
               </div>
               <div>
-                <div className="font-semibold text-gray-800 text-base">Conference Mode</div>
-                <div className="text-sm text-gray-600 text-center">Virtual <span className="mx-1">+</span> Physical <br />(Hybrid)</div>
+                <div className="font-bold text-gray-800 text-base">Conference Mode</div>
+                <div className="text-sm text-gray-900 text-center font-medium">Virtual <span className="mx-1">+</span> Physical <br />(Hybrid)</div>
               </div>
             </div>
               </div>

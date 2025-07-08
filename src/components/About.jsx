@@ -44,7 +44,7 @@ function About() {
               </p>
 
               <p className="text-lg leading-relaxed">
-                Join us in Singapore for an immersive three-day experience featuring keynote speeches, panel
+                Join us in  bali indonesia for an immersive three-day experience featuring keynote speeches, panel
                 discussions, workshops, and networking opportunities with global leaders in multidisciplinary research.
               </p>
 
