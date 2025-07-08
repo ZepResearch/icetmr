@@ -352,6 +352,10 @@ export default function ConferenceFooter() {
             <Link href="/cancellation-policy" className="text-white/60 text-sm hover:text-white transition-colors">
               Cancellation Policy
             </Link>
+            <Link href="/complaints-policy" className="text-white/60 text-sm hover:text-white transition-colors">
+                Complaints-Policy
+            </Link>
+          
           </div>
         </div>
       </div>
