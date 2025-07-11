@@ -97,7 +97,7 @@ export default function Hero() {
                     Gain insights from leading researchers and innovators in their respective fields.
                   </p>
                   <Link
-                    href="#"
+                    href="/venue"
                     className="mt-4 inline-flex items-center text-sm font-medium text-gray-900 hover:underline"
                     prefetch={false}
                   >
