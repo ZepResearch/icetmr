@@ -114,7 +114,7 @@ The International Conference on Emerging Trends in Multidisciplinary Research 20
                         <MapPin className="h-5 w-5 text-gray-600" />
                         <h3 className="text-lg font-medium text-gray-800">Address</h3>
                       </div>
-                      <p className="text-gray-600">
+                      <p className="text-gray-900 font-semibold">
                        Melasti Kuta Beach Hotel & Spa,  <br />
 Jl. Kartika Plaza No.5, Kuta, Kec. Kuta, Kabupaten Badung,  <br />
 Bali 80361, Indonesia
