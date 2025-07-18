@@ -80,7 +80,7 @@ export default function ConferenceVenue() {
                       <p className="text-sm text-gray-500">2 Days of Research Innovation</p>
                     </div>
                   </div>
-
+{/* 
                   <div className="flex items-start gap-4">
                     <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-neutral-900 text-white shadow-lg">
                       <Clock size={20} />
@@ -90,7 +90,7 @@ export default function ConferenceVenue() {
                       <p className="text-gray-800 font-medium">8:30 AM - 6:00 PM </p>
                       <p className="text-sm text-gray-500">Registration opens at 7:30 AM</p>
                     </div>
-                  </div>
+                  </div> */}
 
                   <div className="flex items-start gap-4">
                     <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-neutral-900 text-white shadow-lg">
