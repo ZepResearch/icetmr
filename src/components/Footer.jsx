@@ -220,7 +220,7 @@ export default function ConferenceFooter() {
                 <div className="space-y-1">
                   
                   <a
-                    href="mail:info@icsift.com"
+                    href="mail:info@emergingtrendsconference.com"
                     className="inline-flex gap-4 text-white/70 hover:text-white transition-colors hover:underline "
                   >
                    <Mail/> info@emergingtrendsconference.com
