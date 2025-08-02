@@ -342,7 +342,7 @@ export default function ConferenceFooter() {
           <p className="text-white/60 text-sm mb-4 md:mb-0">
             © 2025 ICSIFT. All rights reserved. Designed with sustainability in mind.
           </p>
-          <div className="flex space-x-6">
+          <div className="grid md:grid-cols-4 grid-cols-2  gap-8 text-center">
             <Link href="/terms-and-conditions" className="text-white/60 text-sm hover:text-white transition-colors">
               Terms of Service
             </Link>
@@ -356,6 +356,18 @@ export default function ConferenceFooter() {
                 Complaints-Policy
             </Link>
           
+
+
+        
+            <Link href="/disability-discrimination-policy" className="text-white/60 text-sm hover:text-[#00adef] transition-colors ">
+             Disability Discrimination Policy
+            </Link>
+            <Link href="/health-and-safety-policy" className="text-white/60 text-sm hover:text-[#00adef] transition-colors">
+             Health and Safety Policy
+            </Link>
+            <Link href="/equal-treatment-policy" className="text-white/60 text-sm hover:text-[#00adef] transition-colors">
+             Equal Treatment Policy
+            </Link>
           </div>
         </div>
       </div>
