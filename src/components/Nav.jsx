@@ -35,7 +35,7 @@ const navLinks = [
   },
   { title: 'COMMITTEE', href: '/committee' },
   { title: 'SUBMISSION', href: '/submission' },
-  // { title: 'GALLERY', href: '/gallery' },
+   { title: 'JOURNAL', href: '/journals' },
   { title: 'VENUE', href: '/venue' },
   { title: 'AWARDS', href: '/awards' },
   { title: 'CONTACT', href: '/contact' },
