@@ -35,6 +35,22 @@ const RegistrationEmailTemplate = (data) => {
             margin-bottom: 20px;
           }
           
+          .logo-box {
+            width: 180px;
+            height: 60px;
+            margin: 0 auto;
+            background: linear-gradient(to bottom left, #ec4899, #ef4444, #eab308);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            text-align: center;
+            line-height: 1;
+          }
+          
           .conference-title {
             font-size: 20px;
             font-weight: 700;
@@ -205,7 +221,7 @@ const RegistrationEmailTemplate = (data) => {
         <div class="container">
           <div class="header">
             <div class="logo">
-              <div style="width: 180px; height: 60px; margin: 0 auto; background: linear-gradient(to bottom left, #ec4899, #ef4444, #eab308); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 18px;">
+              <div class="logo-box">
                 ICETMR 2025
               </div>
             </div>
