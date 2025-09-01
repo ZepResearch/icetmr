@@ -138,7 +138,7 @@ const SpeakerDrawer = ({ isOpen, onClose, speaker }) => (
 )
 
 export function SpeakerSection() {
-  const [activeCategory, setActiveCategory] = useState("Guest Speaker")
+  const [activeCategory, setActiveCategory] = useState("Organizing Secretary")
   const [selectedSpeaker, setSelectedSpeaker] = useState(null)
   const [isDrawerOpen, setIsDrawerOpen] = useState(false)
   const [speakers, setSpeakers] = useState()
