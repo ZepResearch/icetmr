@@ -1,6 +1,8 @@
 import React from 'react';
 
-const organizerImg = '/assets/org-logo.png'; // Update with your image path
+
+const umm = '/organizer/org-logo.png'; // Update with your image path
+const rit = '/organizer/rit.png'; // Update with your image path
 
 function Organizer() {
     return (
@@ -8,11 +10,18 @@ function Organizer() {
             <h2 className="text-5xl font-semibold mb-6 text-slate-900 ">
                 Our <span className='bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500 drop-shadow-2xl text-transparent bg-clip-text'>Organizing Partner</span>
             </h2>
-            <img
-                src={organizerImg}
+                <div className='grid grid-cols-1 sm:grid-cols-2 gap-8'>
+             <img
+                src={umm}
                 alt="Organizing Partner Logo"
                 className="max-w-xl w-auto h-[250px] rounded-lg   p-4 mx-auto"
             />
+            <img
+                src={rit}
+                alt="Organizing Partner Logo"
+                className="max-w-xl w-auto h-[250px] rounded-lg   p-4 mx-auto"
+            />
+            </div>
         </section>
     );
 }

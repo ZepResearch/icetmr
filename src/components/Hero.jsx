@@ -34,7 +34,7 @@ export default function Hero() {
               <img
                 src="assets/cpd.png"
                 alt=""
-                className="h-20 drop-shadow-lg"
+                className="h-28 drop-shadow-lg"
               />
                <img
                 src="assets/zepresearch.png"
