@@ -45,7 +45,8 @@ export default function ThemeAndTopicsPage() {
       "Climate Tech: Innovations Saving the Planet",
       "Corporate Responsibility and the Circular Economy",
       "Measuring Impact Beyond Profit",
-            "Sustainable tourism and Hospitality Management"
+            "Sustainable tourism and Hospitality Management",
+            " Laguage and Linguistic in education"
 
     ],
   },
