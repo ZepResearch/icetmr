@@ -99,18 +99,36 @@ export default  function ConferenceTimeline() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {timelineItems.map((item, index) => {
             const IconComponent = getIconForTitle(item.title)
+            const isExpired = index === 0 // First item is expired
+            
             return (
               <div key={item.id} className="group">
                 {/* Card with angled corners */}
-                <div className="relative bg-white border-2 border-gray-200 hover:border-orange-300 transition-all duration-300 h-72">
+                <div className={cn(
+                  "relative bg-white border-2 border-gray-200 hover:border-orange-300 transition-all duration-300 h-72",
+                  isExpired && "opacity-70"
+                )}>
                   {/* Angled top corners */}
                 
                   {/* Card Content */}
-                  <div className="p-6 h-full flex flex-col">
+                  <div className="p-6 h-full flex flex-col relative">
+                    {/* Expired overlay line */}
+                    {isExpired && (
+                      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                        <div className="w-full h-0.5 bg-red-500 transform rotate-12"></div>
+                      </div>
+                    )}
+                    
                     {/* Icon */}
                     <div className="mb-6">
-                      <div className="w-12 h-12 border-2 border-gray-300 rounded flex items-center justify-center">
-                        <IconComponent className="w-6 h-6 text-gray-600 group-hover:text-orange-500" />
+                      <div className={cn(
+                        "w-12 h-12 border-2 border-gray-300 rounded flex items-center justify-center",
+                        isExpired && "border-gray-400"
+                      )}>
+                        <IconComponent className={cn(
+                          "w-6 h-6 text-gray-600 group-hover:text-orange-500",
+                          isExpired && "text-gray-400"
+                        )} />
                       </div>
                     </div>
 
@@ -118,18 +136,33 @@ export default  function ConferenceTimeline() {
                     <div className="mb-6">
                       <div className="flex gap-1">
                         {[...Array(8)].map((_, i) => (
-                          <div key={i} className="w-1 h-8 bg-gray-200 transform skew-x-12"></div>
+                          <div key={i} className={cn(
+                            "w-1 h-8 bg-gray-200 transform skew-x-12",
+                            isExpired && "bg-gray-300"
+                          )}></div>
                         ))}
                       </div>
                     </div>
 
                     {/* Title */}
-                    <h3 className="text-xl font-bold text-gray-900 mb-4 leading-tight">{item.title.toUpperCase()}</h3>
+                    <h3 className={cn(
+                      "text-xl font-bold text-gray-900 mb-4 leading-tight",
+                      isExpired && "text-gray-500 line-through"
+                    )}>
+                      {item.title.toUpperCase()}
+                    </h3>
 
                     {/* Date */}
                     <div className="mb-4">
-                      <p className="bg-clip-text text-transparent bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500  font-bold text-lg">{item.date}</p>
+                      <p className={cn(
+                        "bg-clip-text text-transparent bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500 font-bold text-lg",
+                        isExpired && "text-gray-400 line-through"
+                      )}>
+                        {item.date}
+                      </p>
                     </div>
+
+                  
 
                     {/* Description */}
                     {/* <div className="flex-grow">
