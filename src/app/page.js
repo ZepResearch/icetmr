@@ -1,5 +1,6 @@
 import About from "@/components/About";
 import Buttons from "@/components/buttons";
+import CPD from "@/components/cpd";
 import CtaHighlight from "@/components/CTA-section";
 import ConferenceTimeline from "@/components/Dates-Timeline";
 import ConferenceFAQ from "@/components/Faq";
@@ -13,6 +14,7 @@ export default function Home() {
     <main>
       
       <Hero/>
+      <CPD/>
       <Organizer/>
       <About/>
       <Buttons/>
