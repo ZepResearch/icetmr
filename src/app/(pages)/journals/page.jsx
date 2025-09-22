@@ -2,7 +2,10 @@ import Image from "next/image"
 import Link from "next/link"
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
 import { getJournals } from "@/lib/pocketbase"
+import { journalMetadata } from "@/components/metadata"
 
+
+export const metadata = journalMetadata
 export const dynamic = "force-dynamic"
 
 export default async function JournalsPage() {

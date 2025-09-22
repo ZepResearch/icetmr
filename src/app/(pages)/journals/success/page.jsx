@@ -1,10 +1,9 @@
+import { successPageMetadata } from "@/components/metadata"
 import Link from "next/link"
 
-export const metadata = {
-  title: "Submission Successful - International Conference on Sustainable Tourism & Hospitality Management",
-  description:
-    "Your paper has been successfully submitted to the International Conference on Sustainable Tourism & Hospitality Management",
-}
+
+
+export const metadata = successPageMetadata
 
 export default function SuccessPage() {
   return (

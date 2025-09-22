@@ -1,6 +1,20 @@
 import React from 'react';
 import { Shield, Heart, AlertTriangle, Users, Activity, RefreshCw, MapPin, Phone } from 'lucide-react';
-
+export const metadata = {
+  title: 'Health and Safety Policy - International Conference on Emerging Trends in Management & Research',
+  description: 'ICETMR is dedicated to providing a safe, healthy, and secure environment for all participants. Read our Health and Safety Policy for details.',
+  keywords: ['ICETMR', 'Health and Safety', 'Conference Safety', 'Management conference', 'research innovation', 'academic conference', 'research conference 2025'],
+  alternates: {
+    canonical: 'https://emergingtrendsconference.com/health-and-safety-policy',
+  },
+  openGraph: {
+    title: 'Health and Safety Policy - ICETMR 2025',
+    description: 'Discover ICETMR’s commitment to health, safety, and well-being for all conference participants.',
+    type: 'website',
+    locale: 'en_US',
+    site_name: 'ICETMR 2025',
+  },
+}
 const HealthSafetyPolicy = () => {
   return (
     <div className="min-h-screen ">

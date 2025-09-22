@@ -1,7 +1,8 @@
 import React from 'react';
 import { Shield, Heart, Users, FileText, Phone, Eye } from 'lucide-react';
 import Link from 'next/link';
-
+import { DisabilityPolicyMetadata } from '@/components/metadata';
+export const metadata = DisabilityPolicyMetadata
 const DisabilityPolicy = () => {
   return (
     <div className="min-h-screen ">

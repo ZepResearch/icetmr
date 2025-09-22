@@ -1,6 +1,20 @@
 import React from 'react';
 import { Scale, Target, Globe, Shield, FileText, Users, AlertCircle, UserCheck } from 'lucide-react';
-
+export const metadata = {
+  title: 'Equal Treatment Policy - International Conference on Emerging Trends in Multidisciplinary Research',
+  description: 'ICETMR 2025 is committed to fostering an inclusive, respectful, and equitable environment for all participants. Read our Equal Treatment Policy for details.',
+  keywords: ['ICETMR', 'Equal Treatment', 'Diversity', 'Inclusivity', 'multidisciplinary conference', 'academic conference', 'research conference 2025'],
+  alternates: {
+    canonical: 'https://emergingtrendsconference.com/equal-treatment-policy',
+  },
+  openGraph: {
+    title: 'Equal Treatment Policy - ICETMR 2025',
+    description: 'Learn about ICETMR 2025’s commitment to diversity, inclusivity, and fairness for all conference participants.',
+    type: 'website',
+    locale: 'en_US',
+    site_name: 'ICETMR 2025',
+  },
+}
 const EqualTreatmentPolicy = () => {
   return (
     <div className="min-h-screen ">

@@ -1713,3 +1713,270 @@ export const venueMetadata = {
     }),
   },
 };
+
+export const journalMetadata = {
+  title: "Associated Journals | ICETMR: International Conference on Emerging Trends in Multidisciplinary Research",
+  description:
+    "Explore journal publication opportunities associated with ICETMR 2025. Learn about special issues in multidisciplinary research and emerging trends journals, submission guidelines, and how to publish your conference paper.",
+  keywords: [
+    "ICETMR 2025 journals",
+    "multidisciplinary research publications",
+    "emerging trends research journals",
+    "interdisciplinary publications",
+    "special issues",
+    "research publication",
+    "academic journals",
+    "proceedings publication"
+  ],
+
+  // Open Graph / Facebook
+  openGraph: {
+    type: "website",
+    url: "https://emergingtrendsconference.com/journals",
+    title: "Associated Journals | ICETMR: International Conference on Emerging Trends in Multidisciplinary Research",
+    description:
+      "Explore journal publication opportunities associated with ICETMR 2025. Learn about special issues in multidisciplinary research and emerging trends journals, submission guidelines, and how to publish your conference paper.",
+    siteName: "ICETMR",
+    images: [
+      {
+        url: "https://emergingtrendsconference.com/opengraph.png",
+        width: 1200,
+        height: 630,
+        alt: "ICETMR Associated Journals",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Associated Journals | ICETMR: International Conference on Emerging Trends in Multidisciplinary Research",
+    description:
+      "Explore journal publication opportunities associated with ICETMR 2025. Learn about special issues in multidisciplinary research and emerging trends journals, submission guidelines, and how to publish your conference paper.",
+    images: ["https://emergingtrendsconference.com/opengraph.png"],
+  },
+
+  // Canonical URL
+  alternates: {
+    canonical: "https://emergingtrendsconference.com/journals",
+  },
+
+  // Structured data
+  other: {
+    "application/ld+json": JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      name: "Associated Journals | ICETMR: International Conference on Emerging Trends in Multidisciplinary Research",
+      description:
+        "Explore journal publication opportunities associated with ICETMR 2025. Learn about special issues in multidisciplinary research and emerging trends journals, submission guidelines, and how to publish your conference paper.",
+      url: "https://emergingtrendsconference.com/journals",
+      mainEntity: {
+        "@type": "ItemList",
+        name: "ICETMR 2025 Associated Journals",
+        description: "Partner journals for publishing ICETMR 2025 conference papers",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Journal of Multidisciplinary Research"
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "International Journal of Emerging Trends"
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: "Interdisciplinary Research & Innovation"
+          }
+        ]
+      },
+    }),
+  },
+};
+
+export const successPageMetadata = {
+  title: "Submission Successful | ICETMR Journal Publication",
+  description:
+    "Your research paper has been successfully submitted to ICETMR 2025 associated journal. Thank you for your submission! A confirmation email has been sent and our review team will contact you soon.",
+  keywords: [
+    "submission successful",
+    "paper submitted successfully",
+    "ICETMR submission confirmation",
+    "journal submission complete",
+    "research paper confirmation",
+    "academic submission success",
+    "manuscript submitted",
+    "peer review process",
+    "publication confirmation"
+  ],
+
+  // Open Graph / Facebook
+  openGraph: {
+    type: "website",
+    url: "https://emergingtrendsconference.com/journals/success",
+    title: "Submission Successful | ICETMR Journal Publication",
+    description:
+      "Your research paper has been successfully submitted to ICETMR 2025 associated journal. Thank you for your submission! Our review team will contact you soon.",
+    siteName: "ICETMR",
+    images: [
+      {
+        url: "https://emergingtrendsconference.com/opengraph.png",
+        width: 1200,
+        height: 630,
+        alt: "ICETMR - Submission Successful",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Submission Successful | ICETMR Journal Publication",
+    description:
+      "Your research paper has been successfully submitted to ICETMR 2025 associated journal. Thank you for your submission!",
+    images: ["https://emergingtrendsconference.com/opengraph.png"],
+  },
+
+  // Canonical URL
+  alternates: {
+    canonical: "https://emergingtrendsconference.com/journals/success",
+  },
+
+  // Robots - prevent indexing of success pages
+  robots: {
+    index: false,
+    follow: true,
+    noarchive: true,
+    nosnippet: true,
+  },
+
+  // Structured data
+  other: {
+    "application/ld+json": JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      name: "Submission Successful | ICETMR Journal Publication",
+      description:
+        "Confirmation page for successful research paper submission to ICETMR 2025 associated journals.",
+      url: "https://emergingtrendsconference.com/journals/success",
+      mainEntity: {
+        "@type": "Action",
+        "@id": "https://emergingtrendsconference.com/journals/success#submission-confirmation",
+        name: "Journal Submission Confirmation",
+        description: "Successful completion of research paper submission process",
+        actionStatus: "CompletedActionStatus",
+        agent: {
+          "@type": "Organization",
+          name: "ICETMR",
+          url: "https://emergingtrendsconference.com"
+        },
+        object: {
+          "@type": "DigitalDocument",
+          name: "Research Paper Submission",
+          description: "Academic research paper submitted for peer review"
+        },
+        result: {
+          "@type": "Message",
+          text: "Submission successful - confirmation email sent"
+        }
+      },
+      breadcrumb: {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: "https://emergingtrendsconference.com"
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Journals",
+            item: "https://emergingtrendsconference.com/journals"
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: "Submission Successful",
+            item: "https://emergingtrendsconference.com/journals/success"
+          }
+        ]
+      }
+    }),
+  },
+};
+
+export const DisabilityPolicyMetadata = {
+  title: "Disability & Accessibility Policy | ICETMR: International Conference on Emerging Trends in Multidisciplinary Research",
+  description:
+    "Read ICETMR's disability and accessibility policy for our Bali conference. Learn about accessible venue features, accommodations for attendees with disabilities, and how we support an inclusive event experience.",
+  keywords: [
+    "ICETMR accessibility",
+    "disability policy",
+    "conference accessibility",
+    "inclusive event",
+    "accessible venue",
+    "Bali conference accessibility",
+    "accommodations for disabilities",
+    "assistive services",
+    "inclusive multidisciplinary conference"
+  ],
+
+  // Open Graph / Facebook
+  openGraph: {
+    type: "website",
+    url: "https://emergingtrendsconference.com/disability-discrimination-policy",
+    title: "Disability & Accessibility Policy | ICETMR: International Conference on Emerging Trends in Multidisciplinary Research",
+    description:
+      "Read ICETMR's disability and accessibility policy for our Bali conference. Learn about accessible venue features, accommodations for attendees with disabilities, and how we support an inclusive event experience.",
+    siteName: "ICETMR 2025",
+    images: [
+      {
+        url: "https://emergingtrendsconference.com/accessibility-opengraph.png",
+        width: 1200,
+        height: 630,
+        alt: "ICETMR Accessibility Policy",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Disability & Accessibility Policy | ICETMR: International Conference on Emerging Trends in Multidisciplinary Research",
+    description:
+      "Read ICETMR's disability and accessibility policy for our Bali conference. Learn about accessible venue features, accommodations for attendees with disabilities, and how we support an inclusive event experience.",
+    images: ["https://emergingtrendsconference.com/accessibility-opengraph.png"],
+  },
+
+  // Canonical URL
+  alternates: {
+    canonical: "https://emergingtrendsconference.com/disability-discrimination-policy",
+  },
+
+  // Structured data
+  other: {
+    "application/ld+json": JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      name: "Disability & Accessibility Policy | ICETMR",
+      description:
+        "Policy outlining accessibility accommodations and support for attendees with disabilities at ICETMR 2025 in Bali.",
+      url: "https://emergingtrendsconference.com/disability-discrimination-policy",
+      about: {
+        "@type": "Event",
+        name: "International Conference on Emerging Trends in Multidisciplinary Research",
+        organizer: {
+          "@type": "Organization",
+          name: "ICETMR"
+        }
+      },
+      mainEntity: {
+        "@type": "DigitalDocument",
+        name: "Disability & Accessibility Policy",
+        description: "Details on accessible venue features, accommodations, and support services for attendees with disabilities.",
+        about: "Accessibility and inclusion at ICETMR 2025"
+      }
+    }),
+  },
+};
