@@ -82,7 +82,7 @@ export default function PaperSubmissionPage() {
             </h1>
             <h2 className="text-xl  mb-8">
               Share your research at International conference on
-              AI & Robotics Innovation
+             Emerging Trends in Multidisciplinary Research
             </h2>
             <a href="#guid" className="scroll-smooth transition-all py-2 px-3  bg-gradient-to-tl from-pink-500 via-red-500 to-yellow-500 rounded-4xl text-white font-semibold hover:drop-shadow-2xl hover:bg-orange-500/90">
              Read Submission Guidelines before submitting </a>
