@@ -81,7 +81,7 @@ export default function Hero() {
             </div>
           </div>
         </section>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 pt- max-w-screen-2xl mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 pt- container mx-auto px-6">
                 <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
                   <h3 className="text-lg font-semibold mb-2">October | 10<sup>th</sup> - 11<sup>th</sup> 2025</h3>
                   <p className="text-sm text-gray-500">

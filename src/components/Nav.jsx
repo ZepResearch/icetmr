@@ -38,8 +38,9 @@ const navLinks = [
    { title: 'JOURNAL', href: '/journals' },
   { title: 'VENUE', href: '/venue' },
   { title: 'AWARDS', href: '/awards' },
+  { title: 'GALLERY', href: '/gallery' },
   { title: 'CONTACT', href: '/contact' },
-  { title: 'EXHIBIT & SPONSOR', href: '/exhibit-and-sponsor' },
+  { title: 'SPONSORSHIP', href: '/exhibit-and-sponsor' },
 ]
 
 function Nav() {
