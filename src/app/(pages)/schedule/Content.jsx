@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils"
 
 const scheduleData = [
   {
-    date: "October 10 | Day 1",
+    date: "February 27-28 | Day 1",
     items: [
       { time: "9:00AM - 9:20AM", title: "Registration" },
       { time: "9:20AM - 9:30AM", title: "Introduction by Moderator" },
@@ -44,7 +44,7 @@ const scheduleData = [
 ]
 
 export default function ConferenceSchedule() {
-  const startDate = new Date(2025, 9, 10) // October 10, 2025
+  const startDate = new Date(2026, 1, 27) // October 10, 2025
   const [selectedDates, setSelectedDates] = useState([startDate])
 
   return (
@@ -53,7 +53,7 @@ export default function ConferenceSchedule() {
         <div className="space-y-8">
           <div className="text-center space-y-4 mb-12">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-800">
-              International Conference on
+             2<sup>nd </sup> International Conference on
               <span className="relative inline-block mx-5">
                 <span className="relative z-10 text-white px-1 py-2 rounded-lg">Emerging Trends</span>
                 <span className="absolute inset-0 bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500 rounded-lg transform -rotate-1 scale-110 z-0"></span>
@@ -62,7 +62,7 @@ export default function ConferenceSchedule() {
             </h1>
             <div className="space-y-2">
               <p className="text-gray-600 text-xl font-semibold">
-                October 10th, 2025
+             February 27th - 28th ,2026
               </p>
               <p className="text-gray-600 text-lg">
                 Bali, Indonesia

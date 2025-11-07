@@ -181,7 +181,7 @@ export default function ExhibitAndSponsorPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-flex items-center rounded-full border border-gray-200 bg-gray-50 px-4 py-1.5 text-sm font-medium text-gray-700 mb-6">
-              <span>ICETMR 2025</span>
+              <span>ICETMR 2026</span>
               <ChevronRight className="ml-1 h-4 w-4" />
             </div>
 
@@ -194,9 +194,9 @@ export default function ExhibitAndSponsorPage() {
             </h1>
 
             <p className="text-xl text-gray-600 mb-4">
-              Partner with the International Conference on Emerging Trends in Multidisciplinary Research
+              Partner with the 2<sup>nd </sup> International Conference on Emerging Trends in Multidisciplinary Research
             </p>
-            <p className="text-lg text-gray-500 mb-8">October 10th - 11th, 2025 | Bali, Indonesia</p>
+            <p className="text-lg text-gray-500 mb-8">February 27th - 28th ,2026 | Bali, Indonesia</p>
           </div>
         </div>
       </section>
@@ -217,11 +217,11 @@ export default function ExhibitAndSponsorPage() {
                   </div>
                 </div>
 
-                <h2 className="text-2xl md:text-3xl font-bold mb-6 text-gray-900">Why Sponsor ICETMR?</h2>
+                <h2 className="text-2xl md:text-3xl font-bold mb-6 text-gray-900">Why Sponsor 2<sup>nd </sup>ICETMR?</h2>
 
                 <div className="space-y-6 text-gray-600">
                   <p>
-                    The International Conference on Emerging Trends in Multidisciplinary Research 2025 offers a unique
+                    The 2<sup>nd </sup>International Conference on Emerging Trends in Multidisciplinary Research 2026 offers a unique
                     opportunity to connect with leading researchers, academics, and industry professionals from diverse
                     fields. By sponsoring our conference, you'll gain visibility among a global audience of innovators
                     and decision-makers in beautiful Bali, Indonesia.
@@ -403,7 +403,7 @@ export default function ExhibitAndSponsorPage() {
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Looking for a Custom Package?</h3>
                 <p className="text-gray-600 mb-6">
                   We understand that every organization has unique goals and requirements. Contact us to discuss a
-                  customized sponsorship package tailored to your specific needs for ICETMR 2025 in Bali.
+                  customized sponsorship package tailored to your specific needs for 2nd ICETMR 2026 in Bali.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -78,19 +78,19 @@ export default function AboutConferencePage() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
               About
               <span className="relative inline-block  mx-5 ">
-                <span className="relative z-10 bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500 bg-clip-text text-transparent">ICETMR</span>
+                <span className="relative z-10 bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500 bg-clip-text text-transparent"> 2nd ICETMR</span>
                 <span className="absolute inset-0 bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500 rounded-full transform -rotate-1 scale-110 z-0 opacity-20"></span>
               </span>
-              2025
+              2026
             </h1>
             <p className="text-xl text-gray-600 mb-8">
-              International Conference on Emerging Trends in Multidisciplinary Research
+             2<sup>nd</sup> International Conference on Emerging Trends in Multidisciplinary Research
             </p>
 
             <div className="flex flex-wrap justify-center gap-6 mb-12">
               <div className="flex items-center bg-gray-50 rounded-full px-5 py-2 shadow-sm border border-gray-100">
                 <Calendar className="h-5 w-5 text-gray-600 mr-2" />
-                <span className="text-gray-700">October 10-11, 2025</span>
+                <span className="text-gray-700">February 27th - 28th  2026</span>
               </div>
               <div className="flex items-center bg-gray-50 rounded-full px-5 py-2 shadow-sm border border-gray-100">
                 <MapPin className="h-5 w-5 text-gray-600 mr-2" />
@@ -117,25 +117,25 @@ export default function AboutConferencePage() {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">About the Conference</h2>
               <p className="text-gray-600 mb-4">
-                The International Conference on Emerging Trends in Multidisciplinary Research 2025, taking place in
+                The  2<sup>nd</sup> International Conference on Emerging Trends in Multidisciplinary Research 2026, taking place in
                 the tropical paradise of Bali, Indonesia, aims to foster collaboration and innovation across diverse
                 research disciplines and academic fields.
               </p>
               <p className="text-gray-600 mb-4">
-                From October 10 to 11, 2025, ICETMR will bring together researchers, scholars, and professionals from
+                From February 27th - 28th , 2026, 2nd ICETMR will bring together researchers, scholars, and professionals from
                 various disciplines to share cutting-edge research, explore interdisciplinary approaches, and discuss
                 emerging trends that are shaping the future of academic research.
               </p>
               <p className="text-gray-600">
                 The conference features keynote presentations, panel discussions, and interactive workshops designed to
                 promote knowledge exchange and establish collaborative networks. With a focus on innovative research
-                methodologies and cross-disciplinary solutions, ICETMR 2025 promises to be an inspiring platform for
+                methodologies and cross-disciplinary solutions, 2nd ICETMR 2026 promises to be an inspiring platform for
                 advancing multidisciplinary research and its applications.
               </p>
             </div>
             <div className="relative rounded-3xl overflow-hidden h-[400px]">
               <Image
-                src="/gallery/ICSIFT_02.jpg"
+                src="/gallery/9.jpg"
                 alt="Conference"
                 fill
                 className="object-cover"
@@ -203,7 +203,7 @@ export default function AboutConferencePage() {
 
           <div className="mt-16 text-center">
             <p className="text-xl text-gray-600 mb-6">
-              Join us in Bali from October 10-11, 2025, to be part of a global community dedicated to advancing
+              Join us in Bali from February 27th - 28th  2026, to be part of a global community dedicated to advancing
               multidisciplinary research and fostering innovative collaborations!
             </p>
             <Link href="/schedule" >
@@ -219,9 +219,9 @@ export default function AboutConferencePage() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto mb-12 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Why Attend ICETMR 2025</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Why Attend 2nd ICETMR 2026</h2>
             <p className="text-gray-600">
-              The International Conference on Emerging Trends in Multidisciplinary Research (ICETMR) is the premier
+              The 2<sup>nd</sup> International Conference on Emerging Trends in Multidisciplinary Research (ICETMR) is the premier
               platform for exploring innovative research approaches and fostering interdisciplinary collaboration.
             </p>
           </div>
@@ -295,7 +295,7 @@ export default function AboutConferencePage() {
           <div className="bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
             <div className="flex flex-col md:flex-row items-center justify-between">
               <div className="mb-6 md:mb-0 md:mr-6">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Ready to join ICETMR 2025?</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">Ready to join 2nd ICETMR 2026?</h3>
                 <p className="text-gray-600 max-w-xl">
                   Register now to secure your spot at the premier conference on emerging trends in multidisciplinary
                   research in beautiful Bali, Indonesia.

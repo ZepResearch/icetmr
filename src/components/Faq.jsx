@@ -12,7 +12,7 @@ export default function ConferenceFAQ() {
     {
       question: "How can I register for the conference?",
       answer:
-        "Registration for ICETMR 2025 is available through our online portal. Early bird registration is open until September 15th, 2025. You can choose between in-person attendance in Bali or virtual participation. Group discounts are available for institutions sending 5 or more participants.",
+        "Registration for 2nd ICETMR 2025 is available through our online portal. Early bird registration is open until September 15th, 2025. You can choose between in-person attendance in Bali or virtual participation. Group discounts are available for institutions sending 5 or more participants.",
     },
     {
       question: "What are the submission guidelines for research papers?",
@@ -22,7 +22,7 @@ export default function ConferenceFAQ() {
     {
       question: "Is there financial support available for students and researchers?",
       answer:
-        "Yes, ICETMR offers special student pricing and travel grants for the conference on October 10th-11th, 2025. Student registration is available at 60% discount compared to regular registration. We also offer limited travel grants for outstanding research submissions from developing countries. To qualify, provide valid student ID and proof of enrollment or institutional affiliation.",
+        "Yes, 2nd ICETMR offers special student pricing and travel grants for the conference on October 10th-11th, 2025. Student registration is available at 60% discount compared to regular registration. We also offer limited travel grants for outstanding research submissions from developing countries. To qualify, provide valid student ID and proof of enrollment or institutional affiliation.",
     },
     {
       question: "What accommodation options are available in Bali?",
@@ -55,7 +55,7 @@ export default function ConferenceFAQ() {
            
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Find answers to common questions about ICETMR 2025 in Bali, Indonesia. If you don't see your question here, please contact us.
+            Find answers to common questions about 2nd ICETMR 2025 in Bali, Indonesia. If you don't see your question here, please contact us.
           </p>
         </div>
 
@@ -104,7 +104,7 @@ export default function ConferenceFAQ() {
         <div className="mt-12 bg-gradient-to-br from-gray-50 to-white rounded-2xl p-6 md:p-8 border border-gray-100">
           <h3 className="text-2xl font-bold text-gray-800 mb-4">Still have questions?</h3>
           <p className="text-gray-600 mb-6">
-            Our team is ready to assist you with any additional questions or concerns you may have about ICETMR 2025 in Bali.
+            Our team is ready to assist you with any additional questions or concerns you may have about 2nd ICETMR 2025 in Bali.
           </p>
          <div className="flex flex-col  text-lg font-bold " >
           <a className="inline-flex gap-2 items-center " >

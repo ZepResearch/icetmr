@@ -95,7 +95,7 @@ export default function ContactPage() {
                   <h2 className="text-2xl font-bold text-black mb-6">Get In Touch</h2>
 
                   <p className="text-gray-700 mb-8">
-                    Have questions about ICETMR 2025? Our team is here to help. Reach out to us using the contact
+                    Have questions about ICETMR 2026? Our team is here to help. Reach out to us using the contact
                     information below or fill out the form.
                   </p>
 

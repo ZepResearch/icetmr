@@ -85,8 +85,8 @@ export default  function ConferenceTimeline() {
           </div>
 
           <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8">
-            <h1 className="text-3xl lg:text-5xl font-medium text-gray-900 leading-tight max-w-2xl ">
-              Important Dates for <span className="bg-clip-text text-transparent bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500  ">ICETMR</span> 
+            <h1 className="text-3xl lg:text-5xl font-medium text-gray-900 leading-tight max-w-3xl ">
+              Important Dates for 2<sup>nd</sup> <span className="bg-clip-text text-transparent bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500  "> ICETMR</span> 
             </h1>
 
             <div className="text-right max-w-md">
@@ -99,7 +99,7 @@ export default  function ConferenceTimeline() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {timelineItems.map((item, index) => {
             const IconComponent = getIconForTitle(item.title)
-            const isExpired = index === 0 // First item is expired
+            const isExpired = index === 4 // First item is expired if keep 0 then 1 iteam is expired
             
             return (
               <div key={item.id} className="group">

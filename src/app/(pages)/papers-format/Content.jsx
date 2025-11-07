@@ -78,8 +78,8 @@ export default function PapersFormatPage() {
                 </span>
               </h1>
               <div className="mt-8 space-y-2">
-                <h2 className="text-2xl md:text-3xl font-bold text-gray-800">International Conference on Emerging Trends in Multidisciplinary Research</h2>
-                <p className="text-xl font-semibold text-gray-700">October 10th - 11th, 2025</p>
+                <h2 className="text-2xl md:text-3xl font-bold text-gray-800">2<sup>nd</sup> International Conference on Emerging Trends in Multidisciplinary Research</h2>
+                <p className="text-xl font-semibold text-gray-700">February 27th - 28th , 2026</p>
                 <p className="text-lg text-gray-600">Bali, Indonesia</p>
               </div>
             </div>
@@ -271,7 +271,7 @@ export default function PapersFormatPage() {
               <div className="mb-6 md:mb-0 md:mr-6">
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">Ready to submit your paper?</h3>
                 <p className="text-gray-600 max-w-xl">
-                  Download the appropriate template and prepare your submission for the International Conference on Emerging Trends in Multidisciplinary Research 2025.
+                  Download the appropriate template and prepare your submission for the International Conference on Emerging Trends in Multidisciplinary Research 2026.
                 </p>
               </div>
               <div className="flex flex-wrap gap-4">

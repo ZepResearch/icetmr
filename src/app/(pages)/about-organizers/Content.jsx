@@ -97,7 +97,7 @@ export default function AboutOrganizersPage() {
               Meet the team behind the International Conference on Emerging Trends in Multidisciplinary Research
             </p>
             <div className="text-lg text-gray-500">
-              <p className="font-semibold">October 10th - 11th, 2025</p>
+              <p className="font-semibold">February 27th - 28th  , 2026</p>
               <p>Bali, Indonesia</p>
             </div>
           </div>
@@ -110,7 +110,7 @@ export default function AboutOrganizersPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative rounded-3xl overflow-hidden h-[400px]">
               <Image
-                src="/gallery/organizer.jpg"
+                src="/gallery/13.jpg"
                 alt="Zep Research Team"
                 fill
                 className="object-cover"

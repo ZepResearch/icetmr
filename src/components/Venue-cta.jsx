@@ -76,7 +76,7 @@ export default function ConferenceVenue() {
                     </div>
                     <div>
                       <p className="text-sm text-gray-500">Date</p>
-                      <p className="text-gray-800 font-medium">October 10<sup>th</sup> - 11<sup>th</sup>, 2025</p>
+                      <p className="text-gray-800 font-medium">February  27<sup>th</sup> - 28<sup>th</sup>, 2025</p>
                       <p className="text-sm text-gray-500">2 Days of Research Innovation</p>
                     </div>
                   </div>

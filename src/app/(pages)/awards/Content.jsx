@@ -83,7 +83,7 @@ export default function AwardsPage() {
                   <div className="bg-gradient-to-r from-pink-50 to-yellow-50 rounded-xl p-6 border border-pink-100">
                     <h3 className="font-semibold text-gray-900 mb-3">How Recipients Are Selected</h3>
                     <p className="text-sm text-gray-700 mb-4">
-                      The Conference Program Committee of ICETMR will award scholarships to eligible applicants who have
+                      The Conference Program Committee of 2nd ICETMR will award scholarships to eligible applicants who have
                       submitted exceptional abstracts that have passed the blind peer review process and been accepted
                       for presentation at the conference. Additional scholarships are available for those who present
                       their research work exceptionally during the conference.
@@ -279,7 +279,7 @@ export default function AwardsPage() {
 
                 <div className="space-y-6 text-gray-700">
                   <p>
-                    All submissions and presentations at ICETMR 2025 will be evaluated by our panel of expert judges,
+                    All submissions and presentations at 2nd ICETMR 2025 will be evaluated by our panel of expert judges,
                     comprising leading researchers, industry professionals, and academic leaders in multidisciplinary research,
                     emerging trends, and innovation across various fields.
                   </p>
@@ -330,7 +330,7 @@ export default function AwardsPage() {
                       <div>
                         <h3 className="text-xl font-medium text-gray-900 mb-2">Award Ceremony</h3>
                         <p className="text-gray-700">
-                          Winners are announced and recognized during the closing ceremony on October 11, 2025 in Bali, Indonesia.
+                          Winners are announced and recognized during the closing ceremony on February 28th ,2026 in Bali, Indonesia.
                         </p>
                       </div>
                     </div>
@@ -352,7 +352,7 @@ export default function AwardsPage() {
               <div className="relative">
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Ready to Showcase Your Research?</h3>
                 <p className="text-gray-700 mb-6">
-                  Submit your paper and register for ICETMR 2025 to be considered for our prestigious awards in beautiful Bali, Indonesia.
+                  Submit your paper and register for 2nd ICETMR 2026 to be considered for our prestigious awards in beautiful Bali, Indonesia.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">

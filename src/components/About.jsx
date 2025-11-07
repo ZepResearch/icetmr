@@ -33,7 +33,7 @@ function About() {
 
             <div className="space-y-6 text-gray-950">
               <p className="text-lg leading-relaxed">
-                At the International Conference on Emerging Trends in Multidisciplinary Research, we bring together the world's leading
+                At the 2<sup>nd</sup> International Conference on Emerging Trends in Multidisciplinary Research, we bring together the world's leading
                 experts, researchers, and innovators across various fields of study.
               </p>
 

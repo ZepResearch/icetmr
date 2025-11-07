@@ -23,7 +23,7 @@ function CtaHighlight() {
     {
       id: 'sponsorship',
       title: 'Sponsorship',
-      description: 'Partner with ICETMR to showcase your organization\'s commitment toEmerging Trends in Multidisciplinary Research and gain visibility among industry leaders.',
+      description: 'Partner with 2nd ICETMR to showcase your organization\'s commitment toEmerging Trends in Multidisciplinary Research and gain visibility among industry leaders.',
       href: '/sponsorship',
       icon: <Presentation/>
     },
@@ -44,7 +44,7 @@ function CtaHighlight() {
     {
       id: 'organizer',
       title: 'Organizer',
-      description: 'Learn more about the organizing team behind ICETMR and their commitment to advancing Emerging Trends in Multidisciplinary Research.',
+      description: 'Learn more about the organizing team behind 2nd ICETMR and their commitment to advancing Emerging Trends in Multidisciplinary Research.',
       href: '/about-organizers',
       icon: <Users/>
     }

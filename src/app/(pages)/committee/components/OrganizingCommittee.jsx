@@ -113,10 +113,10 @@ export default function CommitteePage() {
               </span>
             </h1>
             <p className="text-xl text-gray-600 mb-8">
-              Meet the experts behind ICETMR 2025: International Conference on Emerging Trends in Multidisciplinary Research
+              Meet the experts behind 2nd ICETMR 2026: International Conference on Emerging Trends in Multidisciplinary Research
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-lg font-medium text-gray-700">
-              <span>October 10th - 11th 2025</span>
+              <span>February 27th - 28th ,2026</span>
               <span className="hidden sm:block">•</span>
               <span>Bali, Indonesia</span>
             </div>

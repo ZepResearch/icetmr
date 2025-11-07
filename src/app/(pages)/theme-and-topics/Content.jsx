@@ -121,10 +121,10 @@ export default function ThemeAndTopicsPage() {
               </span>
             </h1>
             <p className="text-xl text-gray-600 mb-8">
-              Explore the research areas and themes for ICETMR 2025
+              Explore the research areas and themes for 2nd ICETMR 2025
             </p>
             <div className="text-lg text-gray-500">
-              <p className="font-semibold">October 10th - 11th, 2025</p>
+              <p className="font-semibold">February 27th -28th, 2026</p>
               <p>Bali, Indonesia</p>
             </div>
           </div>
@@ -143,7 +143,7 @@ export default function ThemeAndTopicsPage() {
                 "Breaking Boundaries: Multidisciplinary Approaches to Global Challenges"
               </h2>
               <p className="text-gray-600 mb-4">
-                ICETMR 2025 explores how interdisciplinary collaboration is revolutionizing our approach to complex global 
+                2nd ICETMR 2025 explores how interdisciplinary collaboration is revolutionizing our approach to complex global 
                 challenges. As traditional boundaries between disciplines continue to blur, new collaborative frameworks 
                 are enabling unprecedented opportunities for addressing climate change, social inequality, technological 
                 ethics, and sustainable development.

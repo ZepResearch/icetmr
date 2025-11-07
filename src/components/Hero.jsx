@@ -13,7 +13,7 @@ export default function Hero() {
           <div className="container px-4 md:px-6 grid lg:grid-cols-2 gap-1 items-center mx-auto">
             <div className="space-y-6">
               <h1 className="text-4xl font-semibold text-pretty tracking-tight sm:text-5xl md:text-6xl  leading-tight">
-                International Conference on <span className="bg-clip-text text-transparent bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500  ">Emerging Trends</span> in Multidisciplinary Research
+               2<sup>nd</sup> International Conference on <span className="bg-clip-text text-transparent bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500  ">Emerging Trends</span> in Multidisciplinary Research
               </h1>
               <p className="max-w-[600px] text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 Join us to explore the cutting-edge advancements and interdisciplinary connections shaping the future of
@@ -83,7 +83,7 @@ export default function Hero() {
         </section>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 pt- container mx-auto px-6">
                 <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                  <h3 className="text-lg font-semibold mb-2">October | 10<sup>th</sup> - 11<sup>th</sup> 2025</h3>
+                  <h3 className="text-lg font-semibold mb-2">February 27<sup>th</sup> - 28<sup>th</sup> 2026</h3>
                   <p className="text-sm text-gray-500">
                     Explore cutting-edge topics across various disciplines, fostering interdisciplinary collaboration.
                   </p>

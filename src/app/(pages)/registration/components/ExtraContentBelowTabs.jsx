@@ -234,7 +234,7 @@ function ExtraContentBelowTabs() {
           <div className="absolute -inset-px rounded-3xl bg-gray-100/20 opacity-50"></div>
 
           <div className="relative">
-            <h3 className="text-2xl font-bold text-black mb-3">Ready to Join ICETMR 2025?</h3>
+            <h3 className="text-2xl font-bold text-black mb-3">Ready to Join 2nd ICETMR 2026?</h3>
             <p className="text-gray-700 mb-6">
               Register now to secure your spot at the International Conference on Emerging Trends in Multidisciplinary Research.
             </p>
