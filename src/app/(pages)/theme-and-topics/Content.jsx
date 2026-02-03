@@ -121,11 +121,11 @@ export default function ThemeAndTopicsPage() {
               </span>
             </h1>
             <p className="text-xl text-gray-600 mb-8">
-              Explore the research areas and themes for 2nd ICETMR 2025
+              Explore the research areas and themes for 2nd ICETMR 2026
             </p>
             <div className="text-lg text-gray-500">
-              <p className="font-semibold">February 27th -28th, 2026</p>
-              <p>Bali, Indonesia</p>
+              <p className="font-semibold">October 7th - 8th 2026</p>
+              <p>Kuala Lumpur, Malaysia</p>
             </div>
           </div>
         </div>
@@ -143,7 +143,7 @@ export default function ThemeAndTopicsPage() {
                 "Breaking Boundaries: Multidisciplinary Approaches to Global Challenges"
               </h2>
               <p className="text-gray-600 mb-4">
-                2nd ICETMR 2025 explores how interdisciplinary collaboration is revolutionizing our approach to complex global 
+                2nd ICETMR 2026 explores how interdisciplinary collaboration is revolutionizing our approach to complex global 
                 challenges. As traditional boundaries between disciplines continue to blur, new collaborative frameworks 
                 are enabling unprecedented opportunities for addressing climate change, social inequality, technological 
                 ethics, and sustainable development.
@@ -153,7 +153,7 @@ export default function ThemeAndTopicsPage() {
                 examine the current state and future possibilities of cross-disciplinary research. We invite contributions 
                 that highlight innovative interdisciplinary approaches, novel methodologies for collaborative research, 
                 and critical perspectives on the ethical and practical implications of multidisciplinary solutions 
-                in our beautiful setting of Bali, Indonesia.
+                in our beautiful setting of Kuala Lumpur, Malaysia.
               </p>
             </div>
             <div className="relative rounded-3xl overflow-hidden h-[400px]">
@@ -258,7 +258,7 @@ export default function ThemeAndTopicsPage() {
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">Ready to contribute?</h3>
                 <p className="text-gray-600 max-w-xl">
                   Submit your research paper or proposal and be part of the global conversation on multidisciplinary 
-                  research and emerging trends in Bali, Indonesia.
+                  research and emerging trends in Kuala Lumpur, Malaysia.
                 </p>
               </div>
               <div className="flex flex-wrap gap-4">

@@ -120,7 +120,7 @@ export default function ContactPage() {
                       </div>
                       <div>
                         <p className="text-sm text-gray-700">Phone</p>
-                        <p className="text-black font-medium">+91 92373 88328</p>
+                        <p className="text-black font-medium">+91 82600 80050</p>
                       </div>
                     </div>
 
@@ -133,7 +133,8 @@ export default function ContactPage() {
                       <div>
                         <p className="text-sm text-gray-700">Address</p>
                         <p className="text-black font-medium">
-                          DCB-330, 3rd Floor, DLF Cyber City, Patia, Bhubaneswar, ODISHA - 751024 India
+                     Flat No: 202 Plot.no.2028/2044, Sai Aarti Enclave, Behind Tanishq Chandasekharpur, Bhubaneshwar, India
+
                         </p>
                       </div>
                     </div>
@@ -154,12 +155,12 @@ export default function ContactPage() {
                       >
                         <Instagram className="h-5 w-5 text-red-400" />
                       </a>
-                      <a
+                      {/* <a
                         href="https://x.com/Zepresearch"
                         className="h-10 w-10 flex items-center justify-center rounded-full bg-white border border-gray-200 hover:border-transparent transition-colors"
                       >
                         <Twitter className="h-5 w-5 text-red-400" />
-                      </a>
+                      </a> */}
                       <a
                         href="https://www.linkedin.com/company/zep-research/"
                         className="h-10 w-10 flex items-center justify-center rounded-full bg-white border border-gray-200 hover:border-transparent transition-colors"

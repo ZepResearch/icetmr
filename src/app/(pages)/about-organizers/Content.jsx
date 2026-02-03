@@ -97,8 +97,8 @@ export default function AboutOrganizersPage() {
               Meet the team behind the International Conference on Emerging Trends in Multidisciplinary Research
             </p>
             <div className="text-lg text-gray-500">
-              <p className="font-semibold">February 27th - 28th  , 2026</p>
-              <p>Bali, Indonesia</p>
+              <p className="font-semibold">October 7th - 8th 2026</p>
+              <p>Kuala Lumpur, Malaysia</p>
             </div>
           </div>
         </div>
@@ -150,7 +150,7 @@ export default function AboutOrganizersPage() {
             </p>
             <p className="text-xl text-gray-600">
               ICETMR is more than a conference; it's a convergence point for multidisciplinary excellence. Our goal is 
-              to create a vibrant intellectual ecosystem in the beautiful setting of Bali, where ideas transcend 
+              to create a vibrant intellectual ecosystem in the beautiful setting of Kuala Lumpur, Malaysia, where ideas transcend 
               traditional boundaries, collaborative networks are forged, and emerging researchers are empowered to 
               pioneer the next generation of interdisciplinary solutions. Together, we're shaping a future driven by 
               holistic thinking, innovative collaboration, and bold multidisciplinary research.
@@ -209,7 +209,7 @@ export default function AboutOrganizersPage() {
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">Partner with Zep Research</h3>
                 <p className="text-gray-600 max-w-xl">
                   Interested in collaborating with us for future conferences or multidisciplinary research initiatives? 
-                  Get in touch to explore partnership opportunities in Bali and beyond.
+                  Get in touch to explore partnership opportunities in Kuala Lumpur, Malaysia and beyond.
                 </p>
               </div>
               <Link

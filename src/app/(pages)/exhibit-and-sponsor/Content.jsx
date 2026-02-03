@@ -196,7 +196,7 @@ export default function ExhibitAndSponsorPage() {
             <p className="text-xl text-gray-600 mb-4">
               Partner with the 2<sup>nd </sup> International Conference on Emerging Trends in Multidisciplinary Research
             </p>
-            <p className="text-lg text-gray-500 mb-8">February 27th - 28th ,2026 | Bali, Indonesia</p>
+            <p className="text-lg text-gray-500 mb-8">October 7th - 8th 2026 | Kuala Lumpur, Malaysia</p>
           </div>
         </div>
       </section>
@@ -224,7 +224,7 @@ export default function ExhibitAndSponsorPage() {
                     The 2<sup>nd </sup>International Conference on Emerging Trends in Multidisciplinary Research 2026 offers a unique
                     opportunity to connect with leading researchers, academics, and industry professionals from diverse
                     fields. By sponsoring our conference, you'll gain visibility among a global audience of innovators
-                    and decision-makers in beautiful Bali, Indonesia.
+                    and decision-makers in beautiful Kuala Lumpur, Malaysia.
                   </p>
 
                   <p>
@@ -403,7 +403,7 @@ export default function ExhibitAndSponsorPage() {
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Looking for a Custom Package?</h3>
                 <p className="text-gray-600 mb-6">
                   We understand that every organization has unique goals and requirements. Contact us to discuss a
-                  customized sponsorship package tailored to your specific needs for 2nd ICETMR 2026 in Bali.
+                  customized sponsorship package tailored to your specific needs for 2nd ICETMR 2026 in Kuala Lumpur, Malaysia.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">

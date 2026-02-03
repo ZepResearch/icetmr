@@ -11,7 +11,7 @@ const DisabilityPolicy = () => {
       <main className="max-w-4xl mx-auto px-6 py-8">
         <div className="bg-slate-50 rounded-lg shadow-sm border border-gray-200 overflow-hidden">
           {/* Title Section */}
-          <div className="bg-gradient-to-r from-orange-500 to-red-400 px-8 py-6">
+          <div className="bg-gradient-to-r from-orange-300 to-red-400 px-8 py-6">
             <div className="flex items-center space-x-3">
               <Shield className="w-8 h-8 text-white" />
               <h1 className="text-2xl font-bold text-white">Disability Discrimination Policy</h1>
@@ -22,7 +22,7 @@ const DisabilityPolicy = () => {
             {/* Introduction */}
             <div className="prose max-w-none">
               <p className="text-gray-700 leading-relaxed">
-                The  International Conference on Emerging Trends in Multidisciplinary Research (ICETMR 2025) is committed to fostering an inclusive, accessible, and discrimination-free environment for all participants, regardless of physical, sensory, intellectual, or mental health conditions.
+                The  International Conference on Emerging Trends in Multidisciplinary Research (ICETMR) is committed to fostering an inclusive, accessible, and discrimination-free environment for all participants, regardless of physical, sensory, intellectual, or mental health conditions.
               </p>
             </div>
 
@@ -33,7 +33,7 @@ const DisabilityPolicy = () => {
                 <h2 className="text-xl font-semibold text-gray-900">1. Policy Statement</h2>
               </div>
               <p className="text-gray-700 leading-relaxed">
-                ICETMR 2025 strictly prohibits any form of discrimination, harassment, or exclusion based on disability. All conference organizers, staff, and participants are expected to support and uphold the principles of inclusivity and equal access to conference activities, both in physical and virtual formats.
+                ICETMR  strictly prohibits any form of discrimination, harassment, or exclusion based on disability. All conference organizers, staff, and participants are expected to support and uphold the principles of inclusivity and equal access to conference activities, both in physical and virtual formats.
               </p>
             </section>
 

@@ -90,11 +90,11 @@ export default function AboutConferencePage() {
             <div className="flex flex-wrap justify-center gap-6 mb-12">
               <div className="flex items-center bg-gray-50 rounded-full px-5 py-2 shadow-sm border border-gray-100">
                 <Calendar className="h-5 w-5 text-gray-600 mr-2" />
-                <span className="text-gray-700">February 27th - 28th  2026</span>
+                <span className="text-gray-700">October 7th - 8th 2026</span>
               </div>
               <div className="flex items-center bg-gray-50 rounded-full px-5 py-2 shadow-sm border border-gray-100">
                 <MapPin className="h-5 w-5 text-gray-600 mr-2" />
-                <span className="text-gray-700">Bali, Indonesia</span>
+                <span className="text-gray-700">Kuala Lumpur, Malaysia</span>
               </div>
               <div className="flex items-center bg-gray-50 rounded-full px-5 py-2 shadow-sm border border-gray-100">
                 <Users className="h-5 w-5 text-gray-600 mr-2" />
@@ -118,11 +118,11 @@ export default function AboutConferencePage() {
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">About the Conference</h2>
               <p className="text-gray-600 mb-4">
                 The  2<sup>nd</sup> International Conference on Emerging Trends in Multidisciplinary Research 2026, taking place in
-                the tropical paradise of Bali, Indonesia, aims to foster collaboration and innovation across diverse
+                the tropical paradise of Kuala Lumpur, Malaysia, aims to foster collaboration and innovation across diverse
                 research disciplines and academic fields.
               </p>
               <p className="text-gray-600 mb-4">
-                From February 27th - 28th , 2026, 2nd ICETMR will bring together researchers, scholars, and professionals from
+                From October 7th - 8th, 2026, 2nd ICETMR will bring together researchers, scholars, and professionals from
                 various disciplines to share cutting-edge research, explore interdisciplinary approaches, and discuss
                 emerging trends that are shaping the future of academic research.
               </p>
@@ -143,7 +143,7 @@ export default function AboutConferencePage() {
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
               <div className="absolute bottom-0 left-0 right-0 p-6">
                 <div className="bg-white/90 backdrop-blur-sm rounded-full py-3 px-6 inline-flex items-center">
-                  <span className="text-gray-900 font-medium">Join us in Bali</span>
+                  <span className="text-gray-900 font-medium">Join us in Kuala Lumpur</span>
                 </div>
               </div>
             </div>
@@ -203,7 +203,7 @@ export default function AboutConferencePage() {
 
           <div className="mt-16 text-center">
             <p className="text-xl text-gray-600 mb-6">
-              Join us in Bali from February 27th - 28th  2026, to be part of a global community dedicated to advancing
+              Join us in Kuala Lumpur from October 7th - 8th  2026, to be part of a global community dedicated to advancing
               multidisciplinary research and fostering innovative collaborations!
             </p>
             <Link href="/schedule" >
@@ -298,7 +298,7 @@ export default function AboutConferencePage() {
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">Ready to join 2nd ICETMR 2026?</h3>
                 <p className="text-gray-600 max-w-xl">
                   Register now to secure your spot at the premier conference on emerging trends in multidisciplinary
-                  research in beautiful Bali, Indonesia.
+                  research in beautiful Kuala Lumpur, Malaysia.
                 </p>
               </div>
               <Link

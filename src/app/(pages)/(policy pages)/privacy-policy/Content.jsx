@@ -145,9 +145,7 @@ export default function PrivacyPolicy() {
               <p className="text-xl font-semibold text-gray-800">
                 International Conference on Emerging Trends in Multidisciplinary Research
               </p>
-              <p className="text-lg text-gray-600">
-                October 10th - 11th, 2025 • Bali, Indonesia
-              </p>
+           
               <p className="text-base text-gray-500">
                 Simple, clear information about how we protect your data
               </p>
@@ -226,7 +224,6 @@ export default function PrivacyPolicy() {
                   or call us at +91 78488 54815.
                 </p>
                 <div className="space-y-2 text-sm text-gray-500">
-                  <p><strong className="text-gray-700">Venue:</strong> Bali, Indonesia</p>
                   <p>Last updated: {new Date().toLocaleDateString()}</p>
                 </div>
               </div>

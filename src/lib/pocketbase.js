@@ -16,7 +16,9 @@ export async function getJournals() {
 
     // Get the start and end dates for 2025
     const startDate = '2025-01-01 00:00:00'
-    const endDate = '2025-12-31 23:59:59'
+ const now = new Date()
+
+    const endDate = `${now.getFullYear()}-12-31 23:59:59`
 
     // Fetch journals from 2025 only, sorted by creation date (newest first)
     const records = await pb.collection("Journals").getFullList({

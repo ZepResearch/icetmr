@@ -143,8 +143,7 @@ export default function TermsAndConditions() {
 
                 <p className="text-gray-600 mb-6">
                   Welcome to the Terms and Conditions for the International Conference on Emerging Trends in
-                  Multidisciplinary Research (ICETMR). These terms govern your participation in our conference scheduled
-                  for October 10th-11th, 2025 in Bali, Indonesia.
+                  Multidisciplinary Research (ICETMR). These terms govern your participation in our conference 
                 </p>
 
                 <div className="relative backdrop-blur-sm bg-gray-50 rounded-xl border border-gray-200 overflow-hidden mb-6">

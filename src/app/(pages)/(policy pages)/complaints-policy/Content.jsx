@@ -57,7 +57,7 @@ export default function ComplaintsPolicy() {
                   <strong>Complaints should be sent via email to:</strong> info@emergingtrendsconference.com
                 </p>
                 <p className="text-gray-700 mt-2">
-                  <strong>Subject line:</strong> Formal Complaint – ICETMR 2025
+                  <strong>Subject line:</strong> Formal Complaint – ICETMR 
                 </p>
               </div>
             </section>
@@ -123,10 +123,7 @@ export default function ComplaintsPolicy() {
                   <Phone className="w-5 h-5" />
                   <span>+91 92373 88328</span>
                 </div>
-                <div className="flex items-center space-x-3 text-orange-600">
-                  <MapPin className="w-5 h-5" />
-                  <span>Bali, Indonesia</span>
-                </div>
+               
               </div>
             </section>
           </div>

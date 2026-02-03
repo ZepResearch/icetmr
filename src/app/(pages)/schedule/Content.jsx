@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils"
 
 const scheduleData = [
   {
-    date: "February 27-28 | Day 1",
+    date: "October 7-8 | Day 1-2",
     items: [
       { time: "9:00AM - 9:20AM", title: "Registration" },
       { time: "9:20AM - 9:30AM", title: "Introduction by Moderator" },
@@ -44,8 +44,11 @@ const scheduleData = [
 ]
 
 export default function ConferenceSchedule() {
-  const startDate = new Date(2026, 1, 27) // October 10, 2025
-  const [selectedDates, setSelectedDates] = useState([startDate])
+  const startDate = new Date(2026, 9, 7) // October 7, 2026 (month is 0-indexed)
+  const [selectedDates, setSelectedDates] = useState([
+    new Date(2026, 9, 7),
+    new Date(2026, 9, 8),
+  ])
 
   return (
     <div className="bg-white py-16">
@@ -62,22 +65,22 @@ export default function ConferenceSchedule() {
             </h1>
             <div className="space-y-2">
               <p className="text-gray-600 text-xl font-semibold">
-             February 27th - 28th ,2026
+             October 7th - 8th 2026
               </p>
               <p className="text-gray-600 text-lg">
-                Bali, Indonesia
+                Kuala Lumpur, Malaysia
               </p>
             </div>
             <p className="text-gray-600 text-lg max-w-3xl mx-auto">
               Join us for a day of cutting-edge insights, interdisciplinary collaboration, and networking opportunities 
-              in the beautiful setting of Bali. Explore emerging trends that are shaping the future of research.
+              in the beautiful setting of Kuala Lumpur. Explore emerging trends that are shaping the future of research.
             </p>
           </div>
 
           <div className="grid gap-8 md:grid-cols-[300px_1fr]">
             <Card className="border-gray-200 rounded-3xl shadow-lg overflow-hidden bg-white h-fit">
               <CardHeader className="bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500 text-white py-3">
-                <CardTitle>October 2025</CardTitle>
+                <CardTitle>October 2026</CardTitle>
               </CardHeader>
               <CardContent className="p-4">
                 <Calendar
@@ -129,7 +132,7 @@ export default function ConferenceSchedule() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <h3 className="text-xl font-bold text-gray-800 mb-3">Venue</h3>
-                <p className="text-gray-600 mb-2">Bali, Indonesia</p>
+                <p className="text-gray-600 mb-2">Kuala Lumpur, Malaysia</p>
               </div>
               <div>
                 <h3 className="text-xl font-bold text-gray-800 mb-3">Registration</h3>

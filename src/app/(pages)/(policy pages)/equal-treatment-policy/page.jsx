@@ -25,7 +25,7 @@ const EqualTreatmentPolicy = () => {
       <main className="max-w-4xl mx-auto px-6 py-8">
         <div className="bg-slate-50 rounded-lg shadow-sm border border-gray-200 overflow-hidden">
           {/* Title Section */}
-          <div className="bg-gradient-to-r from-orange-500 to-red-400 px-8 py-6">
+          <div className="bg-gradient-to-r from-orange-300 to-red-400 px-8 py-6">
             <div className="flex items-center space-x-3">
               <Scale className="w-8 h-8 text-white" />
               <div>
@@ -39,7 +39,7 @@ const EqualTreatmentPolicy = () => {
             {/* Introduction */}
             <div className="prose max-w-none">
               <p className="text-gray-700 leading-relaxed">
-                The  International Conference on Emerging Trends in Multidisciplinary Research  (ICETMR 2025) is committed to fostering an inclusive, respectful, and equitable environment for all participants. This policy ensures that every attendee, including authors, presenters, delegates, session chairs, reviewers, organizers, and sponsors, is treated fairly and without any form of discrimination.
+                The  International Conference on Emerging Trends in Multidisciplinary Research  (ICETMR ) is committed to fostering an inclusive, respectful, and equitable environment for all participants. This policy ensures that every attendee, including authors, presenters, delegates, session chairs, reviewers, organizers, and sponsors, is treated fairly and without any form of discrimination.
               </p>
             </div>
 
@@ -103,7 +103,7 @@ const EqualTreatmentPolicy = () => {
                 <Shield className="w-6 h-6 text-orange-500" />
                 <h2 className="text-xl font-semibold text-gray-900">3. Commitment to Equal Treatment</h2>
               </div>
-              <p className="text-gray-700 mb-6">ICETMR 2025 ensures that:</p>
+              <p className="text-gray-700 mb-6">ICETMR  ensures that:</p>
               
               <div className="space-y-6">
                 {/* Non-Discrimination */}

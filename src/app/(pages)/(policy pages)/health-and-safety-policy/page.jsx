@@ -25,7 +25,7 @@ const HealthSafetyPolicy = () => {
       <main className="max-w-4xl mx-auto px-6 py-8">
         <div className="bg-slate-50 rounded-lg shadow-sm border border-gray-200 overflow-hidden">
           {/* Title Section */}
-          <div className="bg-gradient-to-r from-orange-500 to-red-400 px-8 py-6">
+          <div className="bg-gradient-to-r from-orange-300 to-red-400 px-8 py-6">
             <div className="flex items-center space-x-3">
               <Heart className="w-8 h-8 text-white" />
               <h1 className="text-2xl font-bold text-white">Health and Safety Policy</h1>

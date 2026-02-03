@@ -47,8 +47,8 @@ export default function ModeOfPresentationPage() {
               </h1>
               <div className="mt-8 space-y-2">
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-800">2<sup>nd </sup> International Conference on Emerging Trends in Multidisciplinary Research</h2>
-                <p className="text-xl font-semibold text-gray-700">February 27th - 28th ,2026</p>
-                <p className="text-lg text-gray-600">Bali, Indonesia</p>
+                <p className="text-xl font-semibold text-gray-700">October 7th - 8th 2026</p>
+                <p className="text-lg text-gray-600">Kuala Lumpur, Malaysia</p>
               </div>
             </div>
             <p className="text-xl text-gray-600 mb-8">

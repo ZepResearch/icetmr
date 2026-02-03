@@ -69,11 +69,9 @@ export default function CancellationPolicy() {
               <p className="text-xl font-semibold text-gray-800">
                 International Conference on Emerging Trends in Multidisciplinary Research
               </p>
-              <p className="text-lg text-gray-600">
-                October 10th - 11th, 2025 • Bali, Indonesia
-              </p>
+          
               <p className="text-base text-gray-500">
-                Our refund and cancellation guidelines for ICETMR 2025
+                Our refund and cancellation guidelines for ICETMR 
               </p>
             </motion.div>
           </div>
@@ -108,7 +106,7 @@ export default function CancellationPolicy() {
                 <p className="text-gray-600 leading-relaxed">
                   We understand that plans can change. Our cancellation policy is designed to be fair to all parties
                   involved. Please read this policy carefully before registering for the International Conference on
-                  Emerging Trends in Multidisciplinary Research (ICETMR) taking place in Bali, Indonesia.
+                  Emerging Trends in Multidisciplinary Research (ICETMR) .
                 </p>
               </div>
             </div>
@@ -179,9 +177,7 @@ export default function CancellationPolicy() {
                   <p>
                     <strong className="text-gray-900">Phone:</strong> +91 78488 54815
                   </p>
-                  <p>
-                    <strong className="text-gray-900">Venue:</strong> Bali, Indonesia
-                  </p>
+             
                 </div>
 
                 <div className="mt-8 text-center">

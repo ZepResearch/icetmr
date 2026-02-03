@@ -16,7 +16,7 @@ function CtaHighlight() {
     {
       id: 'venue',
       title: 'Venue',
-      description: 'Experience the conference live in Bali, Indonesia or connect virtually through our dynamic online platform—choose the way that suits you best.',
+      description: 'Experience the conference live in Kuala Lumpur, Malaysia  or connect virtually through our dynamic online platform—choose the way that suits you best.',
       href: '/venue',
       icon: <MapPin/>
     },

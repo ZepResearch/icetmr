@@ -40,7 +40,7 @@ export default function ConferenceVenue() {
             </span>
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Join us at our premier venue in beautiful Bali, Indonesia, designed to inspire innovation and foster 
+            Join us at our premier venue in beautiful Kuala Lumpur, Malaysia  designed to inspire innovation and foster 
             multidisciplinary collaboration in a tropical paradise setting.
           </p>
         </div>
@@ -51,7 +51,7 @@ export default function ConferenceVenue() {
             {/* Left side - Venue image */}
             <div className="relative h-[300px] lg:h-full">
               <Image
-                src="https://images.unsplash.com/photo-1734765481725-7f9fbfbaa697?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="https://images.unsplash.com/photo-1512580687892-1b04e29ea66f?q=80&w=1501&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="ICETMR Conference Venue - Bali International Convention Centre"
                 fill
                 className="object-cover"
@@ -76,7 +76,7 @@ export default function ConferenceVenue() {
                     </div>
                     <div>
                       <p className="text-sm text-gray-500">Date</p>
-                      <p className="text-gray-800 font-medium">February  27<sup>th</sup> - 28<sup>th</sup>, 2025</p>
+                      <p className="text-gray-800 font-medium">October  7<sup>th</sup> - 8<sup>th</sup>, 2026</p>
                       <p className="text-sm text-gray-500">2 Days of Research Innovation</p>
                     </div>
                   </div>
@@ -98,8 +98,8 @@ export default function ConferenceVenue() {
                     </div>
                     <div>
                       <p className="text-sm text-gray-500">Address</p>
-                      <p className="text-gray-800 font-bold">Melasti Kuta Beach Hotel & Spa</p>
-                      <p className="text-gray-800">Jl. Kartika Plaza No.5, Kuta, Kec. Kuta, Kabupaten Badung, Bali 80361, Indonesia</p>
+                      <p className="text-gray-800 font-bold">Kuala Lumpur, Malaysia</p>
+                      <p className="text-gray-800"></p>
 
                     </div>
                   </div>

@@ -116,9 +116,10 @@ export default function CommitteePage() {
               Meet the experts behind 2nd ICETMR 2026: International Conference on Emerging Trends in Multidisciplinary Research
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-lg font-medium text-gray-700">
-              <span>February 27th - 28th ,2026</span>
+              <span>October 7th - 8th 2026</span>
               <span className="hidden sm:block">•</span>
-              <span>Bali, Indonesia</span>
+              <span>Kuala Lumpur, Malaysia
+</span>
             </div>
           </div>
         </div>

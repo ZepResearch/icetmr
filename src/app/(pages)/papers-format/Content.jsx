@@ -79,8 +79,8 @@ export default function PapersFormatPage() {
               </h1>
               <div className="mt-8 space-y-2">
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-800">2<sup>nd</sup> International Conference on Emerging Trends in Multidisciplinary Research</h2>
-                <p className="text-xl font-semibold text-gray-700">February 27th - 28th , 2026</p>
-                <p className="text-lg text-gray-600">Bali, Indonesia</p>
+                <p className="text-xl font-semibold text-gray-700">October 7th - 8th 2026</p>
+                <p className="text-lg text-gray-600">Kuala Lumpur, Malaysia</p>
               </div>
             </div>
             <p className="text-xl text-gray-600 mb-8">Download templates and learn how to format your submission</p>
@@ -143,7 +143,7 @@ export default function PapersFormatPage() {
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Citation Style</h2>
               <p className="text-gray-600 mb-4">
-                The International Conference on Emerging Trends in Multidisciplinary Research 2025 uses the IEEE citation style for all submissions. Please ensure that your references are
+                The International Conference on Emerging Trends in Multidisciplinary Research 2026 uses the IEEE citation style for all submissions. Please ensure that your references are
                 formatted according to this style. The templates provided include examples of how to format different
                 types of references.
               </p>

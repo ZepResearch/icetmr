@@ -279,7 +279,7 @@ export default function AwardsPage() {
 
                 <div className="space-y-6 text-gray-700">
                   <p>
-                    All submissions and presentations at 2nd ICETMR 2025 will be evaluated by our panel of expert judges,
+                    All submissions and presentations at 2nd ICETMR 2026 will be evaluated by our panel of expert judges,
                     comprising leading researchers, industry professionals, and academic leaders in multidisciplinary research,
                     emerging trends, and innovation across various fields.
                   </p>
@@ -330,7 +330,8 @@ export default function AwardsPage() {
                       <div>
                         <h3 className="text-xl font-medium text-gray-900 mb-2">Award Ceremony</h3>
                         <p className="text-gray-700">
-                          Winners are announced and recognized during the closing ceremony on February 28th ,2026 in Bali, Indonesia.
+                          Winners are announced and recognized during the closing ceremony on October 7th - 8th, 2026 in Kuala Lumpur, Malaysia.
+.
                         </p>
                       </div>
                     </div>
@@ -352,7 +353,7 @@ export default function AwardsPage() {
               <div className="relative">
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Ready to Showcase Your Research?</h3>
                 <p className="text-gray-700 mb-6">
-                  Submit your paper and register for 2nd ICETMR 2026 to be considered for our prestigious awards in beautiful Bali, Indonesia.
+                  Submit your paper and register for 2nd ICETMR 2026 to be considered for our prestigious awards in beautiful Kuala Lumpur, Malaysia.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">

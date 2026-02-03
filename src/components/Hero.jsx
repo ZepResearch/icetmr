@@ -1,10 +1,40 @@
+"use client"
+
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ArrowUpRight, Calendar1, ChevronDown, Lectern, MapPin } from "lucide-react"
 import { ReserveButton } from "./reserve-button"
+import { useRef, useEffect } from "react"
 
 export default function Hero() {
+  const videoRef = useRef(null)
+
+  useEffect(() => {
+    const video = videoRef.current
+    if (!video) return
+
+    let playingForward = true
+
+    const handleTimeUpdate = () => {
+      if (playingForward && video.currentTime >= video.duration - 0.1) {
+        // Reached the end, start playing in reverse
+        playingForward = false
+        video.playbackRate = -1
+      } else if (!playingForward && video.currentTime <= 0.1) {
+        // Reached the beginning, start playing forward
+        playingForward = true
+        video.playbackRate = 1
+      }
+    }
+
+    video.addEventListener('timeupdate', handleTimeUpdate)
+
+    return () => {
+      video.removeEventListener('timeupdate', handleTimeUpdate)
+    }
+  }, [])
+
   return (
     <div className="flex flex-col min-h-full bg-gradient-to-b from-gray-50 to-white ">
   
@@ -54,17 +84,18 @@ export default function Hero() {
               </Button>
             </Link>
           
-             <ReserveButton/>
+             {/* <ReserveButton/> */}
             </div>
            
             </div>
             <div className="relative flex justify-center items-center lg:justify-end">
-              <Image
-                src="/assets/brain-network.png"
-                width={500}
-                height={500}
-                alt="Brain network representing multidisciplinary research"
-                className="mx-auto  overflow-hidden rounded-xl object-cover object-bottom  lg:order-last select-none pointer-events-none "
+              <video
+                ref={videoRef}
+                src="/assets/brain-network.mp4"
+                autoPlay
+                muted
+                playsInline
+                className="mx-auto overflow-hidden rounded-xl object-cover object-bottom lg:order-last select-none pointer-events-none w-full max-w-[500px] h-auto"
               />
             
               <div className="absolute bottom-4 right-4  rounded-full shadow-lg backdrop-blur-sm  drop-shadow-2xl ">
@@ -83,7 +114,7 @@ export default function Hero() {
         </section>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 pt- container mx-auto px-6">
                 <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                  <h3 className="text-lg font-semibold mb-2">February 27<sup>th</sup> - 28<sup>th</sup> 2026</h3>
+                  <h3 className="text-lg font-semibold mb-2">October  7<sup>th</sup> - 8<sup>th</sup> 2026</h3>
                   <p className="text-sm text-gray-500">
                     Explore cutting-edge topics across various disciplines, fostering interdisciplinary collaboration.
                   </p>
@@ -97,7 +128,7 @@ export default function Hero() {
                   </Link>
                 </div>
                 <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                  <h3 className="text-lg font-semibold mb-2">Bali, Indonesia </h3>
+                  <h3 className="text-lg font-semibold mb-2">Kuala Lumpur, Malaysia  </h3>
                   <p className="text-sm text-gray-500">
                     Gain insights from leading researchers and innovators in their respective fields.
                   </p>

@@ -177,8 +177,8 @@ export default function ConferenceFooter() {
           </Link>
             </div>
             <p className="text-white/80 mb-6 max-w-xl">
-              2<sup>nd</sup> International Conference on Emerging Trends in Multidisciplinary Research. Join us February  27th - 28th,
-              2026 in Bali, Indonesia for a transformative experience bringing together experts, researchers, and
+              2<sup>nd</sup> International Conference on Emerging Trends in Multidisciplinary Research. Join us October 7th - 8th 2026
+               in Kuala Lumpur, Malaysia for a transformative experience bringing together experts, researchers, and
               industry leaders to explore groundbreaking advancements in multidisciplinary research and innovation.
             </p>
             <div className="flex space-x-4">
@@ -194,12 +194,12 @@ export default function ConferenceFooter() {
               >
                 <Instagram size={18} />
               </a>
-              <a
+              {/* <a
                 href="https://x.com/Zepresearch"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
               >
                 <Twitter size={18} />
-              </a>
+              </a> */}
               <a
                 href="https://www.linkedin.com/company/zep-research/"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
@@ -234,14 +234,14 @@ export default function ConferenceFooter() {
                     href="tel:+919237388328"
                     className="inline-flex gap-2 text-white/70 hover:text-white transition-colors hover:underline "
                   >
-                    <Contact/>+91 92373 88328
+                    <Contact/> +91 82600 80050
                   </a>
                 </div>
               </li>
               <li>
                 <div className="space-y-1">
                   <p className="text-white/70 inline-flex gap-2">
-                   <MapPin/>Bali, Indonesia
+                   <MapPin/>  Kualu Lumpur, Malaysia
                   </p>
                 </div>
               </li>
