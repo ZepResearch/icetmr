@@ -16,9 +16,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Emerging Trends Conf. | ICETMR 2025 | Bali, Indonesia",
+  title: "Emerging Trends Conf. | ICETMR  ",
   description:
-    "Join global experts at ICETMR 2025, a premier conference dedicated to exploring emerging trends and multidisciplinary research in Bali, Indonesia.",
+    "Join global experts at ICETMR , a premier conference dedicated to exploring emerging trends and multidisciplinary research ",
   keywords: [
     "ICETMR",
     "multidisciplinary research",
@@ -32,9 +32,9 @@ export const metadata = {
   authors: [{ name: "ICETMR Organizing Committee", url: "https://emergingtrendsconference.com" }],
   creator: "ICETMR",
   openGraph: {
-    title: "International Conference on Emerging Trends in Multidisciplinary Research October | 10th - 11th 2025 Bali, Indonesia",
+    title: "International Conference on Emerging Trends in Multidisciplinary Research ",
     description:
-      "Join leading researchers and academics at ICETMR 2025 in Bali — where multidisciplinary research meets innovation to address global challenges.",
+      "Join leading researchers and academics at ICETMR   where multidisciplinary research meets innovation to address global challenges.",
     url: "https://emergingtrendsconference.com",
     siteName: "ICETMR",
     images: [
@@ -52,7 +52,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "ICETMR 2025",
     description:
-      "The premier international conference on emerging trends in multidisciplinary research, October 10-11, 2025 in Bali, Indonesia.",
+      "The premier international conference on emerging trends in multidisciplinary research",
     creator: "@icetmr", // Update to your actual handle
     images: ["https://emergingtrendsconference.com/og-image.png"],
   },

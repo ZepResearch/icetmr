@@ -7,6 +7,7 @@ import ConferenceFAQ from "@/components/Faq";
 import Hero from "@/components/Hero";
 import Organizer from "@/components/Organizer";
 import { SpeakerSection } from "@/components/speaker-section";
+import TrashImagslider from "@/components/TrashImage";
 import ConferenceVenue from "@/components/Venue-cta";
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
       <ConferenceTimeline/>
       <SpeakerSection/>
       <CtaHighlight/>
+      <TrashImagslider/>
       <ConferenceVenue/>
       <ConferenceFAQ/>
     </main>
