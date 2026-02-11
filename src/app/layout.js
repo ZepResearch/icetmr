@@ -34,6 +34,8 @@ export const metadata = {
   openGraph: {
     title: "International Conference on Emerging Trends in Multidisciplinary Research ",
     description:
+
+    
       "Join leading researchers and academics at ICETMR   where multidisciplinary research meets innovation to address global challenges.",
     url: "https://emergingtrendsconference.com",
     siteName: "ICETMR",

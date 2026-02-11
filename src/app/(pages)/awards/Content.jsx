@@ -125,7 +125,7 @@ export default function AwardsPage() {
             <div className="h-1 w-20 bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500 mx-auto mb-8 rounded-full"></div>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
             {/* Best Talk Award */}
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500 opacity-10 rounded-3xl blur-xl"></div>
@@ -248,6 +248,51 @@ export default function AwardsPage() {
                         <li className="list-disc text-gray-700">Independence of work</li>
                         <li className="list-disc text-gray-700">Presentation skills</li>
                         <li className="list-disc text-gray-700">Potential impact of research</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Fourth Card - Centered */}
+          <div className="flex justify-center">
+            <div className="relative w-full lg:w-1/3">
+              <div className="absolute inset-0 bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500 opacity-10 rounded-3xl blur-xl"></div>
+              
+              <div className="relative bg-white rounded-3xl border border-gray-200 overflow-hidden h-full shadow-lg">
+                <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500 opacity-10"></div>
+                
+                <div className="relative p-8 flex flex-col h-full">
+                  <div className="flex justify-center">
+                    <div className="flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500 p-0.5 -mt-4 mb-6 shadow-lg">
+                      <div className="flex h-full w-full items-center justify-center rounded-full bg-white">
+                        <Award className="h-10 w-10 text-gray-800" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <h3 className="text-2xl font-bold text-gray-900 text-center mb-4">OUTSTANDING CONTRIBUTOR AWARD</h3>
+
+                  <div className="space-y-4 text-gray-700 flex-grow">
+                    <p>
+                      Recognizing individuals who have made exceptional contributions to the conference through their
+                      dedication, collaboration, and commitment to advancing multidisciplinary research. This award
+                      honors those who go above and beyond in supporting the research community.
+                    </p>
+
+                    <div className="bg-gray-50 rounded-xl border border-gray-200 p-4 space-y-3">
+                      <div className="flex items-center gap-2">
+                        <Star className="h-5 w-5 text-purple-500" />
+                        <span className="text-gray-900 font-medium">Award Criteria</span>
+                      </div>
+
+                      <ul className="space-y-2 pl-7">
+                        <li className="list-disc text-gray-700">Overall contribution to the conference</li>
+                        <li className="list-disc text-gray-700">Collaboration and mentorship</li>
+                        <li className="list-disc text-gray-700">Impact on the research community</li>
+                        <li className="list-disc text-gray-700">Dedication to multidisciplinary research</li>
                       </ul>
                     </div>
                   </div>

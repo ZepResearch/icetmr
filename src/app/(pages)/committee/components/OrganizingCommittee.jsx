@@ -184,8 +184,7 @@ export default function CommitteePage() {
             <div className="h-1 w-20 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 mx-auto mb-8 rounded-full"></div>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Our committee members bring diverse expertise and perspectives to ensure a successful and impactful
-              conference experience in beautiful Bali, Indonesia
-            </p>
+              conference experience </p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">

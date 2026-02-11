@@ -65,7 +65,7 @@ export default function VenuePage() {
 
                       <div className="space-y-6 text-gray-600">
                       <p>
-            The International Conference on Emerging Trends in Multidisciplinary Research 2025 will be held in Kuala Lumpur, Malaysia. This vibrant venue offers a seamless blend of modern amenities and authentic hospitality—perfect for collaboration, innovation, and relaxation.                      </p>
+            The International Conference on Emerging Trends in Multidisciplinary Research 2026 will be held in Kuala Lumpur, Malaysia. This vibrant venue offers a seamless blend of modern amenities and authentic hospitality—perfect for collaboration, innovation, and relaxation.                      </p>
 
                       <div className="space-y-4">
                         <h3 className="text-xl font-medium text-gray-800">Venue Features</h3>

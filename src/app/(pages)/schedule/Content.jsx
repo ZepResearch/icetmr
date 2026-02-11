@@ -104,7 +104,7 @@ export default function ConferenceSchedule() {
                     <CardHeader className="bg-gray-50">
                       <CardTitle className="text-gray-800">{day.date}</CardTitle>
                     </CardHeader>
-                    <CardContent className="p-4">
+                    {/* <CardContent className="p-4">
                       <div className="space-y-2">
                         {day.items.map((item, itemIndex) => (
                           <div
@@ -119,7 +119,7 @@ export default function ConferenceSchedule() {
                           </div>
                         ))}
                       </div>
-                    </CardContent>
+                    </CardContent> */}
                   </Card>
                 ))}
               </div>

@@ -24,7 +24,7 @@ function CtaHighlight() {
       id: 'sponsorship',
       title: 'Sponsorship',
       description: 'Partner with 2nd ICETMR to showcase your organization\'s commitment toEmerging Trends in Multidisciplinary Research and gain visibility among industry leaders.',
-      href: '/sponsorship',
+      href: '/exhibit-and-sponsor',
       icon: <Presentation/>
     },
     {
