@@ -16,7 +16,7 @@ export default function Home() {
       
       <Hero/>
       <CPD/>
-      {/* <Organizer/> */}
+      <Organizer/>
       <About/>
       <Buttons/>
       <ConferenceTimeline/>

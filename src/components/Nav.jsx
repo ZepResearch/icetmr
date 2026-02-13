@@ -21,6 +21,7 @@ const navLinks = [
     dropdown: [
       { href: '/about-conference', title: 'About Conference' },
       { href: '/about-organizers', title: 'About Organizers' },
+      { href: '/about-co-organizers', title: 'About Co-Organizers' },
     ],
   },
   {
