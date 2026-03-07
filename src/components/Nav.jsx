@@ -32,15 +32,17 @@ const navLinks = [
       { href: '/papers-format', title: 'Paper Formats' },
       { href: '/mode-of-presentation', title: 'Mode of Presentation' },
       { href: '/schedule', title: 'Conference Schedule' },
+      { title: 'gallery', href: '/gallery' },
+      { title: 'awards', href: '/awards' },
+
     ],
   },
   { title: 'COMMITTEE', href: '/committee' },
   { title: 'SUBMISSION', href: '/submission' },
-   { title: 'JOURNAL', href: '/journals' },
+  { title: 'JOURNAL', href: '/journals' },
   { title: 'VENUE', href: '/venue' },
-  { title: 'AWARDS', href: '/awards' },
-  { title: 'GALLERY', href: '/gallery' },
   { title: 'CONTACT', href: '/contact' },
+  { title: 'PROCEEDINGS', href: '/proceedings' },
   { title: 'SPONSORSHIP', href: '/exhibit-and-sponsor' },
 ]
 
@@ -48,13 +50,13 @@ function Nav() {
   return (
     <div className="max-w-screen-2xl mx-auto">
       <header className="flex items-center justify-between px-4 py-4 lg:px-6">
-          <Link href={"/"}>
-        <div className="flex items-center space-x-2 mr-4">
+        <Link href={"/"}>
+          <div className="flex items-center space-x-2 mr-4">
             <Image src={"/logo.svg"} alt='logo' height={300} width={300} className=" text-white" />
             {/* <TrendingUp className="w-6 h-6 text-white" /> */}
-          {/* <span className="text-xl font-semibold text-gray-900 ">Emerging Trends <span className="bg-clip-text text-transparent bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500  " >Conf.</span></span> */}
-        </div>
-          </Link>
+            {/* <span className="text-xl font-semibold text-gray-900 ">Emerging Trends <span className="bg-clip-text text-transparent bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500  " >Conf.</span></span> */}
+          </div>
+        </Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-7 bg-gray-50 px-8 py-3 rounded-full border text-xs">
@@ -148,9 +150,9 @@ function Nav() {
 
         {/* Register Button (always visible) */}
         <div className="hidden md:block">
-        <Link href={'/registration'}>
-          <Button className="bg-gray-900 hover:bg-gray-800 text-white px-6 py-2 rounded-lg ">REGISTER NOW</Button>
-        </Link>
+          <Link href={'/registration'}>
+            <Button className="bg-gray-900 hover:bg-gray-800 text-white px-6 py-2 rounded-lg ">REGISTER NOW</Button>
+          </Link>
         </div>
       </header>
     </div>
