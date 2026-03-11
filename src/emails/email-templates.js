@@ -147,7 +147,7 @@ export function getUserEmailTemplate(data) {
   <body>
     <div class="header">
       <div class="conference-title">International Conference on Emerging Trends in Multidisciplinary Research</div>
-      <div class="event-details">October 10th - 11th, 2025 | Bali, Indonesia</div>
+      <div class="event-details">October 7th - 8th 2026 | Kuala Lumpur, Malaysia</div>
     </div>
     <div class="content">
       <p>Dear ${data.author},</p>
@@ -346,8 +346,8 @@ export function getAdminEmailTemplate(data, fileUrl) {
       
       <div class="conference-info">
         <p><strong>Conference Details:</strong></p>
-        <p>📅 October 10th - 11th, 2025<br>
-        📍 Bali, Indonesia<br>
+        <p>📅 October 7th - 8th 2026<br>
+        📍Kuala Lumpur, Malaysia<br>
         📧 info@emergingtrendsconference.com<br>
         📞 +91 78488 54815</p>
       </div>
@@ -425,7 +425,7 @@ export function getAdminEmailTemplate(data, fileUrl) {
       <p>Please review this submission at your earliest convenience.</p>
     </div>
     <div class="footer">
-      <p>© 2025 International Conference on Emerging Trends in Multidisciplinary Research. All rights reserved.</p>
+      <p>© 2026 International Conference on Emerging Trends in Multidisciplinary Research. All rights reserved.</p>
     </div>
   </body>
   </html>

@@ -337,12 +337,12 @@ export const userEmailTemplate = (data) => `
 
                 <div class="detail-item date">
                     <div class="detail-label date">Date:</div>
-                    <p class="detail-value">October 10th - 11th, 2025</p>
+                    <p class="detail-value">October 7th - 8th 2026</p>
                 </div>
 
                 <div class="detail-item location">
                     <div class="detail-label location">Location:</div>
-                    <p class="detail-value">Bali, Indonesia</p>
+                    <p class="detail-value">Kuala Lumpur, Malaysia</p>
                 </div>
 
                 <div class="detail-item focus">
@@ -373,7 +373,7 @@ export const userEmailTemplate = (data) => `
             <div class="footer">
                 <hr class="divider">
                 <p class="copyright">
-                    © 2025 International Conference on Emerging Trends in Multidisciplinary Research
+                    © International Conference on Emerging Trends in Multidisciplinary Research
                 </p>
                 <p class="disclaimer">
                     This is an automated response. Please do not reply to this email.

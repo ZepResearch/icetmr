@@ -208,8 +208,8 @@ export const userConfirmationTemplate = (data) => `
             
             <div class="conference-info">
                 <h3>Conference Details</h3>
-                <div class="conference-date">October 10th - 11th, 2025</div>
-                <div class="conference-venue">📍 Bali, Indonesia</div>
+                <div class="conference-date">October 7th - 8th 2026</div>
+                <div class="conference-venue">📍 Kuala Lumpur, Malaysia</div>
             </div>
             
             <div class="registration-details">

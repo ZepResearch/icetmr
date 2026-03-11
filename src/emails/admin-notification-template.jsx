@@ -49,7 +49,6 @@ export const adminNotificationTemplate = (data) => `
             font-size: 12px;
             font-weight: 500;
             margin-bottom: 20px;
-            text-transform: uppercase;
         }
         .details-table {
             width: 100%;
