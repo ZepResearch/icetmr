@@ -46,8 +46,7 @@ export default function Hero() {
                2<sup>nd</sup> International Conference on <span className="bg-clip-text text-transparent bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500  ">Emerging Trends</span> in Multidisciplinary Research
               </h1>
               <p className="max-w-[600px] text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Join us to explore the cutting-edge advancements and interdisciplinary connections shaping the future of
-                research across diverse fields.
+              Breaking Boundaries: Multidisciplinary Approaches to Global Challenges
               </p>
           
             <div className="flex sm:flex-row flex-col-reverse items-start sm:items-center justify-start gap-3 px-4 max-w-4xl backdrop-blur-sm bg-gray-50/30 py-4 rounded-3xl ">

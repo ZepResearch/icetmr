@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import { Button } from './ui/button'
 import { ArrowRight } from 'lucide-react'
+import Link from 'next/link'
 
 function About() {
   return (
@@ -47,11 +48,12 @@ function About() {
                 Join us  for an immersive two-day experience featuring keynote speeches, panel
                 discussions, workshops, and networking opportunities with global leaders in multidisciplinary research.
               </p>
-
+              <Link href="/about-conference" className="inline-block">
               <Button size={'lg'}>
                 Learn More Here
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
+                </Link>
             </div>
           </div>
         </div>

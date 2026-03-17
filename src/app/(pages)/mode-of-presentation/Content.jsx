@@ -128,7 +128,7 @@ export default function ModeOfPresentationPage() {
       </section>
 
       {/* Show a Poster Section */}
-      <section className="py-16 bg-gray-50">
+      {/* <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
@@ -194,7 +194,7 @@ export default function ModeOfPresentationPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Present Online Section */}
       <section className="py-16 bg-white">
