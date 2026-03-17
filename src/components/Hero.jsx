@@ -126,14 +126,14 @@ export default function Hero() {
               </div>
             </div>
             </div>
+
             <div className="relative flex justify-center items-center lg:justify-end">
-              <video
-                ref={videoRef}
-                src="/assets/brain-network.mp4"
-                autoPlay
-                muted
-                playsInline
-                className="mx-auto overflow-hidden rounded-xl object-cover object-bottom lg:order-last select-none pointer-events-none w-full max-w-[500px] h-auto"
+              <Image
+                src="/assets/brain-network.png"
+                alt="Hero Image"
+                width={500}
+                height={500}
+                className="w-full h-auto  object-cover select-none pointer-events-none drop-shadow-2xl"
               />
             
               <div className="absolute bottom-4 right-4  rounded-full shadow-lg backdrop-blur-sm  drop-shadow-2xl ">
@@ -148,6 +148,8 @@ export default function Hero() {
             </div>
               </div>
             </div>
+
+
           </div>
         </section>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 pt- container mx-auto px-6">
