@@ -51,12 +51,12 @@ export default function ConferenceVenue() {
             {/* Left side - Venue image */}
             <div className="relative h-[300px] lg:h-full">
               <Image
-                src="https://images.unsplash.com/photo-1512580687892-1b04e29ea66f?q=80&w=1501&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="/venue.avif"
                 alt="ICETMR Conference Venue - Bali International Convention Centre"
                 fill
                 className="object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-gray-900/40 to-transparent"></div>
 
               {/* Venue name overlay */}
               <div className="absolute bottom-0 left-0 right-0 p-6">
@@ -98,8 +98,8 @@ export default function ConferenceVenue() {
                     </div>
                     <div>
                       <p className="text-sm text-gray-500">Address</p>
-                      <p className="text-gray-800 font-bold">Kuala Lumpur, Malaysia</p>
-                      <p className="text-gray-800"></p>
+                      <p className="text-gray-800 font-bold">Holiday Inn Express</p>
+                      <p className="text-gray-800">Kuala Lumpur City Centre, an IHG Hotel, Kuala Lumpur, Malaysia</p>
 
                     </div>
                   </div>

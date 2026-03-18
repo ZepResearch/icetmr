@@ -124,20 +124,19 @@ export default function ContactPage() {
                       </div>
                     </div>
 
-                    {/* <div className="flex items-start gap-4">
+                    <div className="flex items-start gap-4">
                       <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gray-900/90 p-0.5">
                         <div className="flex h-full w-full items-center justify-center rounded-full bg-white">
                           <MapPin className="h-5 w-5 text-gray-900" />
                         </div>
                       </div>
                       <div>
-                        <p className="text-sm text-gray-700">Address</p>
+                        <p className="text-sm text-gray-700">Venue</p>
                         <p className="text-black font-medium">
-                     Flat No: 202 Plot.no.2028/2044, Sai Aarti Enclave, Behind Tanishq Chandasekharpur, Bhubaneshwar, India
-
+                          Kualu Lumpur, Malaysia
                         </p>
                       </div>
-                    </div> */}
+                    </div>
                   </div>
 
                   <div className="mt-8 pt-8 border-t border-gray-200">

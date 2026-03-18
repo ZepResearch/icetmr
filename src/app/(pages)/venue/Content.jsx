@@ -116,8 +116,10 @@ export default function VenuePage() {
                         <h3 className="text-lg font-medium text-gray-800">Location</h3>
                         </div>
                         <p className="text-gray-900 font-semibold">
-                         Kuala Lumpur,  <br />
-            Malaysia
+                          Holiday Inn Express,
+                          Kuala Lumpur
+                          City Centre, an IHG Hotel,
+                          Kuala Lumpur, Malaysia
                         </p>
                       </div>
                       </div>
@@ -132,12 +134,11 @@ export default function VenuePage() {
                     <div>
                       <div className="relative h-[400px] w-full rounded-2xl overflow-hidden border border-gray-200">
                       <Image
-                        src="https://images.unsplash.com/photo-1602427384420-71c70e2b2a2f?q=80&w=1406&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt="Kuala Lumpur"
+                        src="/venue.avif"
+                        alt="Holiday Inn Express"
                         fill
                         className="object-cover"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
 
                       {/* Floating elements */}
                     <div className="absolute top-1/4 right-1/4 h-12 w-12 rounded-full bg-gradient-to-bl from-pink-300 via-red-300 to-yellow-300 blur-xl opacity-70 animate-pulse"></div>
@@ -148,7 +149,7 @@ export default function VenuePage() {
 
                     {/* Venue name overlay */}
                     <div className="absolute bottom-0 left-0 right-0 p-6">
-                      <h3 className="text-2xl font-bold text-white mb-1">Kuala Lumpur, Malaysia
+                      <h3 className="text-2xl font-bold text-white mb-1">Holiday Inn Express
 </h3>
                       {/* <p className="text-white/90">Melasti Kuta Beach Hotel & Spa </p> */}
                     </div>
@@ -170,11 +171,9 @@ export default function VenuePage() {
 
           <div className="relative bg-gray-50 rounded-3xl border border-gray-200 overflow-hidden p-4 shadow-lg">
             <div className="absolute -inset-px rounded-3xl bg-gradient-to-bl from-pink-200 via-red-200 to-yellow-200 opacity-20"></div>
-
             <div className="relative rounded-2xl overflow-hidden h-[500px] w-full">
               <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63741.33874887687!2d101.64579017066157!3d3.1385907934178556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc362abd08e7d3%3A0x232e1ff540d86c99!2sKuala%20Lumpur%2C%20Federal%20Territory%20of%20Kuala%20Lumpur%2C%20Malaysia!5e0!3m2!1sen!2sin!4v1770110369087!5m2!1sen!2sin"                        alt="Kuala Lumpur"
-                
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.7871721936954!2d101.70610967703418!3d3.1507633968246207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc362aba001bed%3A0x1a95bd9e2e38cad4!2sHoliday%20Inn%20Express%20Kuala%20Lumpur%20City%20Centre%20by%20IHG!5e0!3m2!1sen!2sin!4v1773815109770!5m2!1sen!2sin"    
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
