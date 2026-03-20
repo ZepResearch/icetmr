@@ -297,7 +297,7 @@ export const adminEmailTemplate = (data) => `
                 </div>
                 <hr class="divider">
                 <p class="copyright">
-                    © 2025 International Conference on Emerging Trends in Multidisciplinary Research
+                    © International Conference on Emerging Trends in Multidisciplinary Research
                 </p>
             </div>
         </div>

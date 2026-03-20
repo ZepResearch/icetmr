@@ -166,7 +166,7 @@ const RegistrationEmailTemplate = (data) => {
       <body>
         <div class="container">
           <div class="header">
-            <div style="font-size: 16px; font-weight: 600; margin-bottom: 10px; background: linear-gradient(135deg, #ffffff, #f8fafc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">ICETMR 2025</div>
+            <div style="font-size: 16px; font-weight: 600; margin-bottom: 10px; background: linear-gradient(135deg, #ffffff, #f8fafc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">ICETMR </div>
             <h1 class="header-title">
               ${isAdmin ? "New Conference Registration" : "Conference Registration Payment"}
             </h1>
@@ -181,7 +181,7 @@ const RegistrationEmailTemplate = (data) => {
               ${
                 isAdmin
                   ? "A new participant has registered for the International Conference on Emerging Trends in Multidisciplinary Research:"
-                  : "Your registration payment for the International Conference on Emerging Trends in Multidisciplinary Research 2025 has been initiated. Please note that your registration is not complete until payment is confirmed."
+                  : "Your registration payment for the International Conference on Emerging Trends in Multidisciplinary Research  has been initiated. Please note that your registration is not complete until payment is confirmed."
               }
             </div>
             
@@ -242,7 +242,7 @@ const RegistrationEmailTemplate = (data) => {
             
             <div class="conference-info">
               <p><strong>International Conference on Emerging Trends in Multidisciplinary Research (ICETMR)</strong><br>
-              October 10th - 11th, 2025 • Bali, Indonesia</p>
+             October 7th - 8th ,2026 •Kuala Lumpur, Malaysia</p>
             </div>
             
             ${
