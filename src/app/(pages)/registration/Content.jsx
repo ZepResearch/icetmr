@@ -41,6 +41,7 @@ export default function RegistrationPage() {
           category: "Academician",
           physical: { price: 249, currency: "USD" },
           virtual: { price: 169, currency: "USD" },
+          earlyBird: { price: 199, currency: "USD" },
           features: [
             "Full conference access",
             "Networking opportunities",
@@ -54,6 +55,7 @@ export default function RegistrationPage() {
           category: "Student",
           physical: { price: 199, currency: "USD" },
           virtual: { price: 129, currency: "USD" },
+          earlyBird: { price: 159, currency: "USD" },
           features: [
             "Conference access",
             "Networking opportunities",
@@ -67,6 +69,7 @@ export default function RegistrationPage() {
           category: "Delegate",
           physical: { price: 169, currency: "USD" },
           virtual: { price: 79, currency: "USD" },
+          earlyBird: { price: 159, currency: "USD" },
           features: [
             "Conference access",
             "Networking opportunities",
@@ -79,6 +82,7 @@ export default function RegistrationPage() {
           category: "With Scopus Q3 & Q4",
           physical: { price: 1049, currency: "USD" },
           virtual: { price: 949, currency: "USD" },
+          earlyBird: { price: 999, currency: "USD" },
           features: [
             "Full conference access",
             "Scopus Q3 & Q4 publication",
@@ -92,6 +96,7 @@ export default function RegistrationPage() {
           category: "With Scopus Q1 & Q2",
           physical: { price: 1749, currency: "USD" },
           virtual: { price: 1649, currency: "USD" },
+          earlyBird: { price: 1699, currency: "USD" },
           features: [
             "Full conference access",
             "Scopus Q1 & Q2 publication",
@@ -107,6 +112,7 @@ export default function RegistrationPage() {
           category: "Academician",
           physical: { price: 299, currency: "USD" },
           virtual: { price: 229, currency: "USD" },
+          earlyBird: { price: 249, currency: "USD" },
           features: [
             "Full conference access",
             "International networking",
@@ -120,6 +126,7 @@ export default function RegistrationPage() {
           category: "Student",
           physical: { price: 249, currency: "USD" },
           virtual: { price: 169, currency: "USD" },
+          earlyBird: { price: 219, currency: "USD" },
           features: [
             "Conference access",
             "International networking",
@@ -131,8 +138,9 @@ export default function RegistrationPage() {
         },
         {
           category: "Delegate",
-          physical: { price: 199, currency: "USD" },
+          physical: { price: 219, currency: "USD" },
           virtual: { price: 129, currency: "USD" },
+          earlyBird: { price: 199, currency: "USD" },
           features: [
             "Conference access",
             "International networking",
@@ -145,6 +153,7 @@ export default function RegistrationPage() {
           category: "With Scopus Q3 & Q4",
           physical: { price: 1099, currency: "USD" },
           virtual: { price: 999, currency: "USD" },
+          earlyBird: { price: 1049, currency: "USD" },
           features: [
             "Full conference access",
             "Scopus Q3 & Q4 publication",
@@ -158,6 +167,7 @@ export default function RegistrationPage() {
           category: "With Scopus Q1 & Q2",
           physical: { price: 1799, currency: "USD" },
           virtual: { price: 1699, currency: "USD" },
+          earlyBird: { price: 1749, currency: "USD" },
           features: [
             "Full conference access",
             "Scopus Q1 & Q2 publication",
@@ -174,6 +184,7 @@ export default function RegistrationPage() {
         {
           category: "Academician",
           physical: { price: 399, currency: "USD" },
+          earlyBird: { price: 349, currency: "USD" },
           features: [
             "Full conference access",
             "Accommodation included",
@@ -186,6 +197,7 @@ export default function RegistrationPage() {
         {
           category: "Student",
           physical: { price: 349, currency: "USD" },
+          earlyBird: { price: 299, currency: "USD" },
           features: [
             "Conference access",
             "Accommodation included",
@@ -198,6 +210,7 @@ export default function RegistrationPage() {
         {
           category: "Delegate",
           physical: { price: 319, currency: "USD" },
+          earlyBird: { price: 279, currency: "USD" },
           features: [
             "Conference access",
             "Accommodation included",
@@ -209,6 +222,7 @@ export default function RegistrationPage() {
         {
           category: "With Scopus Q3 & Q4",
           physical: { price: 1199, currency: "USD" },
+          earlyBird: { price: 1149, currency: "USD" },
           features: [
             "Full conference access",
             "Accommodation included",
@@ -221,6 +235,7 @@ export default function RegistrationPage() {
         {
           category: "With Scopus Q1 & Q2",
           physical: { price: 1899, currency: "USD" },
+          earlyBird: { price: 1849, currency: "USD" },
           features: [
             "Full conference access",
             "Accommodation included",
@@ -235,6 +250,7 @@ export default function RegistrationPage() {
         {
           category: "Academician",
           physical: { price: 449, currency: "USD" },
+          earlyBird: { price: 399, currency: "USD" },
           features: [
             "Full conference access",
             "Accommodation included",
@@ -247,6 +263,7 @@ export default function RegistrationPage() {
         {
           category: "Student",
           physical: { price: 399, currency: "USD" },
+          earlyBird: { price: 349, currency: "USD" },
           features: [
             "Conference access",
             "Accommodation included",
@@ -259,6 +276,7 @@ export default function RegistrationPage() {
         {
           category: "Delegate",
           physical: { price: 349, currency: "USD" },
+          earlyBird: { price: 299, currency: "USD" },
           features: [
             "Conference access",
             "Accommodation included",
@@ -270,6 +288,7 @@ export default function RegistrationPage() {
         {
           category: "With Scopus Q3 & Q4",
           physical: { price: 1299, currency: "USD" },
+          earlyBird: { price: 1249, currency: "USD" },
           features: [
             "Full conference access",
             "Accommodation included",
@@ -282,6 +301,7 @@ export default function RegistrationPage() {
         {
           category: "With Scopus Q1 & Q2",
           physical: { price: 1949, currency: "USD" },
+          earlyBird: { price: 1899, currency: "USD" },
           features: [
             "Full conference access",
             "Accommodation included",
@@ -407,22 +427,26 @@ export default function RegistrationPage() {
     }
   }
 
-  const createTicketFromPricing = (categoryData, priceType, participantType, accommodationType) => {
-    const priceInfo = categoryData[priceType]
-    if (!priceInfo) return null
+const createTicketFromPricing = (categoryData, priceType, participantType, accommodationType) => {
+  const priceInfo = categoryData[priceType]
+  if (!priceInfo) return null
 
-    return {
-      name: `${categoryData.category} - ${participantType.charAt(0).toUpperCase() + participantType.slice(1)} (${priceType === 'physical' ? 'Physical' : 'Virtual'})`,
-      price: priceInfo.price,
-      currency: priceInfo.currency,
-      type: categoryData.category,
-      category: categoryData.category,
-      participantType: participantType,
-      accommodationType: accommodationType,
-      priceType: priceType,
-      features: categoryData.features
-    }
+  const priceLabel = priceType === 'physical' ? 'Physical' 
+    : priceType === 'virtual' ? 'Virtual' 
+    : 'Early Bird'
+
+  return {
+    name: `${categoryData.category} - ${participantType.charAt(0).toUpperCase() + participantType.slice(1)} (${priceLabel})`,
+    price: priceInfo.price,
+    currency: priceInfo.currency,
+    type: categoryData.category,
+    category: categoryData.category,
+    participantType: participantType,
+    accommodationType: accommodationType,
+    priceType: priceType,
+    features: categoryData.features
   }
+}
 
   const renderPricingCard = (categoryData, participantType, accommodationType) => {
     const getCurrencySymbol = (currency) => currency === "USD" ? "$" : "₹"
@@ -447,22 +471,33 @@ export default function RegistrationPage() {
             </div>
           </div>
           
-          <div className="space-y-3">
-            <div className="flex justify-between items-center">
-              <span className="text-sm text-gray-800">Physical:</span>
-              <span className="text-2xl font-bold text-black">
-                {getCurrencySymbol(categoryData.physical.currency)}{categoryData.physical.price}
-              </span>
-            </div>
-            {hasVirtual && (
-              <div className="flex justify-between items-center">
-                <span className="text-sm text-gray-800">Virtual:</span>
-                <span className="text-xl font-semibold text-black">
-                  {getCurrencySymbol(categoryData.virtual.currency)}{categoryData.virtual.price}
-                </span>
-              </div>
-            )}
-          </div>
+         <div className="space-y-3">
+  <div className="flex justify-between items-center">
+    <span className="text-sm text-gray-800">Physical:</span>
+    <span className="text-2xl font-bold text-black">
+      {getCurrencySymbol(categoryData.physical.currency)}{categoryData.physical.price}
+    </span>
+  </div>
+  {hasVirtual && (
+    <div className="flex justify-between items-center">
+      <span className="text-sm text-gray-800">Virtual:</span>
+      <span className="text-xl font-semibold text-black">
+        {getCurrencySymbol(categoryData.virtual.currency)}{categoryData.virtual.price}
+      </span>
+    </div>
+  )}
+  {categoryData.earlyBird && (
+    <div className="flex justify-between items-center bg-orange-50 border border-orange-200 rounded-xl px-3 py-2 mt-1">
+      <span className="text-sm font-semibold text-orange-700 flex items-center gap-1">
+        <Sparkles className="h-3.5 w-3.5" />
+        Early Bird:
+      </span>
+      <span className="text-lg font-bold text-orange-600">
+        {getCurrencySymbol(categoryData.earlyBird.currency)}{categoryData.earlyBird.price}
+      </span>
+    </div>
+  )}
+</div>
         </div>
 
         <div className="p-6 flex flex-col flex-1">
@@ -491,8 +526,8 @@ export default function RegistrationPage() {
               ))}
             </ul>
           </div>
-          
-          <div className="space-y-2 mt-auto">
+
+         <div className="space-y-2 mt-auto">
             <Button
               onClick={() => handleTicketSelect(createTicketFromPricing(categoryData, "physical", participantType, accommodationType))}
               className="w-full bg-gradient-to-r from-rose-400 to-orange-300 text-white rounded-full"
@@ -503,10 +538,19 @@ export default function RegistrationPage() {
             {hasVirtual && (
               <Button
                 onClick={() => handleTicketSelect(createTicketFromPricing(categoryData, "virtual", participantType, accommodationType))}
-                className="w-full bg-white hover:bg-gray-50 text-gray-900 border-2 border-gray-900 rounded-full"
+              className="w-full bg-gradient-to-r from-rose-400 to-orange-300 text-white rounded-full"
               >
-                <Globe className="mr-2 h-4 w-4 text-gray-900" />
+                <Globe className="mr-2 h-4 w-4 text-white" />
                 Virtual - {getCurrencySymbol(categoryData.virtual.currency)}{categoryData.virtual.price}
+              </Button>
+            )}
+            {categoryData.earlyBird && (
+              <Button
+                onClick={() => handleTicketSelect(createTicketFromPricing(categoryData, "earlyBird", participantType, accommodationType))}
+                className="w-full bg-emerald-500 hover:bg-emerald-600 text-white rounded-full border-0"
+              >
+                <Sparkles className="mr-2 h-4 w-4 text-white" />
+                Early Bird - {getCurrencySymbol(categoryData.earlyBird.currency)}{categoryData.earlyBird.price}
               </Button>
             )}
           </div>
