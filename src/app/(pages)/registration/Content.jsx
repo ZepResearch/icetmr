@@ -641,8 +641,8 @@ const createTicketFromPricing = (categoryData, priceType, participantType, accom
                 </p>
               </div>
 
-              {/* Local Participants */}
-              <div className="mb-12">
+              {/* Local Participants - HIDDEN */}
+              {/* <div className="mb-12">
                 <h4 className="text-xl font-bold text-gray-900 mb-6 text-center">
                   <MapPin className="inline mr-2 h-5 w-5" />
                   Local Participants
@@ -652,7 +652,7 @@ const createTicketFromPricing = (categoryData, priceType, participantType, accom
                     renderPricingCard(categoryData, "local", "with-accommodation")
                   )}
                 </div>
-              </div>
+              </div> */}
 
               {/* International Participants */}
               <div>
