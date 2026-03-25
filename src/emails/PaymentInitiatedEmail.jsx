@@ -242,7 +242,7 @@ const RegistrationEmailTemplate = (data) => {
             
             <div class="conference-info">
               <p><strong>International Conference on Emerging Trends in Multidisciplinary Research (ICETMR)</strong><br>
-             October 7th - 8th ,2026 •Kuala Lumpur, Malaysia</p>
+             </p>
             </div>
             
             ${
