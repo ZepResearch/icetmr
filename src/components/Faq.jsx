@@ -22,7 +22,7 @@ export default function ConferenceFAQ() {
     {
       question: "Is there financial support available for students and researchers?",
       answer:
-        "Yes, 2nd ICETMR offers special student pricing and travel grants for the conference on October 7th-8th, 2026. Student registration is available at 60% discount compared to regular registration. We also offer limited travel grants for outstanding research submissions from developing countries. To qualify, provide valid student ID and proof of enrollment or institutional affiliation.",
+        "Yes, 2nd ICETMR offers special student pricing and travel grants for the conference on October 7th-8th, 2026. Student registration is available upto 40% discount compared to regular registration. We also offer limited travel grants for outstanding research submissions from developing countries. To qualify, provide valid student ID and proof of enrollment or institutional affiliation.",
     },
     {
       question: "What accommodation options are available in Kuala Lumpur?",
