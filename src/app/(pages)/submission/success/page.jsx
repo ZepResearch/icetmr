@@ -41,8 +41,8 @@ export default function SubmissionSuccess() {
               Thank you for contributing to the International Conference on Emerging Trends in Multidisciplinary Research
             </p>
             <div className="text-lg text-gray-700 space-y-2">
-              <div className="font-semibold">October 10th - 11th, 2025</div>
-              <div className="text-gray-600">Bali, Indonesia</div>
+              <div className="font-semibold">October 7th - 8th 2026</div>
+              <div className="text-gray-600">Kuala Lumpur, Malaysia</div>
             </div>
           </div>
         </div>
@@ -107,7 +107,7 @@ export default function SubmissionSuccess() {
 
                   <div className="flex items-center justify-center gap-4 mt-8 text-gray-700">
                     <Calendar className="h-5 w-5" />
-                    <span>Mark your calendar: Conference dates are October 10th - 11th, 2025 in Bali, Indonesia</span>
+                    <span>Mark your calendar: Conference dates are October 7th - 8th, 2026 in Kuala Lumpur, Malaysia</span>
                   </div>
                 </div>
 
