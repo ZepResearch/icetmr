@@ -23,6 +23,8 @@ function CPD() {
                 alt="CPD" 
                 className="h-48 w-auto mx-auto"
               />
+             <span className="block text-center font-bold text-lg bg-orange-600 rounded-3xl mt-4 text-white">
+              14 CPD Hours</span>
             </div>
           </div>
           
@@ -31,7 +33,8 @@ function CPD() {
             <h2 className="text-2xl lg:text-3xl font-bold text-white mb-4">
               Continuing Professional Development
             </h2>
-            <p className="text-orange-100 leading-relaxed text-sm lg:text-base">
+              <span className='bg-white text-orange-400 p-2 text-lg rounded-2xl relative z-10 sm:-top-12 sm:left-5/6 '>14 CPD Hours</span>
+            <p className="text-orange-100 leading-relaxed text-sm lg:text-base mt-4 sm:mt-0">
               Commit to lifelong learning and professional growth through CPD. Enhance your skills, knowledge, and competencies to stay current in your field and maintain professional standards.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
