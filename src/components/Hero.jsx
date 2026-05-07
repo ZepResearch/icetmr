@@ -123,6 +123,16 @@ export default function Hero() {
                   <span>Offer expires soon • Limited spots available</span>
                 </div>
               </div>
+
+             < div className="bg-white rounded-2xl flex flex-row  p-2shadow-lg my-1 max-w-md px-4">
+              <img 
+                src="assets/cpd2.png" 
+                alt="CPD" 
+                className="h-28 w-auto mx-auto"
+              />
+             <span className=" flex items-center justify-center text-center font-bold text-lg bg-orange-600 rounded-3xl my-4 text-white px-4" >
+              14 CPD Hours</span>
+            </div>
             </div>
             </div>
 
