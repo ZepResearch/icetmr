@@ -9,7 +9,7 @@ export default function FloatingWhatsApp() {
 
   // Replace with your WhatsApp number (include country code without + sign)
   const phoneNumber = "918260080050"
-  const message = ""
+  const message = " Hello! I have a question about your services. Could you please assist me?" // Default message
 
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
 

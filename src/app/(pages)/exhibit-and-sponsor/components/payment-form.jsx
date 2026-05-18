@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Loader2, CreditCard } from "lucide-react"
+import { Conference } from "@/constants/conference"
 
 export function CCavenuePaymentForm({
   isOpen,
@@ -55,9 +56,9 @@ export function CCavenuePaymentForm({
           <DialogTitle className="text-2xl font-bold mb-2 text-gray-900">Conference Registration Payment</DialogTitle>
           <div className="text-sm text-gray-600 mb-4">
             <div className="font-semibold bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500 bg-clip-text text-transparent text-center">
-              International Conference on Emerging Trends in Multidisciplinary Research
+              {Conference.name}
             </div>
-            <div className="mt-1">October 10th - 11th, 2025 • Bali, Indonesia</div>
+            <div className="mt-1">{Conference.date} • {Conference.venue.location}</div>
           </div>
         </DialogHeader>
 

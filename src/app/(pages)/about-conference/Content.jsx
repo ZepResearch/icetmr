@@ -4,6 +4,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Calendar, MapPin, Users, Award, BookOpen, Globe, ArrowRight } from 'lucide-react'
+import { Conference } from "@/constants/conference"
 
 export default function AboutConferencePage() {
   const conferenceHighlights = [
@@ -77,24 +78,24 @@ export default function AboutConferencePage() {
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
               About
-              <span className="relative inline-block  mx-5 ">
-                <span className="relative z-10 bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500 bg-clip-text text-transparent"> 2nd ICETMR</span>
+                <span className="relative inline-block  mx-5 ">
+                <span className="relative z-10 bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500 bg-clip-text text-transparent"> {Conference.shortForm}</span>
                 <span className="absolute inset-0 bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500 rounded-full transform -rotate-1 scale-110 z-0 opacity-20"></span>
               </span>
-              2026
+              {Conference.year}
             </h1>
             <p className="text-xl text-gray-600 mb-8">
-             2<sup>nd</sup> International Conference on Emerging Trends in Multidisciplinary Research
+             {Conference.name}
             </p>
 
             <div className="flex flex-wrap justify-center gap-6 mb-12">
               <div className="flex items-center bg-gray-50 rounded-full px-5 py-2 shadow-sm border border-gray-100">
                 <Calendar className="h-5 w-5 text-gray-600 mr-2" />
-                <span className="text-gray-700">October 7th - 8th 2026</span>
+                <span className="text-gray-700">{Conference.date.replace(",", "")}</span>
               </div>
               <div className="flex items-center bg-gray-50 rounded-full px-5 py-2 shadow-sm border border-gray-100">
                 <MapPin className="h-5 w-5 text-gray-600 mr-2" />
-                <span className="text-gray-700">Kuala Lumpur, Malaysia</span>
+                <span className="text-gray-700">{Conference.venue.location}</span>
               </div>
               <div className="flex items-center bg-gray-50 rounded-full px-5 py-2 shadow-sm border border-gray-100">
                 <Users className="h-5 w-5 text-gray-600 mr-2" />
@@ -117,19 +118,19 @@ export default function AboutConferencePage() {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">About the Conference</h2>
               <p className="text-gray-600 mb-4">
-                The  2<sup>nd</sup> International Conference on Emerging Trends in Multidisciplinary Research 2026, taking place in
-                the tropical paradise of Kuala Lumpur, Malaysia, aims to foster collaboration and innovation across diverse
+                The {Conference.name} {Conference.year}, taking place in {Conference.venue.location},
+                 aims to foster collaboration and innovation across diverse
                 research disciplines and academic fields.
               </p>
               <p className="text-gray-600 mb-4">
-                From October 7th - 8th, 2026, 2nd ICETMR will bring together researchers, scholars, and professionals from
+                From {Conference.date}, {Conference.shortForm} will bring together researchers, scholars, and professionals from
                 various disciplines to share cutting-edge research, explore interdisciplinary approaches, and discuss
                 emerging trends that are shaping the future of academic research.
               </p>
               <p className="text-gray-600">
                 The conference features keynote presentations, panel discussions, and interactive workshops designed to
                 promote knowledge exchange and establish collaborative networks. With a focus on innovative research
-                methodologies and cross-disciplinary solutions, 2nd ICETMR 2026 promises to be an inspiring platform for
+                methodologies and cross-disciplinary solutions, {Conference.shortForm} {Conference.year} promises to be an inspiring platform for
                 advancing multidisciplinary research and its applications.
               </p>
             </div>
@@ -157,7 +158,7 @@ export default function AboutConferencePage() {
           <div className="max-w-4xl mx-auto text-center">
             <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Mission</h3>
             <p className="text-xl text-gray-600 mb-8">
-              The International Conference on Emerging Trends in Multidisciplinary Research aims to bridge the gap
+              {Conference.name} aims to bridge the gap
               between different academic disciplines, fostering collaboration and innovation that addresses complex
               global challenges through integrated research approaches.
             </p>
@@ -203,7 +204,7 @@ export default function AboutConferencePage() {
 
           <div className="mt-16 text-center">
             <p className="text-xl text-gray-600 mb-6">
-              Join us in Kuala Lumpur from October 7th - 8th  2026, to be part of a global community dedicated to advancing
+              Join us in {Conference.venue.location} from {Conference.date}, to be part of a global community dedicated to advancing
               multidisciplinary research and fostering innovative collaborations!
             </p>
             <Link href="/schedule" >
@@ -219,9 +220,9 @@ export default function AboutConferencePage() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto mb-12 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Why Attend 2nd ICETMR 2026</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Why Attend {Conference.shortForm} {Conference.year}</h2>
             <p className="text-gray-600">
-              The 2<sup>nd</sup> International Conference on Emerging Trends in Multidisciplinary Research (ICETMR) is the premier
+              The {Conference.name} ({Conference.shortForm}) is the premier
               platform for exploring innovative research approaches and fostering interdisciplinary collaboration.
             </p>
           </div>
@@ -295,10 +296,10 @@ export default function AboutConferencePage() {
           <div className="bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
             <div className="flex flex-col md:flex-row items-center justify-between">
               <div className="mb-6 md:mb-0 md:mr-6">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Ready to join 2nd ICETMR 2026?</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">Ready to join {Conference.shortForm} {Conference.year}?</h3>
                 <p className="text-gray-600 max-w-xl">
                   Register now to secure your spot at the premier conference on emerging trends in multidisciplinary
-                  research in beautiful Kuala Lumpur, Malaysia.
+                  research in beautiful {Conference.venue.location}.
                 </p>
               </div>
               <Link

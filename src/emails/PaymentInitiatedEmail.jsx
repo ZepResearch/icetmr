@@ -1,3 +1,5 @@
+import { Conference } from "@/constants/conference"
+
 const RegistrationEmailTemplate = (data) => {
   const isAdmin = data.recipient === "admin"
   const currencySymbol = data.currency === "USD" ? "$" : "€"
@@ -166,7 +168,7 @@ const RegistrationEmailTemplate = (data) => {
       <body>
         <div class="container">
           <div class="header">
-            <div style="font-size: 16px; font-weight: 600; margin-bottom: 10px; background: linear-gradient(135deg, #ffffff, #f8fafc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">ICETMR </div>
+            <div style="font-size: 16px; font-weight: 600; margin-bottom: 10px; background: linear-gradient(135deg, #ffffff, #f8fafc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">${Conference.shortForm}</div>
             <h1 class="header-title">
               ${isAdmin ? "New Conference Registration" : "Conference Registration Payment"}
             </h1>
@@ -180,8 +182,8 @@ const RegistrationEmailTemplate = (data) => {
             <div class="intro-text">
               ${
                 isAdmin
-                  ? "A new participant has registered for the International Conference on Emerging Trends in Multidisciplinary Research:"
-                  : "Your registration payment for the International Conference on Emerging Trends in Multidisciplinary Research  has been initiated. Please note that your registration is not complete until payment is confirmed."
+                  ? "A new participant has registered for the ${Conference.name}:"
+                  : "Your registration payment for the ${Conference.name}  has been initiated. Please note that your registration is not complete until payment is confirmed."
               }
             </div>
             
@@ -241,7 +243,7 @@ const RegistrationEmailTemplate = (data) => {
             </div>
             
             <div class="conference-info">
-              <p><strong>International Conference on Emerging Trends in Multidisciplinary Research (ICETMR)</strong><br>
+              <p><strong>${Conference.name} (${Conference.shortForm})</strong><br>
              </p>
             </div>
             
@@ -256,7 +258,7 @@ const RegistrationEmailTemplate = (data) => {
                 <li>Conference venue details and accommodation information</li>
                 <li>Preliminary conference program and schedule</li>
                 <li>Information about keynote speakers and special sessions</li>
-                <li>Networking event details and cultural activities in Bali</li>
+                <li>Networking event details and cultural activities in ${Conference.venue.location.split(",")[0]}</li>
               </ul>
             </div>
             `
@@ -265,7 +267,7 @@ const RegistrationEmailTemplate = (data) => {
           </div>
           
           <div class="footer">
-            <p>© ${new Date().getFullYear()} International Conference on Emerging Trends in Multidisciplinary Research</p>
+            <p>© ${new Date().getFullYear()} ${Conference.name}</p>
             <p>For any questions, please contact <a href="mailto:info@emergingtrendsconference.com">info@emergingtrendsconference.com</a></p>
           </div>
         </div>

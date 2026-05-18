@@ -17,6 +17,7 @@ import {
   Contact,
   TrendingUp
 } from "lucide-react"
+import { Conference } from "@/constants/conference"
 
 export default function ConferenceFooter() {
   const [showScrollTop, setShowScrollTop] = useState(false)
@@ -177,8 +178,8 @@ export default function ConferenceFooter() {
           </Link>
             </div>
             <p className="text-white/80 mb-6 max-w-xl">
-              2<sup>nd</sup> International Conference on Emerging Trends in Multidisciplinary Research. Join us October 7th - 8th 2026
-               in Kuala Lumpur, Malaysia for a transformative experience bringing together experts, researchers, and
+              {Conference.name}. Join us {Conference.date.replace(",", "")}
+               in {Conference.venue.location} for a transformative experience bringing together experts, researchers, and
               industry leaders to explore groundbreaking advancements in multidisciplinary research and innovation.
             </p>
             <div className="flex space-x-4">
@@ -241,7 +242,7 @@ export default function ConferenceFooter() {
               <li>
                 <div className="space-y-1">
                   <p className="text-white/70 inline-flex gap-2">
-                   <MapPin/>  Kualu Lumpur, Malaysia
+                   <MapPin/> {Conference.venue.location}
                   </p>
                 </div>
               </li>
@@ -340,7 +341,7 @@ export default function ConferenceFooter() {
         {/* Bottom Section */}
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-white/60 text-sm mb-4 md:mb-0">
-            © 2026 ICETMR. All rights reserved. Designed with sustainability in mind.
+            © {Conference.year} {Conference.shortForm}. All rights reserved. Designed with sustainability in mind.
           </p>
           <div className="grid md:grid-cols-4 grid-cols-2  gap-8 text-center">
             <Link href="/terms-and-conditions" className="text-white/60 text-sm hover:text-white transition-colors">

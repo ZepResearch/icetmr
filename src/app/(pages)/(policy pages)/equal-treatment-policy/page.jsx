@@ -1,18 +1,19 @@
 import React from 'react';
 import { Scale, Target, Globe, Shield, FileText, Users, AlertCircle, UserCheck } from 'lucide-react';
+import { Conference } from '@/constants/conference';
 export const metadata = {
-  title: 'Equal Treatment Policy - International Conference on Emerging Trends in Multidisciplinary Research',
-  description: 'ICETMR 2025 is committed to fostering an inclusive, respectful, and equitable environment for all participants. Read our Equal Treatment Policy for details.',
+  title: `Equal Treatment Policy - ${Conference.name}`,
+  description: `${Conference.shortForm} ${Conference.year} is committed to fostering an inclusive, respectful, and equitable environment for all participants. Read our Equal Treatment Policy for details.`,
   keywords: ['ICETMR', 'Equal Treatment', 'Diversity', 'Inclusivity', 'multidisciplinary conference', 'academic conference', 'research conference 2025'],
   alternates: {
     canonical: 'https://emergingtrendsconference.com/equal-treatment-policy',
   },
   openGraph: {
-    title: 'Equal Treatment Policy - ICETMR 2025',
-    description: 'Learn about ICETMR 2025’s commitment to diversity, inclusivity, and fairness for all conference participants.',
+    title: `Equal Treatment Policy - ${Conference.shortForm} ${Conference.year}`,
+    description: `Learn about ${Conference.shortForm} ${Conference.year}'s commitment to diversity, inclusivity, and fairness for all conference participants.`,
     type: 'website',
     locale: 'en_US',
-    site_name: 'ICETMR 2025',
+    site_name: `${Conference.shortForm} ${Conference.year}`,
   },
 }
 const EqualTreatmentPolicy = () => {
@@ -39,7 +40,7 @@ const EqualTreatmentPolicy = () => {
             {/* Introduction */}
             <div className="prose max-w-none">
               <p className="text-gray-700 leading-relaxed">
-                The  International Conference on Emerging Trends in Multidisciplinary Research  (ICETMR ) is committed to fostering an inclusive, respectful, and equitable environment for all participants. This policy ensures that every attendee, including authors, presenters, delegates, session chairs, reviewers, organizers, and sponsors, is treated fairly and without any form of discrimination.
+                The {Conference.name} ({Conference.shortForm}) is committed to fostering an inclusive, respectful, and equitable environment for all participants. This policy ensures that every attendee, including authors, presenters, delegates, session chairs, reviewers, organizers, and sponsors, is treated fairly and without any form of discrimination.
               </p>
             </div>
 
@@ -91,7 +92,7 @@ const EqualTreatmentPolicy = () => {
                   </div>
                   <div className="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
                     <Globe className="w-5 h-5 text-orange-500 flex-shrink-0" />
-                    <span className="text-gray-700 text-sm">All ICETMR 2025 events, including presentations, workshops, networking sessions, and social gatherings</span>
+                    <span className="text-gray-700 text-sm">All {Conference.shortForm} {Conference.year} events, including presentations, workshops, networking sessions, and social gatherings</span>
                   </div>
                 </div>
               </div>
@@ -103,7 +104,7 @@ const EqualTreatmentPolicy = () => {
                 <Shield className="w-6 h-6 text-orange-500" />
                 <h2 className="text-xl font-semibold text-gray-900">3. Commitment to Equal Treatment</h2>
               </div>
-              <p className="text-gray-700 mb-6">ICETMR  ensures that:</p>
+              <p className="text-gray-700 mb-6">{Conference.shortForm} ensures that:</p>
               
               <div className="space-y-6">
                 {/* Non-Discrimination */}
@@ -185,7 +186,7 @@ const EqualTreatmentPolicy = () => {
                     <div className="flex items-start space-x-3">
                       <AlertCircle className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
                       <p className="text-gray-700 text-sm">
-                        Any participant who experiences or witnesses unfair treatment, harassment, or discrimination is encouraged to report the issue to the ICETMR 2025 organizing committee.
+                        Any participant who experiences or witnesses unfair treatment, harassment, or discrimination is encouraged to report the issue to the {Conference.shortForm} {Conference.year} organizing committee.
                       </p>
                     </div>
                     <div className="flex items-start space-x-3">

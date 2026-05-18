@@ -1,3 +1,5 @@
+import { Conference } from "@/constants/conference";
+
 export const userEmailTemplate = (data) => `
 <!DOCTYPE html>
 <html lang="en">
@@ -308,7 +310,7 @@ export const userEmailTemplate = (data) => `
         <!-- Header with logo -->
         <div class="header-logo">
             <div class="logo-box">
-                <p class="logo-text">Multidisciplinary Research Conference</p>
+                <p class="logo-text">${Conference.shortForm}</p>
             </div>
         </div>
 
@@ -337,12 +339,12 @@ export const userEmailTemplate = (data) => `
 
                 <div class="detail-item date">
                     <div class="detail-label date">Date:</div>
-                    <p class="detail-value">October 7th - 8th 2026</p>
+                    <p class="detail-value">${Conference.date}</p>
                 </div>
 
                 <div class="detail-item location">
                     <div class="detail-label location">Location:</div>
-                    <p class="detail-value">Kuala Lumpur, Malaysia</p>
+                    <p class="detail-value">${Conference.venue.location}</p>
                 </div>
 
                 <div class="detail-item focus">
@@ -360,20 +362,13 @@ export const userEmailTemplate = (data) => `
                 </div>
             </div>
 
-            <!-- CTA Button (commented out in original, uncomment if needed) -->
-            <!--
-            <div class="cta-section">
-                <a href="https://www.multidisciplinaryresearch.com" class="gradient-button">
-                    EXPLORE OUR PROGRAM
-                </a>
-            </div>
-            -->
+          
 
             <!-- Footer -->
             <div class="footer">
                 <hr class="divider">
                 <p class="copyright">
-                    © International Conference on Emerging Trends in Multidisciplinary Research
+                    © ${Conference.name}
                 </p>
                 <p class="disclaimer">
                     This is an automated response. Please do not reply to this email.

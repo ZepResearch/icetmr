@@ -4,6 +4,7 @@ import { useState } from "react"
 import { ArrowDown, ArrowUp, ChevronDown, ChevronUp, Mail, Phone } from "lucide-react"
 import { Button } from "./ui/button"
 import Link from "next/link"
+import { Conference } from "@/constants/conference"
 
 export default function ConferenceFAQ() {
   const [openIndex, setOpenIndex] = useState(1)
@@ -12,7 +13,7 @@ export default function ConferenceFAQ() {
     {
       question: "How can I register for the conference?",
       answer:
-        "Registration for 2nd ICETMR 2026 is available through our online portal. Early bird registration is open until September 21th, 2026. You can choose between in-person attendance in Bali or virtual participation. Group discounts are available for institutions sending 5 or more participants.",
+        `Registration for ${Conference.shortForm} ${Conference.year} is available through our online portal. Early bird registration is open until September 21th, ${Conference.year}. You can choose between in-person attendance in ${Conference.venue.location} or virtual participation. Group discounts are available for institutions sending 5 or more participants.`,
     },
     {
       question: "What are the submission guidelines for research papers?",
@@ -22,22 +23,22 @@ export default function ConferenceFAQ() {
     {
       question: "Is there financial support available for students and researchers?",
       answer:
-        "Yes, 2nd ICETMR offers special student pricing and travel grants for the conference on October 7th-8th, 2026. Student registration is available upto 40% discount compared to regular registration. We also offer limited travel grants for outstanding research submissions from developing countries. To qualify, provide valid student ID and proof of enrollment or institutional affiliation.",
+        `Yes, ${Conference.shortForm} offers special student pricing and travel grants for the conference on ${Conference.date}. Student registration is available upto 40% discount compared to regular registration. We also offer limited travel grants for outstanding research submissions from developing countries. To qualify, provide valid student ID and proof of enrollment or institutional affiliation.`,
     },
     {
-      question: "What accommodation options are available in Kuala Lumpur?",
+      question: `What accommodation options are available in ${Conference.venue.location.split(",")[0]}?`,
       answer:
-        "We have partnered with several hotels near the venue offering special conference rates. Options range from budget-friendly accommodations to luxury resorts. Book early as October is peak season in Kuala Lumpur. We recommend staying within 15km of the venue for easy transportation. Contact us at info@icetmr.org for hotel recommendations and booking assistance.",
+        `We have partnered with several hotels near the venue offering special conference rates. Options range from budget-friendly accommodations to luxury resorts. Book early as there is peak season in ${Conference.venue.location}. We recommend staying within 15km of the venue for easy transportation. Contact us at info@emergingtrendsconference.com for hotel recommendations and booking assistance.`,
     },
     {
       question: "How can I become a sponsor or exhibitor?",
       answer:
-        "We offer various sponsorship packages designed to provide visibility and engagement opportunities for organizations committed to research innovation and multidisciplinary collaboration. Benefits include exhibition space, speaking slots, logo placement, networking events, and complimentary registrations. Please contact our partnership team at partnerships@icetmr.org for a detailed prospectus.",
+        "We offer various sponsorship packages designed to provide visibility and engagement opportunities for organizations committed to research innovation and multidisciplinary collaboration. Benefits include exhibition space, speaking slots, logo placement, networking events, and complimentary registrations. Please contact our partnership team at info@emergingtrendsconference.com for a detailed prospectus.",
     },
     {
       question: "Is the conference venue accessible and what about visa requirements?",
       answer:
-        "Yes, the Bali International Convention Centre is fully accessible with modern facilities, ramps, elevators, and accessible restrooms. For visa requirements, most nationalities can obtain a visa on arrival or e-visa for Indonesia. Please check with your local Indonesian consulate for specific requirements. We can provide invitation letters for visa applications upon request.",
+        "Yes, the conference venue is fully accessible with modern facilities, ramps, elevators, and accessible restrooms. For visa requirements, please check with your local consulate for specific requirements. We can provide invitation letters for visa applications upon request.",
     },
   ]
 
@@ -55,7 +56,7 @@ export default function ConferenceFAQ() {
            
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Find answers to common questions about 2nd ICETMR 2026 in Kuala Lumpur, Malaysia. If you don't see your question here, please contact us.
+            Find answers to common questions about {Conference.shortForm} {Conference.year} in {Conference.venue.location}. If you don't see your question here, please contact us.
           </p>
         </div>
 
@@ -104,7 +105,7 @@ export default function ConferenceFAQ() {
         <div className="mt-12 bg-gradient-to-br from-gray-50 to-white rounded-2xl p-6 md:p-8 border border-gray-100">
           <h3 className="text-2xl font-bold text-gray-800 mb-4">Still have questions?</h3>
           <p className="text-gray-600 mb-6">
-            Our team is ready to assist you with any additional questions or concerns you may have about 2nd ICETMR 2026 in Kuala Lumpur.
+            Our team is ready to assist you with any additional questions or concerns you may have about {Conference.shortForm} {Conference.year} in {Conference.venue.location}.
           </p>
          <div className="flex flex-col  text-lg font-bold " >
           <a className="inline-flex gap-2 items-center " >

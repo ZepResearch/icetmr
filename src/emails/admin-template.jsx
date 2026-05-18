@@ -1,3 +1,5 @@
+import { Conference } from "@/constants/conference";
+
 export const adminEmailTemplate = (data) => `
 <!DOCTYPE html>
 <html lang="en">
@@ -297,7 +299,7 @@ export const adminEmailTemplate = (data) => `
                 </div>
                 <hr class="divider">
                 <p class="copyright">
-                    © International Conference on Emerging Trends in Multidisciplinary Research
+                    © ${Conference.name}
                 </p>
             </div>
         </div>

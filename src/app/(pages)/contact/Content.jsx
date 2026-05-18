@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import {  Mail, Phone, MapPin, Send, CheckCircle, AlertCircle, Globe, YoutubeIcon, Youtube, Linkedin, Twitter, Instagram, Facebook } from "lucide-react"
 import "react-phone-number-input/style.css"
 import PhoneInput from "react-phone-number-input"
+import { Conference } from "@/constants/conference"
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -95,7 +96,7 @@ export default function ContactPage() {
                   <h2 className="text-2xl font-bold text-black mb-6">Get In Touch</h2>
 
                   <p className="text-gray-700 mb-8">
-                    Have questions about ICETMR 2026? Our team is here to help. Reach out to us using the contact
+                    Have questions about {Conference.shortForm} {Conference.year}? Our team is here to help. Reach out to us using the contact
                     information below or fill out the form.
                   </p>
 
@@ -133,7 +134,7 @@ export default function ContactPage() {
                       <div>
                         <p className="text-sm text-gray-700">Venue</p>
                         <p className="text-black font-medium">
-                          Kualu Lumpur, Malaysia
+                          {Conference.venue.location}
                         </p>
                       </div>
                     </div>

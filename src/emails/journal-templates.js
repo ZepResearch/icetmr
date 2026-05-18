@@ -1,10 +1,12 @@
+import { Conference } from "@/constants/conference"
+
 export function getUserEmailTemplate(data) {
   return `
   <!DOCTYPE html>
   <html>
   <head>
     <meta charset="utf-8">
-    <title>ICETMR Conference Submission Confirmation</title>
+    <title>${Conference.shortForm} Conference Submission Confirmation</title>
     <style>
       body {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -179,8 +181,8 @@ export function getUserEmailTemplate(data) {
     <div class="email-container">
       <div class="header">
         <div class="header-content">
-          <h1 class="conference-logo">ICETMR</h1>
-          <p class="conference-subtitle">International Conference on Emerging Trends in Multidisciplinary Research</p>
+          <h1 class="conference-logo">${Conference.shortForm}</h1>
+          <p class="conference-subtitle">${Conference.name}</p>
         </div>
       </div>
       
@@ -190,7 +192,7 @@ export function getUserEmailTemplate(data) {
         <div class="main-message">
           Thank you for submitting your research paper 
           <span class="paper-title">"${data.paper_title}"</span> 
-          to the International Conference on Emerging Trends in Multidisciplinary Research (ICETMR).
+          to ${Conference.name} (${Conference.shortForm}).
         </div>
         
         <p>We are pleased to confirm that your submission has been received and is now under review by our distinguished panel of experts specializing in multidisciplinary research. You will be notified about the review outcome and conference acceptance status within the next 2-3 weeks.</p>
@@ -217,7 +219,7 @@ export function getUserEmailTemplate(data) {
             </li>
             <li>
               <span class="info-label">Submission ID</span>
-              <span class="info-value">ICETMR-${new Date().getFullYear()}-${Math.random().toString(36).substr(2, 9).toUpperCase()}</span>
+              <span class="info-value">${Conference.shortForm}-${new Date().getFullYear()}-${Math.random().toString(36).substr(2, 9).toUpperCase()}</span>
             </li>
           </ul>
         </div>
@@ -232,13 +234,13 @@ export function getUserEmailTemplate(data) {
         <div class="signature">
           <div class="signature-title">Best regards,</div>
           Conference Organizing Committee<br>
-          ICETMR - International Conference on Emerging Trends in Multidisciplinary Research<br>
+          ${Conference.shortForm} - ${Conference.name}<br>
           📧 info@emergingtrendsconference.com
         </div>
       </div>
       
       <div class="footer">
-        <p>© ${new Date().getFullYear()} ICETMR Conference. All rights reserved.</p>
+        <p>© ${new Date().getFullYear()} ${Conference.shortForm} Conference. All rights reserved.</p>
        
       </div>
     </div>
@@ -253,7 +255,7 @@ export function getAdminEmailTemplate(data, fileUrl) {
   <html>
   <head>
     <meta charset="utf-8">
-    <title>New ICETMR Conference Submission</title>
+    <title>New ${Conference.shortForm} Conference Submission</title>
     <style>
       body {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -478,7 +480,7 @@ export function getAdminEmailTemplate(data, fileUrl) {
       <div class="header">
         <div class="header-content">
           <span class="alert-badge">🚨 NEW SUBMISSION</span>
-          <h1 class="header-title">ICETMR Conference Submission</h1>
+          <h1 class="header-title">${Conference.shortForm} Conference Submission</h1>
           <p class="header-subtitle">Administrative Notification</p>
         </div>
       </div>
@@ -486,7 +488,7 @@ export function getAdminEmailTemplate(data, fileUrl) {
       <div class="content">
         <div class="notification-banner">
           <span class="icon">📝</span>
-          <div class="notification-text">A new research paper has been submitted to ICETMR Conference</div>
+          <div class="notification-text">A new research paper has been submitted to ${Conference.shortForm} Conference</div>
         </div>
         
         <div class="details-section">
@@ -587,7 +589,7 @@ export function getAdminEmailTemplate(data, fileUrl) {
       </div>
       
       <div class="footer">
-        <p>© ${new Date().getFullYear()} ICETMR Conference - Administrative System. All rights reserved.</p>
+        <p>© ${new Date().getFullYear()} ${Conference.shortForm} Conference - Administrative System. All rights reserved.</p>
        
       </div>
     </div>

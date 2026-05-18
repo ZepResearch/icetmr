@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { ArrowRight, Calendar, Image, MapPin, Presentation, Sparkles, Trophy, Users } from 'lucide-react'
 import React from 'react'
 import { cn } from '@/lib/utils'
+import { Conference } from "@/constants/conference"
 
 function CtaHighlight() {
   // Card data with href paths
@@ -16,14 +17,14 @@ function CtaHighlight() {
     {
       id: 'venue',
       title: 'Venue',
-      description: 'Experience the conference live in Kuala Lumpur, Malaysia  or connect virtually through our dynamic online platform—choose the way that suits you best.',
+      description: `Experience the conference live in ${Conference.venue.location} or connect virtually through our dynamic online platform—choose the way that suits you best.`,
       href: '/venue',
       icon: <MapPin/>
     },
     {
       id: 'sponsorship',
       title: 'Sponsorship',
-      description: 'Partner with 2nd ICETMR to showcase your organization\'s commitment toEmerging Trends in Multidisciplinary Research and gain visibility among industry leaders.',
+      description: `Partner with ${Conference.shortForm} to showcase your organization's commitment toEmerging Trends in Multidisciplinary Research and gain visibility among industry leaders.`,
       href: '/exhibit-and-sponsor',
       icon: <Presentation/>
     },
@@ -44,7 +45,7 @@ function CtaHighlight() {
     {
       id: 'organizer',
       title: 'Organizer',
-      description: 'Learn more about the organizing team behind 2nd ICETMR and their commitment to advancing Emerging Trends in Multidisciplinary Research.',
+      description: `Learn more about the organizing team behind ${Conference.shortForm} and their commitment to advancing Emerging Trends in Multidisciplinary Research.`,
       href: '/about-organizers',
       icon: <Users/>
     }

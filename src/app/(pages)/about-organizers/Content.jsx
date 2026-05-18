@@ -3,6 +3,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight, Target, Users, Globe, Award } from "lucide-react"
+import { Conference } from "@/constants/conference"
 
 export default function AboutOrganizersPage() {
   const teamMembers = [
@@ -94,11 +95,11 @@ export default function AboutOrganizersPage() {
               </span>
             </h1>
             <p className="text-xl text-gray-600 mb-8">
-              Meet the team behind the International Conference on Emerging Trends in Multidisciplinary Research
+              Meet the team behind {Conference.name}
             </p>
             <div className="text-lg text-gray-500">
-              <p className="font-semibold">October 7th - 8th 2026</p>
-              <p>Kuala Lumpur, Malaysia</p>
+              <p className="font-semibold">{Conference.date.replace(",", "")}</p>
+              <p>{Conference.venue.location}</p>
             </div>
           </div>
         </div>
@@ -143,14 +144,14 @@ export default function AboutOrganizersPage() {
           <div className="max-w-4xl mx-auto text-center">
             <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Mission</h3>
             <p className="text-xl text-gray-600 mb-8">
-              At ZEP Research, our mission for the ICETMR Conference is to break down disciplinary silos, foster 
+              At ZEP Research, our mission for the {Conference.shortForm} Conference is to break down disciplinary silos, foster 
               cross-pollination of ideas, and accelerate breakthroughs that emerge from the intersection of diverse 
               fields. We believe that the most transformative innovations happen when researchers from different 
               disciplines collaborate — bridging science and humanities, technology and social sciences, theory and practice.
             </p>
             <p className="text-xl text-gray-600">
-              ICETMR is more than a conference; it's a convergence point for multidisciplinary excellence. Our goal is 
-              to create a vibrant intellectual ecosystem in the beautiful setting of Kuala Lumpur, Malaysia, where ideas transcend 
+              {Conference.shortForm} is more than a conference; it's a convergence point for multidisciplinary excellence. Our goal is 
+              to create a vibrant intellectual ecosystem in the beautiful setting of {Conference.venue.location}, where ideas transcend 
               traditional boundaries, collaborative networks are forged, and emerging researchers are empowered to 
               pioneer the next generation of interdisciplinary solutions. Together, we're shaping a future driven by 
               holistic thinking, innovative collaboration, and bold multidisciplinary research.
@@ -209,7 +210,7 @@ export default function AboutOrganizersPage() {
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">Partner with Zep Research</h3>
                 <p className="text-gray-600 max-w-xl">
                   Interested in collaborating with us for future conferences or multidisciplinary research initiatives? 
-                  Get in touch to explore partnership opportunities in Kuala Lumpur, Malaysia and beyond.
+                  Get in touch to explore partnership opportunities in {Conference.venue.location} and beyond.
                 </p>
               </div>
               <Link

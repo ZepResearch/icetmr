@@ -1,6 +1,31 @@
+﻿import { Conference } from "@/constants/conference"
+
+const conferenceTokens = [
+  ["International Conference on Emerging Trends in Multidisciplinary Research", Conference.name],
+  ["ICETMR 2025", `${Conference.shortForm} ${Conference.year}`],
+  ["ICETMR 2026", `${Conference.shortForm} ${Conference.year}`],
+  ["Bali, Indonesia", Conference.venue.location],
+  ["ICETMR", Conference.shortForm],
+]
+
+const withConferenceData = (value) => {
+  if (typeof value === "string") {
+    return conferenceTokens.reduce((result, token) => result.split(token[0]).join(token[1]), value)
+  }
+
+  if (Array.isArray(value)) {
+    return value.map(withConferenceData)
+  }
+
+  if (value && typeof value === "object") {
+    return Object.fromEntries(Object.entries(value).map(([key, val]) => [key, withConferenceData(val)]))
+  }
+
+  return value
+}
 // 1. about-conference
 
-export const aboutConferenceMetadata = {
+export const aboutConferenceMetadata = withConferenceData({
   title: "About Conference | ICETMR : International Conference on Emerging Trends in Multidisciplinary Research",
   description:
     "Learn about ICETMR , the premier international conference connecting researchers, professionals, and innovators focused on emerging trends in multidisciplinary research .",
@@ -80,11 +105,11 @@ export const aboutConferenceMetadata = {
       },
     }),
   },
-}
+});
 
 // 2. about-organizers
 
-export const aboutOrganizersMetadata = {
+export const aboutOrganizersMetadata = withConferenceData({
   title: "About Organizers | ICETMR : International Conference on Emerging Trends in Multidisciplinary Research",
   description:
     "Meet the team behind ICETMR . Learn about our organizing committee, their expertise, vision, and commitment to fostering emerging trends in multidisciplinary research.",
@@ -148,11 +173,11 @@ export const aboutOrganizersMetadata = {
       },
     }),
   },
-}
+});
 
 // 3. awards
 
-export const awardsMetadata = {
+export const awardsMetadata = withConferenceData({
   title: "Conference Awards | ICETMR : International Conference on Emerging Trends in Multidisciplinary Research",
   description:
     "Discover the prestigious awards and recognition opportunities at ICETMR . Learn about award categories, eligibility criteria, evaluation process, and previous winners.",
@@ -233,11 +258,11 @@ export const awardsMetadata = {
       },
     }),
   },
-}
+});
 
 // 4. committee
 
-export const committeeMetadata = {
+export const committeeMetadata = withConferenceData({
   title: "Program Committee | ICETMR : International Conference on Emerging Trends in Multidisciplinary Research",
   description:
     "Meet our distinguished program committee members who review submissions, chair sessions, and ensure the highest quality content at ICETMR . Learn about their expertise in multidisciplinary research and emerging trends.",
@@ -302,11 +327,11 @@ export const committeeMetadata = {
       },
     }),
   },
-}
+});
 
 // 5. contact
 
-export const contactMetadata = {
+export const contactMetadata = withConferenceData({
   title: "Contact Us | ICETMR : International Conference on Emerging Trends in Multidisciplinary Research",
   description:
     "Get in touch with the ICETMR  team. Find contact information for general inquiries, submission questions, technical support, and sponsorship opportunities for our Bali conference.",
@@ -374,11 +399,11 @@ export const contactMetadata = {
       },
     }),
   },
-}
+});
 
 // 6. exhibit-and-sponsor
 
-export const exhibitSponsorMetadata = {
+export const exhibitSponsorMetadata = withConferenceData({
   title:
     "Exhibit & Sponsorship | ICETMR : International Conference on Emerging Trends in Multidisciplinary Research",
   description:
@@ -456,11 +481,11 @@ export const exhibitSponsorMetadata = {
       },
     }),
   },
-}
+});
 
 // 7. journals
 
-export const journalsMetadata = {
+export const journalsMetadata = withConferenceData({
   title: "Associated Journals | ICETMR : International Conference on Emerging Trends in Multidisciplinary Research",
   description:
     "Explore journal publication opportunities associated with ICETMR . Learn about special issues in multidisciplinary research and emerging trends journals, submission guidelines, and how to publish your conference paper.",
@@ -541,11 +566,11 @@ export const journalsMetadata = {
       },
     }),
   },
-}
+});
 
 // 8. mode-of-presentation
 
-export const presentationModeMetadata = {
+export const presentationModeMetadata = withConferenceData({
   title: "Presentation Modes | ICETMR : International Conference on Emerging Trends in Multidisciplinary Research",
   description:
     "Understand the different presentation formats available at ICETMR  . Learn about oral presentations, poster sessions, workshops, panel discussions, and technical requirements.",
@@ -632,11 +657,11 @@ export const presentationModeMetadata = {
       },
     }),
   },
-}
+});
 
 // 9. papers-format
 
-export const papersFormatMetadata = {
+export const papersFormatMetadata = withConferenceData({
   title:
     "Paper Format Guidelines | ICETMR : International Conference on Emerging Trends in Multidisciplinary Research",
   description:
@@ -723,11 +748,11 @@ export const papersFormatMetadata = {
       },
     }),
   },
-}
+});
 
 // 10. payment
 
-export const paymentMetadataSuccess = {
+export const paymentMetadataSuccess = withConferenceData({
   title: "Payment Successful | ICETMR : International Conference on Emerging Trends in Multidisciplinary Research",
   description:
     "Your payment for ICETMR   was successful. Find details about your registration, payment confirmation, receipts, and next steps for conference participation.",
@@ -803,11 +828,11 @@ export const paymentMetadataSuccess = {
       },
     }),
   },
-}
+});
 
 
 // Failed Payment Metadata
-export const paymentMetadataFailed = {
+export const paymentMetadataFailed = withConferenceData({
   title: "Failed Payment | ICETMR: International Conference on Emerging Trends in Multidisciplinary Research",
   description:
     "Find detailed Failed payment information for ICETMR registration. Learn about payment methods, invoicing, receipts, taxes, group discounts, and financial assistance options.",
@@ -881,10 +906,10 @@ export const paymentMetadataFailed = {
       },
     }),
   },
-};
+});
 
 // Registration Metadata
-export const registrationMetadata = {
+export const registrationMetadata = withConferenceData({
   title: "Registration | ICETMR: International Conference on Emerging Trends in Multidisciplinary Research",
   description:
     "Register for ICETMR  . Learn about registration categories, early bird rates, included benefits, and the registration process for this multidisciplinary research conference.",
@@ -958,10 +983,10 @@ export const registrationMetadata = {
       },
     }),
   },
-};
+});
 
 // Schedule Metadata
-export const scheduleMetadata = {
+export const scheduleMetadata = withConferenceData({
   title: "Conference Schedule | ICETMR: International Conference on Emerging Trends in Multidisciplinary Research",
   description:
     "View the complete schedule for ICETMR  . Explore keynote sessions, presentations, workshops, networking events  .",
@@ -1057,10 +1082,10 @@ export const scheduleMetadata = {
       },
     }),
   },
-};
+});
 
 // Submission Success Metadata
-export const submissionSuccessMetadata = {
+export const submissionSuccessMetadata = withConferenceData({
   title: "Success Submission | ICETMR: International Conference on Emerging Trends in Multidisciplinary Research",
   description:
     "Successfully submitted your research to ICETMR  . Access submission guidelines, important dates, topics of interest, review process details, and submission portal instructions.",
@@ -1144,10 +1169,10 @@ export const submissionSuccessMetadata = {
       },
     }),
   },
-};
+});
 
 // Submission Metadata
-export const submissionMetadata = {
+export const submissionMetadata = withConferenceData({
   title: "Paper Submission | ICETMR: International Conference on Emerging Trends in Multidisciplinary Research",
   description:
     "Submit your research to ICETMR  . Access submission guidelines, important dates, topics of interest, review process details, and submission portal instructions.",
@@ -1231,10 +1256,10 @@ export const submissionMetadata = {
       },
     }),
   },
-};
+});
 
 // Themes and Topics Metadata
-export const themesTopicsMetadata = {
+export const themesTopicsMetadata = withConferenceData({
   title: "Themes and Topics | ICETMR: International Conference on Emerging Trends in Multidisciplinary Research",
   description:
     "Explore the diverse themes and topics covered at ICETMR  . Discover research areas in emerging trends across multiple disciplines, special tracks, and cutting-edge topics.",
@@ -1324,10 +1349,10 @@ export const themesTopicsMetadata = {
       },
     }),
   },
-};
+});
 
 // Gallery Metadata
-export const galleryMetadata = {
+export const galleryMetadata = withConferenceData({
   title: "Photo Gallery | ICETMR: International Conference on Emerging Trends in Multidisciplinary Research",
   description:
     "Browse our photo gallery showcasing highlights from ICETMR conferences. View images from keynote presentations, networking events, exhibitions, and memorable moments from past International Conference on Emerging Trends in Multidisciplinary Research.",
@@ -1429,10 +1454,10 @@ export const galleryMetadata = {
       ]
     }),
   },
-};
+});
 
 // Terms and Conditions Metadata
-export const termsMetadata = {
+export const termsMetadata = withConferenceData({
   title: "Terms and Conditions | ICETMR: International Conference on Emerging Trends in Multidisciplinary Research",
   description:
     "Read the terms and conditions for ICETMR conference registration, participation, and attendance. Understand your rights, responsibilities, and legal obligations for the International Conference on Emerging Trends in Multidisciplinary Research.",
@@ -1503,10 +1528,10 @@ export const termsMetadata = {
       }
     }),
   },
-};
+});
 
 // Privacy Policy Metadata
-export const privacyMetadata = {
+export const privacyMetadata = withConferenceData({
   title: "Privacy Policy | ICETMR: International Conference on Emerging Trends in Multidisciplinary Research",
   description:
     "Learn how ICETMR protects your personal information and privacy. Read our comprehensive privacy policy covering data collection, usage, storage, and your privacy rights for conference registration and participation.",
@@ -1574,10 +1599,10 @@ export const privacyMetadata = {
       }
     }),
   },
-};
+});
 
 // Cancellation Policy Metadata
-export const cancellationMetadata = {
+export const cancellationMetadata = withConferenceData({
   title: "Cancellation Policy | ICETMR: International Conference on Emerging Trends in Multidisciplinary Research",
   description:
     "Review ICETMR's cancellation and refund policy for conference registration. Learn about cancellation deadlines, refund procedures, terms for registration changes, and refund eligibility criteria.",
@@ -1648,9 +1673,9 @@ export const cancellationMetadata = {
       }
     }),
   },
-};
+});
 // Venue Metadata
-export const venueMetadata = {
+export const venueMetadata = withConferenceData({
   title: "Venue Information | ICETMR: International Conference on Emerging Trends in Multidisciplinary Research",
   description:
     "Discover the venue details for ICETMR  . Learn about the conference location, facilities, accommodation options, travel information, and local attractions in beautiful Bali.",
@@ -1712,9 +1737,9 @@ export const venueMetadata = {
     
     }),
   },
-};
+});
 
-export const journalMetadata = {
+export const journalMetadata = withConferenceData({
   title: "Associated Journals | ICETMR: International Conference on Emerging Trends in Multidisciplinary Research",
   description:
     "Explore journal publication opportunities associated with ICETMR . Learn about special issues in multidisciplinary research and emerging trends journals, submission guidelines, and how to publish your conference paper.",
@@ -1793,9 +1818,9 @@ export const journalMetadata = {
       },
     }),
   },
-};
+});
 
-export const successPageMetadata = {
+export const successPageMetadata = withConferenceData({
   title: "Submission Successful | ICETMR Journal Publication",
   description:
     "Your research paper has been successfully submitted to ICETMR  associated journal. Thank you for your submission! A confirmation email has been sent and our review team will contact you soon.",
@@ -1905,9 +1930,9 @@ export const successPageMetadata = {
       }
     }),
   },
-};
+});
 
-export const DisabilityPolicyMetadata = {
+export const DisabilityPolicyMetadata = withConferenceData({
   title: "Disability & Accessibility Policy | ICETMR: International Conference on Emerging Trends in Multidisciplinary Research",
   description:
     "Read ICETMR's disability and accessibility policy for our Bali conference. Learn about accessible venue features, accommodations for attendees with disabilities, and how we support an inclusive event experience.",
@@ -1979,4 +2004,5 @@ export const DisabilityPolicyMetadata = {
       }
     }),
   },
-};
+});
+

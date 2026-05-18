@@ -8,6 +8,7 @@ import { Label } from "@/components/ui/label"
 import { useToast } from "@/hooks/use-toast"
 import "react-phone-number-input/style.css"
 import PhoneInput from "react-phone-number-input"
+import { Conference } from "@/constants/conference"
 
 export function ReserveForm({ isOpen, onClose, onSubmitSuccess }) {
   const { toast } = useToast()
@@ -73,8 +74,8 @@ export function ReserveForm({ isOpen, onClose, onSubmitSuccess }) {
         <DialogHeader className="bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 -mx-6 -mt-6 px-6 py-4 rounded-t-lg">
           <DialogTitle className="text-xl font-semibold text-white">Pre-book your slot !</DialogTitle>
           <DialogDescription className="text-white/90">
-           2<sup>nd</sup> International Conference on Emerging Trends in Multidisciplinary Research
-            <span className="text-white/80 text-sm mt-1">October 7th - 8th 2026 • Kuala Lumpur, Malaysia</span>
+           {Conference.name}
+            <span className="text-white/80 text-sm mt-1">{Conference.date.replace(",", "")} • {Conference.venue.location}</span>
           </DialogDescription>
         </DialogHeader>
         <div className="relative">

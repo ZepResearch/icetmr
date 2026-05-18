@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { CheckCircle, Calendar, FileText, ArrowRight } from "lucide-react"
+import { Conference } from "@/constants/conference"
 
 export default function RegistrationSuccessPage() {
   return (
@@ -21,7 +22,7 @@ export default function RegistrationSuccessPage() {
 
                 <h1 className="text-3xl md:text-4xl font-bold text-[#1a2e1a] mb-4">Payment Successful!</h1>
                 <p className="text-gray-800 text-lg max-w-2xl">
-                  Thank you for your payment for the International Conference on Emerging Trends in Multidisciplinary Research. We look forward to your participation.
+                  Thank you for your payment for {Conference.name}. We look forward to your participation.
                 </p>
               </div>
 
@@ -50,7 +51,7 @@ export default function RegistrationSuccessPage() {
                       <div>
                         <h3 className="text-[#1a2e1a] font-medium">Mark Your Calendar</h3>
                         <p className="text-gray-800">
-                          The conference will take place on October | 10th - 11th 2025 Bali, Indonesia. Exact details will be shared with you via mail.
+                          The conference will take place on {Conference.date} in {Conference.venue.location}. Exact details will be shared with you via mail.
                         </p>
                       </div>
                     </div>

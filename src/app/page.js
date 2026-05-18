@@ -16,13 +16,13 @@ export default function Home() {
       
       <Hero/>
       <CPD/>
-      {/* <Organizer/> */}
+      <Organizer/>
       <About/>
       <Buttons/>
       <ConferenceTimeline/>
       <SpeakerSection/>
       <CtaHighlight/>
-      <TrashImagslider/>
+      {/*   <TrashImagslider/> */}
       <ConferenceVenue/>
       <ConferenceFAQ/>
     </main>

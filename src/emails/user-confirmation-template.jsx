@@ -1,3 +1,5 @@
+import { Conference } from "@/constants/conference";
+
 export const userConfirmationTemplate = (data) => `
 <!DOCTYPE html>
 <html lang="en">
@@ -198,18 +200,18 @@ export const userConfirmationTemplate = (data) => `
     <div class="container">
         <div class="header">
             <h1>Registration Confirmed!</h1>
-            <p>International Conference on Emerging Trends in Multidisciplinary Research</p>
+            <p>${Conference.name}</p>
         </div>
         <div class="content">
             <p class="greeting">Dear ${data.name},</p>
             <div class="success-badge">✓ Registration Successful</div>
             
-            <p>We're delighted to confirm your registration for the International Conference on Emerging Trends in Multidisciplinary Research. Your participation will contribute to valuable discussions on cutting-edge research across multiple disciplines.</p>
+            <p>We're delighted to confirm your registration for the ${Conference.name}. Your participation will contribute to valuable discussions on cutting-edge research across multiple disciplines.</p>
             
             <div class="conference-info">
                 <h3>Conference Details</h3>
-                <div class="conference-date">October 7th - 8th 2026</div>
-                <div class="conference-venue">📍 Kuala Lumpur, Malaysia</div>
+                <div class="conference-date">${Conference.date}</div>
+                <div class="conference-venue">📍 ${Conference.venue.location}</div>
             </div>
             
             <div class="registration-details">
@@ -244,7 +246,7 @@ export const userConfirmationTemplate = (data) => `
             
             <div class="highlight-box">
                 <h3>What's Next?</h3>
-                <p>We'll send you detailed conference information, including the agenda, accommodation options, and venue details as we get closer to the event date. Get ready for an inspiring experience in beautiful Bali!</p>
+                <p>We'll send you detailed conference information, including the agenda, accommodation options, and venue details as we get closer to the event date. Get ready for an inspiring experience in beautiful ${Conference.venue.location.split(",")[0]}!</p>
             </div>
             
             <p>If you have any questions or need assistance, please don't hesitate to contact our conference team.</p>
@@ -252,10 +254,10 @@ export const userConfirmationTemplate = (data) => `
             <p>We look forward to your valuable participation in this important conference!</p>
             
             <p>Warm regards,<br>
-            <strong>The ICETMR Organizing Committee</strong></p>
+            <strong>The ${Conference.shortForm} Organizing Committee</strong></p>
         </div>
         <div class="footer">
-            <p>© ${new Date().getFullYear()} International Conference on Emerging Trends in Multidisciplinary Research</p>
+            <p>© ${new Date().getFullYear()} ${Conference.name}</p>
             <p>This is an automated confirmation. Please do not reply to this email.</p>
             <div class="social-links">
                 <a href="https://www.zepresearch.com/">Website</a> |

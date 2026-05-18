@@ -4,6 +4,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, MapPin, Navigation, Building, Utensils, Landmark, Trees, ShoppingBag, Palette } from "lucide-react"
+import { Conference } from "@/constants/conference"
 
 export default function VenuePage() {
   return (
@@ -37,7 +38,7 @@ export default function VenuePage() {
                 <span className="absolute inset-0 bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500 rounded-lg transform -rotate-1 scale-110 z-0"></span>
               </span>
             </h1>
-            <p className="text-xl text-gray-600 mb-8">Join us at Kuala Lumpur, Malaysia
+            <p className="text-xl text-gray-600 mb-8">Join us at {Conference.venue.location}
 </p>
           </div>
         </div>
@@ -65,7 +66,7 @@ export default function VenuePage() {
 
                       <div className="space-y-6 text-gray-600">
                       <p>
-            The International Conference on Emerging Trends in Multidisciplinary Research 2026 will be held in Kuala Lumpur, Malaysia. This vibrant venue offers a seamless blend of modern amenities and authentic hospitality—perfect for collaboration, innovation, and relaxation.                      </p>
+            {Conference.name} {Conference.year} will be held in {Conference.venue.location}. This vibrant venue offers a seamless blend of modern amenities and authentic hospitality—perfect for collaboration, innovation, and relaxation.                      </p>
 
                       <div className="space-y-4">
                         <h3 className="text-xl font-medium text-gray-800">Venue Features</h3>
@@ -115,12 +116,7 @@ export default function VenuePage() {
                         <MapPin className="h-5 w-5 text-gray-600" />
                         <h3 className="text-lg font-medium text-gray-800">Location</h3>
                         </div>
-                        <p className="text-gray-900 font-semibold">
-                          Holiday Inn Express,
-                          Kuala Lumpur
-                          City Centre, an IHG Hotel,
-                          Kuala Lumpur, Malaysia
-                        </p>
+                        <p className="text-gray-900 font-semibold">{Conference.venue.address}</p>
                       </div>
                       </div>
 
@@ -149,7 +145,7 @@ export default function VenuePage() {
 
                     {/* Venue name overlay */}
                     <div className="absolute bottom-0 left-0 right-0 p-6">
-                      <h3 className="text-2xl font-bold text-white mb-1">Holiday Inn Express
+                      <h3 className="text-2xl font-bold text-white mb-1">{Conference.venue.name}
 </h3>
                       {/* <p className="text-white/90">Melasti Kuta Beach Hotel & Spa </p> */}
                     </div>
@@ -405,7 +401,7 @@ export default function VenuePage() {
               <div className="relative">
                 <h3 className="text-2xl font-bold text-gray-800 mb-3">Ready to Join Us?</h3>
                 <p className="text-gray-600 mb-6">
-                  Register for the International Conference on Emerging Trends in Multidisciplinary Research  and experience world-class research discussions in beautiful Bali.
+                  Register for {Conference.name} and experience world-class research discussions in {Conference.venue.location}.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">

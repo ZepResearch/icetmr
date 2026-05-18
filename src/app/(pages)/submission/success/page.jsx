@@ -2,6 +2,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { CheckCircle, ArrowRight, ArrowLeft, Calendar } from "lucide-react"
 import { submissionSuccessMetadata } from "@/components/metadata"
+import { Conference } from "@/constants/conference"
 
 export const metadata = submissionSuccessMetadata;
 
@@ -38,11 +39,11 @@ export default function SubmissionSuccess() {
               </span>
             </h1>
             <p className="text-xl text-gray-600 mb-8">
-              Thank you for contributing to the International Conference on Emerging Trends in Multidisciplinary Research
+              Thank you for contributing to {Conference.name}
             </p>
             <div className="text-lg text-gray-700 space-y-2">
-              <div className="font-semibold">October 7th - 8th 2026</div>
-              <div className="text-gray-600">Kuala Lumpur, Malaysia</div>
+              <div className="font-semibold">{Conference.date.replace(",", "")}</div>
+              <div className="text-gray-600">{Conference.venue.location}</div>
             </div>
           </div>
         </div>
@@ -68,8 +69,7 @@ export default function SubmissionSuccess() {
 
                 <div className="space-y-6 text-gray-600 max-w-2xl mx-auto">
                   <p>
-                    Thank you for submitting your paper to the International Conference on Emerging Trends in 
-                    Multidisciplinary Research. Your contribution is an important part of advancing research 
+                    Thank you for submitting your paper to {Conference.name}. Your contribution is an important part of advancing research 
                     and collaboration across diverse academic disciplines.
                   </p>
 
@@ -99,7 +99,7 @@ export default function SubmissionSuccess() {
                         </div>
                         <span>
                           If accepted, you will receive further instructions on preparing your final paper and
-                          presentation for the conference in Bali.
+                          presentation for the conference in {Conference.venue.location}.
                         </span>
                       </li>
                     </ul>
@@ -107,7 +107,7 @@ export default function SubmissionSuccess() {
 
                   <div className="flex items-center justify-center gap-4 mt-8 text-gray-700">
                     <Calendar className="h-5 w-5" />
-                    <span>Mark your calendar: Conference dates are October 7th - 8th, 2026 in Kuala Lumpur, Malaysia</span>
+                    <span>Mark your calendar: Conference dates are {Conference.date} in {Conference.venue.location}</span>
                   </div>
                 </div>
 

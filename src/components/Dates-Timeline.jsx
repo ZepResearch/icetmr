@@ -1,4 +1,5 @@
 'use client'
+import { Conference } from "@/constants/conference"
 import { pb } from "@/lib/pocketbase"
 import { cn } from "@/lib/utils"
 import { Calendar, Clock, FileText, UserCheck } from "lucide-react"
@@ -86,7 +87,9 @@ export default  function ConferenceTimeline() {
 
           <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8">
             <h1 className="text-3xl lg:text-5xl font-medium text-gray-900 leading-tight max-w-3xl ">
-              Important Dates for 2<sup>nd</sup> <span className="bg-clip-text text-transparent bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500  "> ICETMR</span> 
+              Important Date <span className="bg-clip-text text-transparent bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500  ">
+
+                 {Conference.shortForm} {Conference.year}</span> 
             </h1>
 
             <div className="text-right max-w-md">

@@ -3,6 +3,7 @@ import React from 'react'
 import { Button } from './ui/button'
 import { ArrowRight } from 'lucide-react'
 import Link from 'next/link'
+import { Conference } from "@/constants/conference"
 
 function About() {
   return (
@@ -34,7 +35,7 @@ function About() {
 
             <div className="space-y-6 text-gray-950">
               <p className="text-lg leading-relaxed">
-                At the 2<sup>nd</sup> International Conference on Emerging Trends in Multidisciplinary Research, we bring together the world's leading
+                At the {Conference.name}, we bring together the world's leading
                 experts, researchers, and innovators across various fields of study.
               </p>
 

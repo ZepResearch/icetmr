@@ -4,6 +4,7 @@ import { useState } from "react"
 import { Calendar } from "@/components/ui/calendar"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { ScrollArea } from "@/components/ui/scroll-area"
+import { Conference } from "@/constants/conference"
 import { cn } from "@/lib/utils"
 
 const scheduleData = [
@@ -49,31 +50,28 @@ const scheduleData = [
   },
 ]
 export default function ConferenceSchedule() {
-  const startDate = new Date(2026, 9, 7) // October 7, 2026 (month is 0-indexed)
-  const [selectedDates, setSelectedDates] = useState([
-    new Date(2026, 9, 7),
-    new Date(2026, 9, 8),
-  ])
+  const { scheduleDates } = Conference
+  const startDate = new Date(scheduleDates.year, scheduleDates.month, scheduleDates.days[0])
+  const [selectedDates, setSelectedDates] = useState(
+    scheduleDates.days.map((day) => new Date(scheduleDates.year, scheduleDates.month, day)),
+  )
+  const calendarTitle = startDate.toLocaleString("en-US", {
+    month: "long",
+    year: "numeric",
+  })
 
   return (
     <div className="bg-white py-16">
       <div className="container mx-auto px-4">
         <div className="space-y-8">
           <div className="text-center space-y-4 mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-800">
-             2<sup>nd </sup> International Conference on
-              <span className="relative inline-block mx-5">
-                <span className="relative z-10 text-white px-1 py-2 rounded-lg">Emerging Trends</span>
-                <span className="absolute inset-0 bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500 rounded-lg transform -rotate-1 scale-110 z-0"></span>
-              </span>
-              in Multidisciplinary Research
-            </h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-800">{Conference.name}</h1>
             <div className="space-y-2">
               <p className="text-gray-600 text-xl font-semibold">
-             October 7th - 8th 2026
+                {Conference.date.replace(",", "")}
               </p>
               <p className="text-gray-600 text-lg">
-                Kuala Lumpur, Malaysia
+                {Conference.venue.location}
               </p>
             </div>
             <p className="text-gray-600 text-lg max-w-3xl mx-auto">
@@ -85,7 +83,7 @@ export default function ConferenceSchedule() {
           <div className="grid gap-8 md:grid-cols-[300px_1fr]">
             <Card className="border-gray-200 rounded-3xl shadow-lg overflow-hidden bg-white h-fit">
               <CardHeader className="bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500 text-white py-3">
-                <CardTitle>October 2026</CardTitle>
+                <CardTitle>{calendarTitle}</CardTitle>
               </CardHeader>
               <CardContent className="p-4">
                 <Calendar
@@ -137,7 +135,7 @@ export default function ConferenceSchedule() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <h3 className="text-xl font-bold text-gray-800 mb-3">Venue</h3>
-                <p className="text-gray-600 mb-2">Kuala Lumpur, Malaysia</p>
+                <p className="text-gray-600 mb-2">{Conference.venue.location}</p>
               </div>
               <div>
                 <h3 className="text-xl font-bold text-gray-800 mb-3">Registration</h3>

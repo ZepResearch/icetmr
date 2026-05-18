@@ -1,3 +1,5 @@
+import { Conference } from "@/constants/conference"
+
 export function getUserEmailTemplate(data) {
   return `
   <!DOCTYPE html>
@@ -146,13 +148,13 @@ export function getUserEmailTemplate(data) {
   </head>
   <body>
     <div class="header">
-      <div class="conference-title">International Conference on Emerging Trends in Multidisciplinary Research</div>
-      <div class="event-details">October 7th - 8th 2026 | Kuala Lumpur, Malaysia</div>
+      <div class="conference-title">${Conference.name}</div>
+      <div class="event-details">${Conference.date} | ${Conference.venue.location}</div>
     </div>
     <div class="content">
       <p>Dear ${data.author},</p>
       
-      <p>Thank you for submitting your paper titled <span class="highlight">"${data.paper_title}"</span> to the International Conference on Emerging Trends in Multidisciplinary Research.</p>
+      <p>Thank you for submitting your paper titled <span class="highlight">"${data.paper_title}"</span> to ${Conference.name}.</p>
       
       <p>We have received your submission and our review committee will evaluate it shortly. You will be notified about the status of your submission in the coming weeks.</p>
       
@@ -174,10 +176,10 @@ export function getUserEmailTemplate(data) {
       
       <p>Best regards,<br>
       Conference Organizing Committee<br>
-      International Conference on Emerging Trends in Multidisciplinary Research</p>
+      ${Conference.name}</p>
     </div>
     <div class="footer">
-      <p>© 2025 International Conference on Emerging Trends in Multidisciplinary Research. All rights reserved.</p>
+      <p>© 2025 ${Conference.name}. All rights reserved.</p>
     </div>
   </body>
   </html>
@@ -338,18 +340,18 @@ export function getAdminEmailTemplate(data, fileUrl) {
   </head>
   <body>
     <div class="header">
-      <div class="conference-title">International Conference on Emerging Trends in Multidisciplinary Research</div>
+      <div class="conference-title">${Conference.name}</div>
       <div class="subtitle">New Paper Submission Alert</div>
     </div>
     <div class="content">
-      <p>A new paper has been submitted to the International Conference on Emerging Trends in Multidisciplinary Research.</p>
+      <p>A new paper has been submitted to ${Conference.name}.</p>
       
       <div class="conference-info">
         <p><strong>Conference Details:</strong></p>
-        <p>📅 October 7th - 8th 2026<br>
-        📍Kuala Lumpur, Malaysia<br>
+        <p>📅 ${Conference.date}<br>
+        📍${Conference.venue.location}<br>
         📧 info@emergingtrendsconference.com<br>
-        📞 +91 78488 54815</p>
+        📞 +91 82600 80050</p>
       </div>
       
       <h2>Submission Details:</h2>
@@ -425,7 +427,7 @@ export function getAdminEmailTemplate(data, fileUrl) {
       <p>Please review this submission at your earliest convenience.</p>
     </div>
     <div class="footer">
-      <p>© 2026 International Conference on Emerging Trends in Multidisciplinary Research. All rights reserved.</p>
+      <p>© 2026 ${Conference.name}. All rights reserved.</p>
     </div>
   </body>
   </html>

@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { ChevronRight, FileText, Info, ArrowLeft, StopCircle, X, DollarSign } from "lucide-react"
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 import Link from "next/link"
+import { Conference } from "@/constants/conference"
 
 export default function CancellationPolicy() {
   const fadeIn = {
@@ -42,7 +43,7 @@ export default function CancellationPolicy() {
           <div className="text-center mb-16 max-w-4xl mx-auto">
             <div className="inline-flex items-center rounded-full border border-gray-200 bg-white/80 backdrop-blur-md px-6 py-2 text-sm font-medium text-gray-800 shadow-sm mb-6">
               <span className="bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500 bg-clip-text text-transparent font-semibold">
-                ICETMR 2025
+                {Conference.shortForm} {Conference.year}
               </span>
               <ChevronRight className="ml-2 h-4 w-4 text-gray-600" />
             </div>
@@ -67,11 +68,11 @@ export default function CancellationPolicy() {
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <p className="text-xl font-semibold text-gray-800">
-                International Conference on Emerging Trends in Multidisciplinary Research
+                {Conference.name}
               </p>
           
               <p className="text-base text-gray-500">
-                Our refund and cancellation guidelines for ICETMR 
+                Our refund and cancellation guidelines for {Conference.shortForm}
               </p>
             </motion.div>
           </div>
@@ -106,7 +107,7 @@ export default function CancellationPolicy() {
                 <p className="text-gray-600 leading-relaxed">
                   We understand that plans can change. Our cancellation policy is designed to be fair to all parties
                   involved. Please read this policy carefully before registering for the International Conference on
-                  Emerging Trends in Multidisciplinary Research (ICETMR) .
+                  Emerging Trends in Multidisciplinary Research ({Conference.shortForm}) .
                 </p>
               </div>
             </div>

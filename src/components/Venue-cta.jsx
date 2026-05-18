@@ -4,6 +4,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Calendar, Clock, MapPin, Navigation, Building, Wifi, Coffee, Users, ArrowRight } from "lucide-react"
+import { Conference } from "@/constants/conference"
 
 export default function ConferenceVenue() {
   const venueFeatures = [
@@ -40,7 +41,7 @@ export default function ConferenceVenue() {
             </span>
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Join us at our premier venue in beautiful Kuala Lumpur, Malaysia  designed to inspire innovation and foster 
+            Join us at our premier venue in beautiful {Conference.venue.location} designed to inspire innovation and foster 
             multidisciplinary collaboration in a tropical paradise setting.
           </p>
         </div>
@@ -76,7 +77,7 @@ export default function ConferenceVenue() {
                     </div>
                     <div>
                       <p className="text-sm text-gray-500">Date</p>
-                      <p className="text-gray-800 font-medium">October  7<sup>th</sup> - 8<sup>th</sup>, 2026</p>
+                      <p className="text-gray-800 font-medium">{Conference.date}</p>
                       <p className="text-sm text-gray-500">2 Days of Research Innovation</p>
                     </div>
                   </div>
@@ -98,8 +99,8 @@ export default function ConferenceVenue() {
                     </div>
                     <div>
                       <p className="text-sm text-gray-500">Address</p>
-                      <p className="text-gray-800 font-bold">Holiday Inn Express</p>
-                      <p className="text-gray-800">Kuala Lumpur City Centre, an IHG Hotel, Kuala Lumpur, Malaysia</p>
+                      <p className="text-gray-800 font-bold">{Conference.venue.name}</p>
+                      <p className="text-gray-800">{Conference.venue.address}</p>
 
                     </div>
                   </div>

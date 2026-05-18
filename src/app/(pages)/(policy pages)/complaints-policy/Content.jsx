@@ -1,4 +1,5 @@
 import { Mail, Phone, MapPin } from "lucide-react"
+import { Conference } from "@/constants/conference"
 
 
 
@@ -20,8 +21,8 @@ export default function ComplaintsPolicy() {
             <section>
               <h2 className="text-xl font-bold text-neutral-900 mb-4">1. Introduction</h2>
               <p className="text-gray-700 leading-relaxed">
-                The Organizing Committee of the International Conference on Emerging Trends in Multidisciplinary Research
-                (ICETMR) is committed to providing a professional, respectful, and inclusive environment for all
+                The Organizing Committee of the {Conference.name}
+                ({Conference.shortForm}) is committed to providing a professional, respectful, and inclusive environment for all
                 participants. We aim to handle all complaints fairly, consistently, and promptly to maintain the
                 integrity and quality of the conference.
               </p>
@@ -57,7 +58,7 @@ export default function ComplaintsPolicy() {
                   <strong>Complaints should be sent via email to:</strong> info@emergingtrendsconference.com
                 </p>
                 <p className="text-gray-700 mt-2">
-                  <strong>Subject line:</strong> Formal Complaint – ICETMR 
+                  <strong>Subject line:</strong> Formal Complaint – {Conference.shortForm}
                 </p>
               </div>
             </section>

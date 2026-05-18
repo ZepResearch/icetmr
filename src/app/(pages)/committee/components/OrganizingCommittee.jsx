@@ -5,6 +5,7 @@ import { Twitter, Linkedin, Globe, Users, Award, GraduationCap, Sparkles, AlertT
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"
 import { pb } from "@/lib/pocketbase"
 import Link from "next/link"
+import { Conference } from "@/constants/conference"
 
 export default function CommitteePage() {
   // Mock committee data since we don't have a real database connection
@@ -113,12 +114,12 @@ export default function CommitteePage() {
               </span>
             </h1>
             <p className="text-xl text-gray-600 mb-8">
-              Meet the experts behind 2nd ICETMR 2026: International Conference on Emerging Trends in Multidisciplinary Research
+              Meet the experts behind {Conference.shortForm} {Conference.year}: {Conference.name}
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-lg font-medium text-gray-700">
-              <span>October 7th - 8th 2026</span>
+              <span>{Conference.date.replace(",", "")}</span>
               <span className="hidden sm:block">•</span>
-              <span>Kuala Lumpur, Malaysia
+              <span>{Conference.venue.location}
 </span>
             </div>
           </div>

@@ -5,172 +5,242 @@ import Image from 'next/image';
 
 // Organizers data structure
 const organizersData = [
+  // {
+  //   id: 1,
+  //   name: "Sulu State College",
+  //   logo: "/co-org/sulu.png",
+  //   image: "/co-org/sulubuilding.jpg",
+  //   about: "The Sulu State College as Center of Excellence in BARMM producing globally competitive graduates and as institutional stewards in the development of the region",
+  //   vision: "The Sulu State College as Center of Excellence in BARMM producing globally competitive graduates and as institutional stewards in the development of the region.",
+  //   mission: "SSC is committed to develop academic stalwart and globally competent professionals, producing cutting edge research, knowledge and technologies for sustainable development; engage in partnership and viable resource generation programs.",
+  //   mandate: "Sulu State College is mandated to provide higher technological, professional, and vocational instruction and training in science, agricultural, and industrial fields, as well as short-term technical or vocational courses. It shall promote research, advanced studies, and progressive leadership in its areas of specialization (Philippine Batas Pambansa Blg. 208 Section 2).To the latter ends, the college believes in a system of management devolution to affect an efficient and effective supervision of processes and resources for a sustained delivery of quality outputs, the generation of knowledge on a more global orientation, and the provision of its academic resources, to the extent feasible, to institutions, both local and international, that are involved in development activities. ",
+  //   coreValues: [
+  //     { letter: 'S', value: 'Solidarity', color: 'bg-yellow-400' },
+  //     { letter: 'P', value: 'Professionalism', color: 'bg-blue-900' },
+  //     { letter: 'I', value: 'Integrity', color: 'bg-yellow-400' },
+  //     { letter: 'C', value: 'Commitment', color: 'bg-blue-900' },
+  //     { letter: 'E', value: 'Excellence', color: 'bg-yellow-400' }
+  //   ],
+  //   culture: [
+  //     "Continuous Improvement",
+  //     "Administrative Accountability",
+  //     "Community Engagement",
+  //     "Commitment to Quality and Innovation"
+  //   ],
+  //   competencies: [
+  //     "Quality Excellence and Continuous Improvement",
+  //     "Building Partnerships with Stakeholders",
+  //     "Providing Accessible Services to Current and Potential Students",
+  //     "Continuous Learning and Development for Employees"
+  //   ],
+  //   accreditations: [
+  //     { name: "WURI Rankings", logo: "/images/wuri.png" },
+  //     { name: "ISO Certified", logo: "/images/iso.png" },
+  //     { name: "CHED Recognition", logo: "/images/ched.png" }
+  //   ],
+  //   contact: {
+  //     facebook: "facebook.com/sulustatecollege",
+  //     email: "sulustatecollege@gmail.com",
+  //   //   phone: "+63 XXX XXX XXXX",
+  //     website: "sulustatecollege.edu.ph"
+  //   },
+  //   theme: {
+  //     primary: 'blue',
+  //     gradient: 'from-blue-900 to-blue-600'
+  //   }
+  // },
+  // {
+  //   id: 2,
+  //   name: "Polytechnic University of the Philippines",
+  //   logo: "/co-org/PUTP.jpeg",
+  //   image: "/co-org/pup-campus.jpg",
+  //   about: "Polytechnic University of the Philippines is a public university established in 1904. Its main campus is located in Manila. Known as the “People’s University,” it provides affordable and quality education. The university offers various undergraduate and graduate programs in business, engineering, education, technology, and social sciences to thousands of students.",
+  //   vision: "To be a globally recognized university for higher education and research that is accessible to all.",
+  //   mission: "To provide higher education offering quality programs that are responsive to societal needs through effective teaching, research, and community engagement.",
+  //   mandate: "PUP is mandated to provide advanced instruction and professional training in technology, science, arts, and economics, and to promote research, advanced studies, and progressive leadership in these fields.",
+  //   coreValues: [
+  //     { letter: 'P', value: 'Pananalig', color: 'bg-red-600' },
+  //     { letter: 'U', value: 'Ugnayan', color: 'bg-yellow-400' },
+  //     { letter: 'P', value: 'Paglilingkod', color: 'bg-red-600' }
+  //   ],
+  //   culture: [
+  //     "Inclusive Education",
+  //     "Academic Integrity",
+  //     "Community Development",
+  //     "Lifelong Learning"
+  //   ],
+  //   competencies: [
+  //     "Research and Innovation",
+  //     "Technical and Vocational Training",
+  //     "Community Outreach",
+  //     "Quality Instruction"
+  //   ],
+  //   accreditations: [
+  //     { name: "CHED Recognized", logo: "/images/ched.png" },
+  //     { name: "ISO Certified", logo: "/images/iso.png" }
+  //   ],
+  //   contact: {
+  //     website: "www.pup.edu.ph",
+  //     email: "",
+  //     facebook: "https://www.facebook.com/ThePUPOfficials"
+  //   },
+  //   theme: {
+  //     primary: 'red',
+  //     gradient: 'from-red-700 to-red-400'
+  //   }
+  // },
+  // {
+  //   id: 3,
+  //   name: "Asia Pacific Society of Educators, Researchers and Professionals",
+  //   logo: "/co-org/PCERP.jpeg",
+  //   image: "/co-org/asperp-event.jpg",
+  //   about: "The Asia Pacific Society of Educators, Researchers and Professionals is an academic organization that promotes collaboration among teachers, researchers, and professionals across the Asia-Pacific region. It organizes conferences, workshops, and research activities to support knowledge sharing, professional development, and innovation in education, science, technology, and other academic and professional fields.",
+  //   vision: "To be the leading network of educators and researchers dedicated to improving education and professional practices in the Asia-Pacific.",
+  //   mission: "To foster partnerships, organize knowledge-sharing events, and support research initiatives that elevate teaching and learning across the region.",
+  //   mandate: "APSERP is committed to strengthening education by creating platforms for collaboration, professional development, and research dissemination.",
+  //   coreValues: [
+  //     { letter: 'A', value: 'Academia', color: 'bg-emerald-600' },
+  //     { letter: 'P', value: 'Partnership', color: 'bg-blue-700' },
+  //     { letter: 'S', value: 'Service', color: 'bg-emerald-600' },
+  //     { letter: 'E', value: 'Excellence', color: 'bg-blue-700' },
+  //     { letter: 'R', value: 'Research', color: 'bg-emerald-600' }
+  //   ],
+  //   culture: [
+  //     "Collaborative Research",
+  //     "Professional Growth",
+  //     "Innovation in Education",
+  //     "Global Networking"
+  //   ],
+  //   competencies: [
+  //     "Conference and Workshop Organization",
+  //     "Research Collaboration",
+  //     "Professional Development",
+  //     "Cross-cultural Knowledge Exchange"
+  //   ],
+  //   accreditations: [
+  //     { name: "International Network", logo: "/images/world.png" }
+  //   ],
+  //   contact: {
+  //     website: "https://www.facebook.com/profile.php?id=61572166725005",
+  //     email: "apserp2025@gmail.com",
+  //     facebook: "www.facebook.com/profile.php?id=61572166725005"
+  //   },
+  //   theme: {
+  //     primary: 'emerald',
+  //     gradient: 'from-emerald-700 to-emerald-400'
+  //   }
+  // },
+  // {
+  //   id: 4,
+  //   name: "FEATI University",
+  //   logo: "/co-org/FU.jpeg",
+  //   image: "/co-org/feati-campus.jpg",
+  //   about: "FEATI University is a leading university in the Philippines, renowned for its pioneering role in aviation education and excellence across engineering, science, education, architecture, business, arts, maritime studies, and information technology. It fosters an environment that empowers students to become socially responsible, lifelong learners and innovators.",
+  //   vision: "To be a premier university developing competent professionals and leaders grounded in technical excellence and ethical values.",
+  //   mission: "To deliver quality education through innovative programs, industry partnerships, and value-driven instruction.",
+  //   mandate: "FEATI is mandated to provide technological and professional education geared towards producing globally competitive graduates.",
+  //   coreValues: [
+  //     { letter: 'F', value: 'Faith', color: 'bg-yellow-500' },
+  //     { letter: 'E', value: 'Excellence', color: 'bg-blue-700' },
+  //     { letter: 'A', value: 'Accountability', color: 'bg-yellow-500' },
+  //     { letter: 'T', value: 'Teamwork', color: 'bg-blue-700' },
+  //     { letter: 'I', value: 'Integrity', color: 'bg-yellow-500' }
+  //   ],
+  //   culture: [
+  //     "Innovation and Creativity",
+  //     "Industry Engagement",
+  //     "Student-centered Learning",
+  //     "Ethical Leadership"
+  //   ],
+  //   competencies: [
+  //     "Aviation and Engineering Education",
+  //     "Technical Research",
+  //     "Industry Partnerships",
+  //     "Leadership Development"
+  //   ],
+  //   accreditations: [
+  //     { name: "PAASCU Accredited", logo: "/images/paascu.png" }
+  //   ],
+  //   contact: {
+  //     website: "www.featiu.edu.ph",
+  //     email: "info@featiu.edu.ph",
+  //     facebook: "www.facebook.com/featiuniversity"
+  //   },
+  //   theme: {
+  //     primary: 'yellow',
+  //     gradient: 'from-yellow-500 to-yellow-300'
+  //   }
+  // },
   {
     id: 1,
-    name: "Sulu State College",
-    logo: "/co-org/sulu.png",
-    image: "/co-org/sulubuilding.jpg",
-    about: "The Sulu State College as Center of Excellence in BARMM producing globally competitive graduates and as institutional stewards in the development of the region",
-    vision: "The Sulu State College as Center of Excellence in BARMM producing globally competitive graduates and as institutional stewards in the development of the region.",
-    mission: "SSC is committed to develop academic stalwart and globally competent professionals, producing cutting edge research, knowledge and technologies for sustainable development; engage in partnership and viable resource generation programs.",
-    mandate: "Sulu State College is mandated to provide higher technological, professional, and vocational instruction and training in science, agricultural, and industrial fields, as well as short-term technical or vocational courses. It shall promote research, advanced studies, and progressive leadership in its areas of specialization (Philippine Batas Pambansa Blg. 208 Section 2).To the latter ends, the college believes in a system of management devolution to affect an efficient and effective supervision of processes and resources for a sustained delivery of quality outputs, the generation of knowledge on a more global orientation, and the provision of its academic resources, to the extent feasible, to institutions, both local and international, that are involved in development activities. ",
-    coreValues: [
-      { letter: 'S', value: 'Solidarity', color: 'bg-yellow-400' },
-      { letter: 'P', value: 'Professionalism', color: 'bg-blue-900' },
-      { letter: 'I', value: 'Integrity', color: 'bg-yellow-400' },
-      { letter: 'C', value: 'Commitment', color: 'bg-blue-900' },
-      { letter: 'E', value: 'Excellence', color: 'bg-yellow-400' }
-    ],
+    name: "Straits Tribe Sdn Bhd",
+    logo: "/co-org/ST.jpeg",
+    image: "",
+    about: "Straits Tribe is a one-stop consultancy and training provider serving corporates and professionals across Malaysia, Singapore, and the ASEAN region. We help organisations and individuals build future-ready capabilities by integrating strategic advisory, industry-led training, and practical application.",
+    vision: "To be Asia Pacific's most trusted and impactful Training & Consultancy Partner.",
+    mission: "Straits Tribe empowers corporates and professionals with future-ready capabilities through integrated consultancy and high-impact training. We deliver practical, industry-driven, and regionally relevant learning that transforms knowledge into measurable results—building confident, adaptable professionals and resilient organisations across Malaysia, Singapore, and the ASEAN region.",
+    mandate: "",
+    coreValues: [],
     culture: [
-      "Continuous Improvement",
-      "Administrative Accountability",
-      "Community Engagement",
-      "Commitment to Quality and Innovation"
+      "Integration and Depth",
+      "Regional Perspective across Malaysia, Singapore, and ASEAN",
+      "Quality, Governance, and Professional Integrity",
+      "Built by professionals, for professionals"
     ],
     competencies: [
-      "Quality Excellence and Continuous Improvement",
-      "Building Partnerships with Stakeholders",
-      "Providing Accessible Services to Current and Potential Students",
-      "Continuous Learning and Development for Employees"
+      "Professional & Leadership Development",
+      "Technical & Functional Capability Building",
+      "Corporate Consultancy & Advisory",
+      "Customize Learning Solutions"
     ],
     accreditations: [
-      { name: "WURI Rankings", logo: "/images/wuri.png" },
-      { name: "ISO Certified", logo: "/images/iso.png" },
-      { name: "CHED Recognition", logo: "/images/ched.png" }
+      { name: "HRD Corp Registered Provider", logo: "" }
     ],
     contact: {
-      facebook: "facebook.com/sulustatecollege",
-      email: "sulustatecollege@gmail.com",
-    //   phone: "+63 XXX XXX XXXX",
-      website: "sulustatecollege.edu.ph"
+      email: "sales@straitstribe.com",
+      phone: "014 7547858 / 011 11247316",
+      website: "www.straitstribe.com"
     },
     theme: {
-      primary: 'blue',
-      gradient: 'from-blue-900 to-blue-600'
+      primary: 'red',
+      gradient: 'from-red-700 to-gray-900'
     }
   },
   {
     id: 2,
-    name: "Polytechnic University of the Philippines",
-    logo: "/co-org/PUTP.jpeg",
-    image: "/co-org/pup-campus.jpg",
-    about: "Polytechnic University of the Philippines is a public university established in 1904. Its main campus is located in Manila. Known as the “People’s University,” it provides affordable and quality education. The university offers various undergraduate and graduate programs in business, engineering, education, technology, and social sciences to thousands of students.",
-    vision: "To be a globally recognized university for higher education and research that is accessible to all.",
-    mission: "To provide higher education offering quality programs that are responsive to societal needs through effective teaching, research, and community engagement.",
-    mandate: "PUP is mandated to provide advanced instruction and professional training in technology, science, arts, and economics, and to promote research, advanced studies, and progressive leadership in these fields.",
-    coreValues: [
-      { letter: 'P', value: 'Pananalig', color: 'bg-red-600' },
-      { letter: 'U', value: 'Ugnayan', color: 'bg-yellow-400' },
-      { letter: 'P', value: 'Paglilingkod', color: 'bg-red-600' }
-    ],
+    name: "Raffles Education Institute",
+    logo: "/co-org/REI.jpeg",
+    image: "",
+    about: "Raffles Education Institute is a one-stop consultancy and training provider serving corporates and professionals across Singapore, Malaysia, and the ASEAN region. We help organisations and individuals build future-ready capabilities by integrating strategic advisory, industry-led training, and practical application.",
+    vision: "To be Asia Pacific's most trusted and impactful Training & Consultancy Partner.",
+    mission: "Raffles Education Institute empowers corporates and professionals with future-ready capabilities through integrated consultancy and high-impact training. We deliver practical, industry-driven, and regionally relevant learning that transforms knowledge into measurable results—building confident, adaptable professionals and resilient organisations across Singapore, Malaysia and the ASEAN region.",
+    mandate: "",
+    coreValues: [],
     culture: [
-      "Inclusive Education",
-      "Academic Integrity",
-      "Community Development",
-      "Lifelong Learning"
+      "Integration and Depth",
+      "Regional Perspective across Singapore, Malaysia, and ASEAN",
+      "Seamless, holistic, and trusted platform for learning and advisory",
+      "Built by professionals, for professionals"
     ],
     competencies: [
-      "Research and Innovation",
-      "Technical and Vocational Training",
-      "Community Outreach",
-      "Quality Instruction"
+      "Professional & Leadership Development",
+      "Technical & Functional Capability Building",
+      "Corporate Consultancy & Advisory",
+      "Customize Learning Solutions"
     ],
     accreditations: [
-      { name: "CHED Recognized", logo: "/images/ched.png" },
-      { name: "ISO Certified", logo: "/images/iso.png" }
+      { name: "HRD Corp Registered Provider", logo: "" }
     ],
     contact: {
-      website: "www.pup.edu.ph",
-      email: "",
-      facebook: "https://www.facebook.com/ThePUPOfficials"
-    },
-    theme: {
-      primary: 'red',
-      gradient: 'from-red-700 to-red-400'
-    }
-  },
-  {
-    id: 3,
-    name: "Asia Pacific Society of Educators, Researchers and Professionals",
-    logo: "/co-org/PCERP.jpeg",
-    image: "/co-org/asperp-event.jpg",
-    about: "The Asia Pacific Society of Educators, Researchers and Professionals is an academic organization that promotes collaboration among teachers, researchers, and professionals across the Asia-Pacific region. It organizes conferences, workshops, and research activities to support knowledge sharing, professional development, and innovation in education, science, technology, and other academic and professional fields.",
-    vision: "To be the leading network of educators and researchers dedicated to improving education and professional practices in the Asia-Pacific.",
-    mission: "To foster partnerships, organize knowledge-sharing events, and support research initiatives that elevate teaching and learning across the region.",
-    mandate: "APSERP is committed to strengthening education by creating platforms for collaboration, professional development, and research dissemination.",
-    coreValues: [
-      { letter: 'A', value: 'Academia', color: 'bg-emerald-600' },
-      { letter: 'P', value: 'Partnership', color: 'bg-blue-700' },
-      { letter: 'S', value: 'Service', color: 'bg-emerald-600' },
-      { letter: 'E', value: 'Excellence', color: 'bg-blue-700' },
-      { letter: 'R', value: 'Research', color: 'bg-emerald-600' }
-    ],
-    culture: [
-      "Collaborative Research",
-      "Professional Growth",
-      "Innovation in Education",
-      "Global Networking"
-    ],
-    competencies: [
-      "Conference and Workshop Organization",
-      "Research Collaboration",
-      "Professional Development",
-      "Cross-cultural Knowledge Exchange"
-    ],
-    accreditations: [
-      { name: "International Network", logo: "/images/world.png" }
-    ],
-    contact: {
-      website: "https://www.facebook.com/profile.php?id=61572166725005",
-      email: "apserp2025@gmail.com",
-      facebook: "www.facebook.com/profile.php?id=61572166725005"
-    },
-    theme: {
-      primary: 'emerald',
-      gradient: 'from-emerald-700 to-emerald-400'
-    }
-  },
-  {
-    id: 4,
-    name: "FEATI University",
-    logo: "/co-org/FU.jpeg",
-    image: "/co-org/feati-campus.jpg",
-    about: "FEATI University is a leading university in the Philippines, renowned for its pioneering role in aviation education and excellence across engineering, science, education, architecture, business, arts, maritime studies, and information technology. It fosters an environment that empowers students to become socially responsible, lifelong learners and innovators.",
-    vision: "To be a premier university developing competent professionals and leaders grounded in technical excellence and ethical values.",
-    mission: "To deliver quality education through innovative programs, industry partnerships, and value-driven instruction.",
-    mandate: "FEATI is mandated to provide technological and professional education geared towards producing globally competitive graduates.",
-    coreValues: [
-      { letter: 'F', value: 'Faith', color: 'bg-yellow-500' },
-      { letter: 'E', value: 'Excellence', color: 'bg-blue-700' },
-      { letter: 'A', value: 'Accountability', color: 'bg-yellow-500' },
-      { letter: 'T', value: 'Teamwork', color: 'bg-blue-700' },
-      { letter: 'I', value: 'Integrity', color: 'bg-yellow-500' }
-    ],
-    culture: [
-      "Innovation and Creativity",
-      "Industry Engagement",
-      "Student-centered Learning",
-      "Ethical Leadership"
-    ],
-    competencies: [
-      "Aviation and Engineering Education",
-      "Technical Research",
-      "Industry Partnerships",
-      "Leadership Development"
-    ],
-    accreditations: [
-      { name: "PAASCU Accredited", logo: "/images/paascu.png" }
-    ],
-    contact: {
-      website: "www.featiu.edu.ph",
-      email: "info@featiu.edu.ph",
-      facebook: "www.facebook.com/featiuniversity"
+      email: "sales@straitstribe.com",
+      phone: "+6593655577",
+      website: "www.straitstribe.com"
     },
     theme: {
       primary: 'yellow',
-      gradient: 'from-yellow-500 to-yellow-300'
+      gradient: 'from-yellow-700 to-gray-900'
     }
-  }
+  },
 ];
 
 export default function CoOrganizerSection() {

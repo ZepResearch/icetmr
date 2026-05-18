@@ -1,18 +1,19 @@
 import React from 'react';
 import { Shield, Heart, AlertTriangle, Users, Activity, RefreshCw, MapPin, Phone } from 'lucide-react';
+import { Conference } from '@/constants/conference';
 export const metadata = {
-  title: 'Health and Safety Policy - International Conference on Emerging Trends in Management & Research',
-  description: 'ICETMR is dedicated to providing a safe, healthy, and secure environment for all participants. Read our Health and Safety Policy for details.',
+  title: `Health and Safety Policy - ${Conference.name}`,
+  description: `${Conference.shortForm} is dedicated to providing a safe, healthy, and secure environment for all participants. Read our Health and Safety Policy for details.`,
   keywords: ['ICETMR', 'Health and Safety', 'Conference Safety', 'Management conference', 'research innovation', 'academic conference', 'research conference 2025'],
   alternates: {
     canonical: 'https://emergingtrendsconference.com/health-and-safety-policy',
   },
   openGraph: {
-    title: 'Health and Safety Policy - ICETMR 2025',
+    title: `Health and Safety Policy - ${Conference.shortForm} ${Conference.year}`,
     description: 'Discover ICETMR’s commitment to health, safety, and well-being for all conference participants.',
     type: 'website',
     locale: 'en_US',
-    site_name: 'ICETMR 2025',
+    site_name: `${Conference.shortForm} ${Conference.year}`,
   },
 }
 const HealthSafetyPolicy = () => {
@@ -36,7 +37,7 @@ const HealthSafetyPolicy = () => {
             {/* Introduction */}
             <div className="prose max-w-none">
               <p className="text-gray-700 leading-relaxed">
-                The Organizing Committee of the  ICETMR is committed to ensuring the health, safety, and well-being of all participants, including delegates, speakers, exhibitors, sponsors, and staff. We aim to provide a secure and comfortable environment that fosters knowledge exchange and professional networking.
+                The Organizing Committee of {Conference.shortForm} is committed to ensuring the health, safety, and well-being of all participants, including delegates, speakers, exhibitors, sponsors, and staff. We aim to provide a secure and comfortable environment that fosters knowledge exchange and professional networking.
               </p>
             </div>
 
@@ -233,7 +234,7 @@ const HealthSafetyPolicy = () => {
                   <Shield className="w-12 h-12 text-orange-500 mx-auto mb-4" />
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">Participant Agreement</h3>
                   <p className="text-gray-700 text-sm max-w-2xl mx-auto">
-                    By attending the  ICETMR, all participants agree to adhere to this Health and Safety Policy, ensuring a secure and professional conference environment.
+                    By attending {Conference.shortForm}, all participants agree to adhere to this Health and Safety Policy, ensuring a secure and professional conference environment.
                   </p>
                 </div>
               </div>

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import { ChevronRight, Shield, Lock, Eye, Server, Cookie, UserCheck } from "lucide-react"
+import { Conference } from "@/constants/conference"
 
 export default function PrivacyPolicy() {
   const fadeIn = {
@@ -118,7 +119,7 @@ export default function PrivacyPolicy() {
           <div className="text-center mb-16 max-w-4xl mx-auto">
             <div className="inline-flex items-center rounded-full border border-gray-200 bg-white/80 backdrop-blur-md px-6 py-2 text-sm font-medium text-gray-800 shadow-sm mb-6">
               <span className="bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500 bg-clip-text text-transparent font-semibold">
-                ICETMR 2025
+                {Conference.shortForm} {Conference.year}
               </span>
               <ChevronRight className="ml-2 h-4 w-4 text-gray-600" />
             </div>
@@ -143,7 +144,7 @@ export default function PrivacyPolicy() {
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <p className="text-xl font-semibold text-gray-800">
-                International Conference on Emerging Trends in Multidisciplinary Research
+                {Conference.name}
               </p>
            
               <p className="text-base text-gray-500">
@@ -176,13 +177,13 @@ export default function PrivacyPolicy() {
                       <Shield className="h-6 w-6 text-gray-700" />
                     </div>
                   </div>
-                  <h2 className="text-2xl md:text-3xl font-bold text-gray-900">ICETMR Privacy Policy</h2>
+                  <h2 className="text-2xl md:text-3xl font-bold text-gray-900">{Conference.shortForm} Privacy Policy</h2>
                 </div>
 
                 <p className="text-gray-600 mb-8 leading-relaxed">
                   We believe in being clear and open about how we collect and use your data. This privacy policy
-                  explains how the International Conference on Emerging Trends in Multidisciplinary Research
-                  (ICETMR) handles your personal information.
+                  explains how the {Conference.name}
+                  ({Conference.shortForm}) handles your personal information.
                 </p>
 
                 <div className="space-y-4">

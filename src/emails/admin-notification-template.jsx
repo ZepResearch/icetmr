@@ -1,3 +1,5 @@
+import { Conference } from "@/constants/conference";
+
 export const adminNotificationTemplate = (data) => `
 <!DOCTYPE html>
 <html lang="en">
@@ -104,7 +106,7 @@ export const adminNotificationTemplate = (data) => `
         <div class="content">
             <div class="alert-badge">New Registration</div>
             
-            <p>A new participant has registered for the International Conference on Emerging Trends in Multidisciplinary Research:</p>
+            <p>A new participant has registered for the ${Conference.name}:</p>
             
             <table class="details-table">
                 <tr>
@@ -136,7 +138,7 @@ export const adminNotificationTemplate = (data) => `
             <p>Please follow up as necessary.</p>
         </div>
         <div class="footer">
-            <p>ICETMR Admin Notification System</p>
+            <p>${Conference.shortForm} Admin Notification System</p>
         </div>
     </div>
 </body>

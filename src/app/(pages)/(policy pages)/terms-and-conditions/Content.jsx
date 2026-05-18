@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { ChevronRight, ScrollText, AlertCircle } from "lucide-react"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { ScrollArea } from "@/components/ui/scroll-area"
+import { Conference } from "@/constants/conference"
 
 export default function TermsAndConditions() {
   const fadeIn = {
@@ -15,7 +16,7 @@ export default function TermsAndConditions() {
     {
       title: "1. Acceptance of Terms",
       content:
-        "By registering for the International Conference on Emerging Trends in Multidisciplinary Research (ICETMR), you agree to comply with and be bound by these Terms and Conditions. If you do not agree to these terms, please do not register for or attend the conference.",
+        `By registering for the ${Conference.name} (${Conference.shortForm}), you agree to comply with and be bound by these Terms and Conditions. If you do not agree to these terms, please do not register for or attend the conference.`,
     },
     {
       title: "2. Registration and Payment",
@@ -87,7 +88,7 @@ export default function TermsAndConditions() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16 max-w-3xl mx-auto">
             <div className="inline-flex items-center rounded-full border border-gray-200 bg-gradient-to-bl from-pink-50 via-red-50 to-yellow-50 px-4 py-1.5 text-sm font-medium text-gray-900 backdrop-blur-md mb-6">
-              <span>ICETMR 2025</span>
+              <span>{Conference.shortForm} {Conference.year}</span>
               <ChevronRight className="ml-1 h-4 w-4" />
             </div>
 
@@ -138,12 +139,11 @@ export default function TermsAndConditions() {
                       <ScrollText className="h-6 w-6 text-gray-900" />
                     </div>
                   </div>
-                  <h2 className="text-2xl md:text-3xl font-bold text-gray-900">ICETMR Terms and Conditions</h2>
+                  <h2 className="text-2xl md:text-3xl font-bold text-gray-900">{Conference.shortForm} Terms and Conditions</h2>
                 </div>
 
                 <p className="text-gray-600 mb-6">
-                  Welcome to the Terms and Conditions for the International Conference on Emerging Trends in
-                  Multidisciplinary Research (ICETMR). These terms govern your participation in our conference 
+                  Welcome to the Terms and Conditions for {Conference.name} ({Conference.shortForm}). These terms govern your participation in our conference 
                 </p>
 
                 <div className="relative backdrop-blur-sm bg-gray-50 rounded-xl border border-gray-200 overflow-hidden mb-6">
@@ -171,7 +171,7 @@ export default function TermsAndConditions() {
                   <AlertCircle className="h-6 w-6 text-pink-500 shrink-0 mt-0.5" />
                   <div>
                     <p className="text-gray-600">
-                      By registering for ICETMR, you acknowledge that you have read, understood, and agree to be bound
+                      By registering for {Conference.shortForm}, you acknowledge that you have read, understood, and agree to be bound
                       by these Terms and Conditions.
                     </p>
                   </div>
