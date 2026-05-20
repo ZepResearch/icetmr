@@ -43,9 +43,17 @@ export default function Hero() {
         <section className="w-full pt-8 md:pt-12  max-w-screen-2xl mx-auto" >
           <div className="container px-4 md:px-6 grid lg:grid-cols-2 gap-1 items-center mx-auto">
             <div className="space-y-6">
-              <h1 className="text-4xl font-semibold text-pretty tracking-tight sm:text-5xl md:text-6xl  ">
-               {Conference.name}
-              </h1>
+              <span className="text-2xl font-medium text-black underline underline-offset-4 uppercase">{Conference.shortForm}<br /></span>
+              <h1 className="text-4xl lg:text-5xl font-medium mb-8 text-gray-900">
+  The{" "}
+    International Conference  
+    on <span className="bg-clip-text text-transparent bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500">
+ Emerging Trends 
+  </span> in<br />
+  <span className="bg-clip-text text-transparent bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500">
+  Multidisciplinary 
+  </span> Research
+</h1>
               <p className="max-w-[600px] text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               Breaking Boundaries: Multidisciplinary Approaches to Global Challenges
               </p>
@@ -86,12 +94,12 @@ export default function Hero() {
           
              {/* <ReserveButton/> */}
             </div>
-             <div
+             {/* <div
               className="mt-4 relative max-w-xl overflow-hidden rounded-2xl bg-gradient-to-r from-yellow-400 via-yellow-500 to-orange-500 p-1 shadow-lg"
             
             >
               <div className="bg-white rounded-xl p-4 relative">
-                {/* Decorative corner element */}
+              
                 <div className="absolute -top-1 -right-1 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-xl">
                   LIMITED
                 </div>
@@ -116,7 +124,7 @@ export default function Hero() {
                   </Link>
                 </div>
 
-                {/* Countdown or expiry text */}
+               
                 <div className="mt-2 flex items-center gap-2 text-xs text-gray-500">
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -134,16 +142,16 @@ export default function Hero() {
              <span className=" flex items-center justify-center text-center font-bold text-lg bg-orange-600 rounded-3xl my-4 text-white px-4" >
               14 CPD Hours</span>
             </div>
-            </div>
+            </div> */}
             </div>
 
             <div className="relative flex justify-center items-center lg:justify-end">
               <Image
-                src="/assets/brain-network.png"
+                src="/assets/white-guy.png"
                 alt="Hero Image"
-                width={500}
-                height={500}
-                className="w-full h-auto  object-cover select-none pointer-events-none drop-shadow-2xl"
+                width={700}
+                height={700}
+                className="w-full h-auto drop-shadow-2xl  object-cover select-none pointer-events-none  "
               />
             
               <div className="absolute bottom-4 right-4  rounded-full shadow-lg backdrop-blur-sm  drop-shadow-2xl ">
@@ -162,7 +170,7 @@ export default function Hero() {
 
           </div>
         </section>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 pt- container mx-auto px-6">
+        <div className="grid sm:grid-cols-2 relative z-10 bottom-1 lg:grid-cols-3 gap-6 pt- container mx-auto px-6">
                 <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
                   <h3 className="text-lg font-semibold mb-2">{Conference.date.replace(",", "")}</h3>
                   <p className="text-sm text-gray-500">
