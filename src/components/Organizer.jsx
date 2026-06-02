@@ -4,7 +4,7 @@ import React from 'react';
 
 // const sulu = '/co-org/sulu.png';
 // const fu = '/co-org/FU.jpeg'; // Update with your image path
-// const pcerp = '/co-org/PCERP.jpeg'; // Update with your image path
+ const pcerp = '/co-org/PCERP.jpeg'; // Update with your image path
 // const putp = '/co-org/PUTP.jpeg'; // Update with your image path
 const st = '/co-org/ST.jpeg'; // Update with your image path
 const rei = '/co-org/REI.jpeg'; // Update with your image path
@@ -14,7 +14,7 @@ function Organizer() {
             <h2 className="text-5xl font-semibold mb-6 text-slate-900 ">
                 Our <span className='bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500 drop-shadow-2xl text-transparent bg-clip-text'>Organizing Partner</span>
             </h2>
-                <div className='grid grid-cols-1 sm:grid-cols-2 gap-2 object-center'>
+                <div className='grid grid-cols-1 sm:grid-cols-3 gap-2 object-center'>
              <img
                 src={st}
                 alt="Organizing Partner Logo"
@@ -25,12 +25,12 @@ function Organizer() {
           alt="Organizing Partner Logo"
           className="max-w-xl w-auto h-[300px] rounded-lg   p-4 mx-auto "
         />
-        {/* <img
+       <img
           src={pcerp}
           alt="Organizing Partner Logo"
-          className="max-w-xl w-auto h-[200px] rounded-lg   p-4 mx-auto"
+          className="max-w-xl w-auto h-[300px] rounded-lg   p-4 mx-auto"
         />
-        <img
+        {/*  <img
           src={putp}
           alt="Organizing Partner Logo"
           className="max-w-xl w-auto h-[200px] rounded-lg   p-4 mx-auto"
