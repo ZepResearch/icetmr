@@ -57,6 +57,7 @@ export default function Hero() {
               <p className="max-w-[600px] text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               Breaking Boundaries: Multidisciplinary Approaches to Global Challenges
               </p>
+               <h1 className="text-2xl font-bold"> Organize by <span className=" text-blue-500">ZEP RESEARCH OPC PRIVATE LIMITED</span> </h1>
           
             <div className="flex sm:flex-row flex-col-reverse items-start sm:items-center justify-start gap-3 px-4 max-w-4xl backdrop-blur-sm bg-gray-50/30 py-4 rounded-3xl ">
               <img
