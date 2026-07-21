@@ -48,7 +48,7 @@ const navLinks = [
 
 function Nav() {
   return (
-    <div className="max-w-screen-2xl mx-auto">
+    <div className="max-w-screen-2xl mx-auto ">
       <header className="flex items-center justify-between px-4 py-4 lg:px-6">
         <Link href={"/"}>
           <div className="flex items-center space-x-2 mr-4">

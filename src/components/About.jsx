@@ -5,133 +5,75 @@ import { ArrowRight } from 'lucide-react'
 import Link from 'next/link'
 import { Conference } from "@/constants/conference"
 
+const pillars = [
+  {
+    title: 'Research excellence',
+    text: 'Promote high-quality inquiry across disciplines and create room for bold, evidence-led thinking.',
+  },
+  {
+    title: 'Interdisciplinary connection',
+    text: 'Bridge disciplines with conversation, collaboration, and a shared sense of purpose.',
+  },
+  {
+    title: 'Global perspective',
+    text: 'Bring together researchers and practitioners from around the world to shape future-ready solutions.',
+  },
+]
+
 function About() {
   return (
-    <section className="py-24 bg-white">
-      <div className="flex flex-col lg:flex-row">
-        {/* Left Side - Image (Stick to left) */}
-        <div className="lg:w-1/2 relative px-0 lg:px-0">
-          <div className="relative z-10 ml-0">
-            <Image
-              src="/assets/about.png"
-              alt="Robotic Hand Innovation"
-              width={700}
-              height={400}
-              className="w-full max-w-4xl mx-auto lg:mx-0 drop-shadow-2xl bg-black rounded-r-full select-none pointer-events-none"
-            />
-          </div>
+    <section className="px-4 py-16 md:px-6 md:py-20 lg:px-8 lg:py-24">
+      <div className="mx-auto max-w-7xl">
+        <div className="section-shell reveal-on-scroll overflow-hidden">
+          <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-10">
+            <div className="relative overflow-hidden bg-[#efedf4]/70 p-4 sm:p-6">
+              <div className="absolute left-4 top-4 h-28 w-28 rounded-full bg-[#ffb7b2]/55 blur-3xl" />
+              <Image
+                src="/assets/about.png"
+                alt="Conference atmosphere"
+                width={700}
+                height={500}
+                className="h-full min-h-[320px] w-full rounded-[2rem] object-cover"
+              />
+            </div>
 
-          {/* Decorative Elements */}
-                 </div>
+            <div className="flex items-center p-6 sm:p-8 lg:p-10">
+              <div className="space-y-6">
+                <span className="eyebrow">About the experience</span>
+                <h2 className="text-3xl font-semibold leading-tight text-[#292524] sm:text-4xl lg:text-5xl">
+                  A thoughtful gathering for <span className="font-[family:var(--font-reenie)] text-[2.2rem] text-[#ff7a6a] sm:text-[2.7rem]">curious minds</span>.
+                </h2>
 
-        {/* Right Side - Content (Centered) */}
-        <div className="lg:w-1/2 px-6 lg:px-12 mt-12 lg:mt-0 flex items-center">
-          <div className="max-w-2xl mx-auto lg:mx-0">
-            <h1 className="text-4xl lg:text-5xl font-medium mb-8 text-gray-900   ">
-              Let's Get   Closer<br />
-              About <br />
-              <span className="bg-clip-text text-transparent bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500  ">Emerging Trends </span>in Research
-            </h1>
+                <div className="space-y-4 text-lg leading-8 text-[#4c463f]">
+                  <p>
+                    At {Conference.name}, we bring together leading experts, researchers, and innovators across fields to explore how multidisciplinary work can respond to global challenges with clarity and care.
+                  </p>
+                  <p>
+                    The conference blends keynote talks, thoughtful panels, collaborative workshops, and relaxed networking into a two-day experience designed to feel both inspiring and grounded.
+                  </p>
+                </div>
 
-            <div className="space-y-6 text-gray-950">
-              <p className="text-lg leading-relaxed">
-                At the {Conference.name}, we bring together the world's leading
-                experts, researchers, and innovators across various fields of study.
-              </p>
-
-              <p className="text-lg leading-relaxed">
-                Our mission is to showcase cutting-edge advancements that integrate the latest developments in
-                multiple disciplines. The conference aims to explore how interdisciplinary research can help redefine
-                the future of various sectors including healthcare, education, technology, and social sciences.
-              </p>
-
-              <p className="text-lg leading-relaxed">
-                Join us  for an immersive two-day experience featuring keynote speeches, panel
-                discussions, workshops, and networking opportunities with global leaders in multidisciplinary research.
-              </p>
-              <Link href="/about-conference" className="inline-block">
-              <Button size={'lg'}>
-                Learn More Here
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
+                <Link href="/about-conference" className="inline-flex">
+                  <Button size="lg" className="rounded-full bg-[#292524] px-6 text-white hover:bg-[#1f1c1a]">
+                    Learn more
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
                 </Link>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      {/* Key Features Grid */}
-      <div className="max-w-screen-2xl mx-auto px-6 lg:px-12 mt-20 lg:mt-24">
-        <h2 className="text-4xl lg:text-5xl font-medium text-center mb-16 text-gray-900 ">
-          Our Vision & <span className="bg-clip-text text-transparent bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500 ">Objectives</span>
-        </h2>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          {/* Feature 1 */}
-          <div className="bg-gray-50 p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-            <div className="w-16 h-16 bg-gradient-to-tl from-pink-500 via-red-500 to-yellow-500 rounded-full flex items-center justify-center mb-6">
-              <span className="text-2xl font-bold text-white">01</span>
+        <div className="mt-8 grid gap-4 md:grid-cols-3">
+          {pillars.map((pillar, index) => (
+            <div key={pillar.title} className="soft-card p-6">
+              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#e8efe8] text-lg font-semibold text-[#292524]">
+                0{index + 1}
+              </div>
+              <h3 className="text-xl font-semibold text-[#292524]">{pillar.title}</h3>
+              <p className="mt-3 text-sm leading-7 text-[#78716c]">{pillar.text}</p>
             </div>
-            <h4 className="text-xl font-bold mb-4 text-gray-900">Research Excellence</h4>
-            <p className="text-gray-700 leading-relaxed">
-              Promote high-quality research and scholarly contributions across multiple disciplines, fostering innovation and academic excellence.
-            </p>
-          </div>
-
-          {/* Feature 2 */}
-          <div className="bg-gray-50 p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-            <div className="w-16 h-16 bg-gradient-to-tl from-pink-500 via-red-500 to-yellow-500 rounded-full flex items-center justify-center mb-6">
-              <span className="text-2xl font-bold text-white">02</span>
-            </div>
-            <h4 className="text-xl font-bold mb-4 text-gray-900">Interdisciplinary Integration</h4>
-            <p className="text-gray-700 leading-relaxed">
-              Bridge the gap between different fields of study, encouraging cross-disciplinary research and innovative solutions to complex problems.
-            </p>
-          </div>
-
-          {/* Feature 3 */}
-          <div className="bg-gray-50 p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-            <div className="w-16 h-16 bg-gradient-to-tl from-pink-500 via-red-500 to-yellow-500 rounded-full flex items-center justify-center mb-6">
-              <span className="text-2xl font-bold text-white">03</span>
-            </div>
-            <h4 className="text-xl font-bold mb-4 text-gray-900">Global Networking</h4>
-            <p className="text-gray-700 leading-relaxed">
-              Create opportunities for researchers worldwide to connect, collaborate, and share knowledge across geographical boundaries.
-            </p>
-          </div>
-
-          {/* Feature 4 */}
-          <div className="bg-gray-50 p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-            <div className="w-16 h-16 bg-gradient-to-tl from-pink-500 via-red-500 to-yellow-500 rounded-full flex items-center justify-center mb-6">
-              <span className="text-2xl font-bold text-white">04</span>
-            </div>
-            <h4 className="text-xl font-bold mb-4 text-gray-900">Publication Opportunities</h4>
-            <p className="text-gray-700 leading-relaxed">
-              Provide platforms for researchers to publish their work in indexed journals and conference proceedings with global reach.
-            </p>
-          </div>
-
-          {/* Feature 5 */}
-          <div className="bg-gray-50 p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-            <div className="w-16 h-16 bg-gradient-to-tl from-pink-500 via-red-500 to-yellow-500 rounded-full flex items-center justify-center mb-6">
-              <span className="text-2xl font-bold text-white">05</span>
-            </div>
-            <h4 className="text-xl font-bold mb-4 text-gray-900">Knowledge Dissemination</h4>
-            <p className="text-gray-700 leading-relaxed">
-              Facilitate the sharing of research findings and best practices through presentations, workshops, and interactive sessions.
-            </p>
-          </div>
-
-          {/* Feature 6 */}
-          <div className="bg-gray-50 p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-            <div className="w-16 h-16 bg-gradient-to-tl from-pink-500 via-red-500 to-yellow-500 rounded-full flex items-center justify-center mb-6">
-              <span className="text-2xl font-bold text-white">06</span>
-            </div>
-            <h4 className="text-xl font-bold mb-4 text-gray-900">Research Impact</h4>
-            <p className="text-gray-700 leading-relaxed">
-              Focus on research outcomes that contribute to societal development and address real-world challenges across various sectors.
-            </p>
-          </div>
+          ))}
         </div>
       </div>
     </section>

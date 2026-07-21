@@ -1,14 +1,9 @@
 'use client'
 import { Conference } from "@/constants/conference"
 import { pb } from "@/lib/pocketbase"
-import { cn } from "@/lib/utils"
 import { Calendar, Clock, FileText, UserCheck } from "lucide-react"
 import { useEffect, useState } from "react"
 
-// Define the type for our timeline data
-
-
-// Icon mapping based on title keywords
 const getIconForTitle = (title) => {
   const lowerTitle = title.toLowerCase()
   if (lowerTitle.includes("registration")) return UserCheck
@@ -16,10 +11,8 @@ const getIconForTitle = (title) => {
   if (lowerTitle.includes("paper")) return Calendar
   return Clock
 }
-// const records = await pb.collection("ICETMR_dates").getFullList({
-// Server Component to fetch data
 
-export default  function ConferenceTimeline() {
+export default function ConferenceTimeline() {
   const [timelineItems, setTimeline] = useState([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
@@ -28,10 +21,9 @@ export default  function ConferenceTimeline() {
     async function fetchDates() {
       try {
         setLoading(true)
-        // Fetch all records from ICGEWEE_dates collection and sort by created date
         const records = await pb.collection("ICETMR_dates").getFullList({
           sort: "created",
-           requestKey: null
+          requestKey: null,
         })
         setTimeline(records)
       } catch (err) {
@@ -47,146 +39,50 @@ export default  function ConferenceTimeline() {
 
   if (loading) {
     return (
-      <div className="flex justify-center items-center min-h-[400px]">
-        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
+      <div className="flex min-h-[260px] items-center justify-center px-4">
+        <div className="h-10 w-10 animate-spin rounded-full border-2 border-[#ffb7b2] border-t-transparent" />
       </div>
     )
   }
 
   if (error) {
-    return (
-      <div className="text-center text-red-500 p-4">
-        {error}
-      </div>
-    )
+    return <div className="px-4 py-6 text-center text-[#a33a2f]">{error}</div>
   }
 
-
   return (
-    <div className="min-h-full relative bg-gray-50 py-24 px-4">
-       <div
-        className={cn(
-          "absolute inset-0",
-          "[background-size:20px_20px]",
-          "[background-image:radial-gradient(#d4d4d4_1px,transparent_1px)]",
-          "dark:[background-image:radial-gradient(#404040_1px,transparent_1px)]",
-        )}
-      />
-      {/* Radial gradient for the container to give a faded look */}
-      <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black"></div>
-    
-      <div className="max-w-7xl mx-auto relative z-20">
-        {/* Header Section */}
-        <div className="mb-16">
-          <div className="flex items-center gap-3 mb-6">
-            <div className="bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500  p-2 rounded-md">
-              <Calendar className="w-5 h-5 text-white" />
-            </div>
-            <span className="text-gray-600 font-medium tracking-wide">CONFERENCE TIMELINE</span>
-          </div>
-
-          <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8">
-            <h1 className="text-3xl lg:text-5xl font-medium text-gray-900 leading-tight max-w-3xl ">
-              Important Date <span className="bg-clip-text text-transparent bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500  ">
-
-                 {Conference.shortForm} {Conference.year}</span> 
-            </h1>
-
-            <div className="text-right max-w-md">
-             
+    <section className="px-4 py-16 md:px-6 md:py-20 lg:px-8 lg:py-24">
+      <div className="mx-auto max-w-7xl">
+        <div className="section-shell reveal-on-scroll overflow-hidden p-6 sm:p-8 lg:p-10">
+          <div className="mb-8 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+            <div>
+              <span className="eyebrow">Conference timeline</span>
+              <h2 className="mt-4 text-3xl font-semibold text-[#292524] sm:text-4xl">
+                Important dates for {Conference.shortForm} {Conference.year}
+              </h2>
             </div>
           </div>
-        </div>
 
-        {/* Timeline Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {timelineItems.map((item, index) => {
-            const IconComponent = getIconForTitle(item.title)
-            const isExpired = index === 4 // First item is expired if keep 0 then 1 iteam is expired
-            
-            return (
-              <div key={item.id} className="group">
-                {/* Card with angled corners */}
-                <div className={cn(
-                  "relative bg-white border-2 border-gray-200 hover:border-orange-300 transition-all duration-300 h-72",
-                  isExpired && "opacity-70"
-                )}>
-                  {/* Angled top corners */}
-                
-                  {/* Card Content */}
-                  <div className="p-6 h-full flex flex-col relative">
-                    {/* Expired overlay line */}
-                    {isExpired && (
-                      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                        <div className="w-full h-0.5 bg-red-500 transform rotate-12"></div>
-                      </div>
-                    )}
-                    
-                    {/* Icon */}
-                    <div className="mb-6">
-                      <div className={cn(
-                        "w-12 h-12 border-2 border-gray-300 rounded flex items-center justify-center",
-                        isExpired && "border-gray-400"
-                      )}>
-                        <IconComponent className={cn(
-                          "w-6 h-6 text-gray-600 group-hover:text-orange-500",
-                          isExpired && "text-gray-400"
-                        )} />
-                      </div>
+          <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+            {timelineItems.map((item, index) => {
+              const IconComponent = getIconForTitle(item.title)
+              return (
+                <div key={item.id} className="soft-card p-5">
+                  <div className="mb-4 flex items-center justify-between">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#e8efe8] text-[#292524]">
+                      <IconComponent className="h-5 w-5" />
                     </div>
-
-                    {/* Decorative stripes */}
-                    <div className="mb-6">
-                      <div className="flex gap-1">
-                        {[...Array(8)].map((_, i) => (
-                          <div key={i} className={cn(
-                            "w-1 h-8 bg-gray-200 transform skew-x-12",
-                            isExpired && "bg-gray-300"
-                          )}></div>
-                        ))}
-                      </div>
-                    </div>
-
-                    {/* Title */}
-                    <h3 className={cn(
-                      "text-xl font-bold text-gray-900 mb-4 leading-tight",
-                      isExpired && "text-gray-500 line-through"
-                    )}>
-                      {item.title.toUpperCase()}
-                    </h3>
-
-                    {/* Date */}
-                    <div className="mb-4">
-                      <p className={cn(
-                        "bg-clip-text text-transparent bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500 font-bold text-lg",
-                        isExpired && "text-gray-400 line-through"
-                      )}>
-                        {item.date}
-                      </p>
-                    </div>
-
-                  
-
-                    {/* Description */}
-                    {/* <div className="flex-grow">
-                      <p className="text-gray-600 text-sm leading-relaxed">{item.description}</p>
-                    </div> */}
+                    <span className="rounded-full border border-[#ffb7b2]/40 bg-[#fff5f2] px-3 py-1 text-xs font-semibold uppercase tracking-[0.25em] text-[#a33a2f]">
+                      {index + 1}
+                    </span>
                   </div>
-
-                  {/* Angled bottom corners */}
-                       </div>
-              </div>
-            )
-          })}
-        </div>
-
-        {/* Loading state fallback - this won't show in production but good for development */}
-        {timelineItems.length === 0 && (
-          <div className="text-center py-12">
-            <p className="text-gray-500">Loading timeline data...</p>
+                  <h3 className="text-lg font-semibold text-[#292524]">{item.title}</h3>
+                  <p className="mt-3 text-sm font-semibold text-[#ff7a6a]">{item.date}</p>
+                </div>
+              )
+            })}
           </div>
-        )}
+        </div>
       </div>
-    </div>
+    </section>
   )
 }

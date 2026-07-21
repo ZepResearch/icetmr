@@ -3,218 +3,95 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { ArrowUpRight, Calendar1, ChevronDown, Lectern, MapPin } from "lucide-react"
-import { ReserveButton } from "./reserve-button"
-import { useRef, useEffect } from "react"
+import { ArrowUpRight, Calendar1, Lectern, MapPin } from "lucide-react"
 import { Conference } from "@/constants/conference"
 
 export default function Hero() {
-  const videoRef = useRef(null)
-
-  useEffect(() => {
-    const video = videoRef.current
-    if (!video) return
-
-    let playingForward = true
-
-    const handleTimeUpdate = () => {
-      if (playingForward && video.currentTime >= video.duration - 0.1) {
-        // Reached the end, start playing in reverse
-        playingForward = false
-        video.playbackRate = -1
-      } else if (!playingForward && video.currentTime <= 0.1) {
-        // Reached the beginning, start playing forward
-        playingForward = true
-        video.playbackRate = 1
-      }
-    }
-
-    video.addEventListener('timeupdate', handleTimeUpdate)
-
-    return () => {
-      video.removeEventListener('timeupdate', handleTimeUpdate)
-    }
-  }, [])
-
   return (
-    <div className="flex flex-col min-h-full bg-gradient-to-b from-gray-50 to-white ">
-  
-      <main className="flex-1">
-        <section className="w-full pt-8 md:pt-12  max-w-screen-2xl mx-auto" >
-          <div className="container px-4 md:px-6 grid lg:grid-cols-2 gap-1 items-center mx-auto">
+    <div className="relative overflow-hidden">
+      <div className="absolute left-[-10%] top-10 h-48 w-48 rounded-full bg-[#ffb7b2]/40 blur-3xl ambient-blob" />
+      <div className="absolute bottom-10 right-[-5%] h-56 w-56 rounded-full bg-[#e8efe8]/70 blur-3xl ambient-blob" />
+
+      <main className="mx-auto flex max-w-7xl flex-col px-4 py-8 md:px-6 md:py-12 lg:px-8 lg:py-16">
+        <section className="section-shell reveal-on-scroll overflow-hidden px-5 py-8 md:px-8 lg:px-10 lg:py-10">
+          <div className="grid items-center gap-10 lg:grid-cols-[1.05fr_0.95fr]">
             <div className="space-y-6">
-              <span className="text-2xl font-medium text-black underline underline-offset-4 uppercase">{Conference.shortForm}<br /></span>
-              <h1 className="text-4xl lg:text-5xl font-medium mb-8 text-gray-900">
-  The{" "}
-    International Conference  
-    on <span className="bg-clip-text text-transparent bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500">
- Emerging Trends 
-  </span> in<br />
-  <span className="bg-clip-text text-transparent bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500">
-  Multidisciplinary 
-  </span> Research
-</h1>
-              <p className="max-w-[600px] text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Breaking Boundaries: Multidisciplinary Approaches to Global Challenges
-              </p>
-               <h1 className="text-2xl font-bold"> Organize by <span className=" text-blue-500">ZEP RESEARCH OPC PRIVATE LIMITED</span> </h1>
-          
-            <div className="flex sm:flex-row flex-col-reverse items-start sm:items-center justify-start gap-3 px-4 max-w-4xl backdrop-blur-sm bg-gray-50/30 py-4 rounded-3xl ">
-              <img
-                src="/assets/scopus.png"
-                alt=""
-                className="h-12 drop-shadow-lg"
-              />
-              <img
-                src="/assets/clarivate.png"
-                alt=""
-                className="h-12 drop-shadow-lg"
-              />
-              {/* <img
-                src="assets/cpd.png"
-                alt=""
-                className="h-28 drop-shadow-lg"
-              /> */}
-               <img
-                src="assets/zepresearch.png"
-                alt=""
-                className="h-12 drop-shadow-lg"
-              />
-            </div>
-              <div className="gap-3 flex  sm:flex-row flex-col ">
-            <Link href={'/registration'}>
-              <Button size={'lg'}>
-                Register Now
-              </Button>
-            </Link>
-            <Link href={'/about-conference'}>
-              <Button size={'lg'}>
-                Learn more
-              </Button>
-            </Link>
-          
-             {/* <ReserveButton/> */}
-            </div>
-             {/* <div
-              className="mt-4 relative max-w-xl overflow-hidden rounded-2xl bg-gradient-to-r from-yellow-400 via-yellow-500 to-orange-500 p-1 shadow-lg"
-            
-            >
-              <div className="bg-white rounded-xl p-4 relative">
-              
-                <div className="absolute -top-1 -right-1 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-xl">
-                  LIMITED
-                </div>
+              <span className="eyebrow">{Conference.shortForm}</span>
 
-                <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-                  <div className="flex-1">
-                    <div className="flex items-center gap-2 mb-1">
-                      <span className="text-2xl">🔥</span>
-                      <h3 className="text-lg font-bold text-gray-900">Early Bird Discount Active!</h3>
-                    </div>
-                    <p className="text-sm text-gray-600">
-                      Save up to <span className="font-bold text-orange-600">20%</span> on registration
-                    </p>
+              <div className="space-y-4">
+                <h1 className="max-w-3xl text-4xl font-semibold leading-[0.95] text-[#292524] sm:text-5xl lg:text-6xl">
+                  A calmer way to meet <span className="font-[family:var(--font-reenie)] text-[2.8rem] text-[#ff7a6a] sm:text-[3.4rem]">ideas</span> that matter.
+                </h1>
+                <p className="max-w-2xl text-lg leading-8 text-[#78716c]">
+                  {Conference.name} invites researchers, educators, and changemakers into a thoughtful hybrid experience shaped around digital wellness, meaningful exchange, and future-facing collaboration.
+                </p>
+              </div>
+
+              <div className="flex flex-wrap items-center gap-3 rounded-[1.5rem] border border-black/5 bg-[#fdfcf8]/80 p-4">
+                <img src="/assets/scopus.png" alt="Scopus partner" className="h-10 opacity-90" />
+                <img src="/assets/clarivate.png" alt="Clarivate partner" className="h-10 opacity-90" />
+                <img src="assets/zepresearch.png" alt="Zep Research partner" className="h-10 opacity-90" />
+              </div>
+
+              <div className="flex flex-col gap-3 sm:flex-row">
+                <Link href="/registration">
+                  <Button size="lg" className="rounded-full bg-[#292524] px-6 text-white shadow-[0_8px_24px_-8px_rgba(41,37,36,0.45)] hover:bg-[#1f1c1a]">
+                    Register now
+                  </Button>
+                </Link>
+                <Link href="/about-conference">
+                  <Button size="lg" variant="outline" className="rounded-full border-[#d8d0c7] bg-white/80 px-6 text-[#292524] hover:bg-[#efedf4]">
+                    Explore the conference
+                  </Button>
+                </Link>
+              </div>
+            </div>
+
+            <div className="relative">
+              <div className="absolute inset-0 rounded-[2rem] bg-[radial-gradient(circle_at_top_left,_rgba(255,183,178,0.35),_transparent_60%)]" />
+              <div className="relative overflow-hidden rounded-[2.5rem] border border-black/5 bg-[#efedf4]/70 p-3 shadow-[0_12px_40px_-12px_rgba(41,37,36,0.2)]">
+                <Image
+                  src="/assets/white-guy.png"
+                  alt="Conference guest"
+                  width={700}
+                  height={700}
+                  className="h-auto w-full rounded-[2rem] object-cover"
+                />
+              </div>
+
+              <div className="absolute bottom-4 right-4 rounded-[1.5rem] border border-black/5 bg-white/85 p-4 shadow-[0_8px_24px_-10px_rgba(41,37,36,0.28)] backdrop-blur">
+                <div className="flex items-center gap-3">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#ffb7b2] text-[#292524]">
+                    <Lectern className="h-6 w-6" />
                   </div>
-
-                  <Link href="/registration">
-                    <Button
-                      className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold px-6 py-2 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 whitespace-nowrap"
-                    >
-                      Claim Now →
-                    </Button>
-                  </Link>
-                </div>
-
-               
-                <div className="mt-2 flex items-center gap-2 text-xs text-gray-500">
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  <span>Offer expires soon • Limited spots available</span>
+                  <div>
+                    <p className="text-sm font-semibold text-[#292524]">Hybrid format</p>
+                    <p className="text-sm text-[#78716c]">Virtual + physical experience</p>
+                  </div>
                 </div>
               </div>
-
-             < div className="bg-white rounded-2xl flex flex-row  p-2shadow-lg my-1 max-w-md px-4">
-              <img 
-                src="assets/cpd2.png" 
-                alt="CPD" 
-                className="h-28 w-auto mx-auto"
-              />
-             <span className=" flex items-center justify-center text-center font-bold text-lg bg-orange-600 rounded-3xl my-4 text-white px-4" >
-              14 CPD Hours</span>
             </div>
-            </div> */}
-            </div>
-
-            <div className="relative flex justify-center items-center lg:justify-end">
-              <Image
-                src="/assets/white-guy.png"
-                alt="Hero Image"
-                width={700}
-                height={700}
-                className="w-full h-auto drop-shadow-2xl  object-cover select-none pointer-events-none  "
-              />
-            
-              <div className="absolute bottom-4 right-4  rounded-full shadow-lg backdrop-blur-sm  drop-shadow-2xl ">
-                <div className="flex items-center gap-4 bg-white/80 border border-gray-200 rounded-xl shadow-sm px-15 py-4 max-w-xs ">
-              <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-lg bg-gradient-to-br from-slate-100 via-gray-100 to-neutral-50/60 shadow-rose-400 shadow">
-                <Lectern className="text-rose-500"/>
-              </div>
-              <div>
-                <div className="font-bold text-gray-800 text-base">Conference Mode</div>
-                <div className="text-sm text-gray-900 text-center font-medium">Virtual <span className="mx-1">+</span> Physical <br />(Hybrid)</div>
-              </div>
-            </div>
-              </div>
-            </div>
-
-
           </div>
         </section>
-        <div className="grid sm:grid-cols-2 relative z-10 bottom-1 lg:grid-cols-3 gap-6 pt- container mx-auto px-6">
-                <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                  <h3 className="text-lg font-semibold mb-2">{Conference.date.replace(",", "")}</h3>
-                  <p className="text-sm text-gray-500">
-                    Explore cutting-edge topics across various disciplines, fostering interdisciplinary collaboration.
-                  </p>
-                  <Link
-                    href="/schedule"
-                    className="mt-4 inline-flex items-center text-sm font-medium text-gray-900 hover:underline"
-                    prefetch={false}
-                  >
-                    <Calendar1 className="w-4 h-4 mr-1" />
-                    view full schedule
-                  </Link>
-                </div>
-                <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                  <h3 className="text-lg font-semibold mb-2">{Conference.venue.location}</h3>
-                  <p className="text-sm text-gray-500">
-                    Gain insights from leading researchers and innovators in their respective fields.
-                  </p>
-                  <Link
-                    href="/venue"
-                    className="mt-4 inline-flex items-center text-sm font-medium text-gray-900 hover:underline"
-                    prefetch={false}
-                  >
-                    <MapPin className="w-4 h-4 mr-1" />
-                    Detail Venue
-                  </Link>
-                </div>
-                <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                  <h3 className="text-lg font-semibold mb-2">Networking Opportunities</h3>
-                  <p className="text-sm text-gray-500">
-                    Connect with peers, mentors, and potential collaborators from around the globe.
-                  </p>
-                  <Link
-                    href="/registration"
-                    className="mt-4 inline-flex items-center text-sm font-medium text-gray-900 hover:underline"
-                    prefetch={false}
-                  >
-                    Register now
-                    <ArrowUpRight className="w-4 h-4 ml-1" />
-                  </Link>
-                </div>
-              </div>
+
+        <div className="mt-6 grid gap-4 md:grid-cols-3">
+          <div className="soft-card p-5">
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#78716c]">When</p>
+            <h3 className="mt-2 text-xl font-semibold text-[#292524]">{Conference.date.replace(",", "")}</h3>
+            <p className="mt-2 text-sm leading-7 text-[#78716c]">A thoughtfully paced two-day programme with keynotes, conversation, and reflection.</p>
+          </div>
+          <div className="soft-card p-5">
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#78716c]">Where</p>
+            <h3 className="mt-2 text-xl font-semibold text-[#292524]">{Conference.venue.location}</h3>
+            <p className="mt-2 text-sm leading-7 text-[#78716c]">A welcoming venue designed for collaboration in a beautiful tropical setting.</p>
+          </div>
+          <div className="soft-card p-5">
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#78716c]">Why</p>
+            <h3 className="mt-2 text-xl font-semibold text-[#292524]">Meaningful networking</h3>
+            <p className="mt-2 text-sm leading-7 text-[#78716c]">Connect with peers, mentors, and changemakers across disciplines.</p>
+          </div>
+        </div>
+      
       </main>
     </div>
   )

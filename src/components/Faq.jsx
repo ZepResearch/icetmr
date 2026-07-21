@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { ArrowDown, ArrowUp, ChevronDown, ChevronUp, Mail, Phone } from "lucide-react"
+import { ArrowDown, ArrowUp, Mail, Phone } from "lucide-react"
 import { Button } from "./ui/button"
 import Link from "next/link"
 import { Conference } from "@/constants/conference"
@@ -47,85 +47,59 @@ export default function ConferenceFAQ() {
   }
 
   return (
-    <div className="w-full py-16 px-4 md:px-8 lg:px-16 bg-white">
-      <div className="max-w-4xl mx-auto">
-        {/* Section Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-medium text-pretty text-gray-800 mb-4">
-            Frequently Asked Questions
-           
-          </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            Find answers to common questions about {Conference.shortForm} {Conference.year} in {Conference.venue.location}. If you don't see your question here, please contact us.
-          </p>
-        </div>
+    <section className="px-4 py-16 md:px-6 md:py-20 lg:px-8 lg:py-24">
+      <div className="mx-auto max-w-5xl">
+        <div className="section-shell reveal-on-scroll overflow-hidden p-6 sm:p-8 lg:p-10">
+          <div className="mb-8 text-center">
+            <span className="eyebrow">Faq</span>
+            <h2 className="mt-4 text-3xl font-semibold text-[#292524] sm:text-4xl">
+              Frequently asked questions
+            </h2>
+            <p className="mx-auto mt-3 max-w-2xl text-sm leading-7 text-[#78716c] sm:text-base">
+              Find answers to common questions about {Conference.shortForm} {Conference.year} in {Conference.venue.location}.
+            </p>
+          </div>
 
-        {/* FAQ Accordion */}
-        <div className="space-y-4">
-          {faqs.map((faq, index) => (
-            <div
-              key={index}
-              className={`rounded-2xl overflow-hidden transition-all duration-300 shadow-sm border ${
-                openIndex === index 
-                  ? "bg-gray-50/50 border-gray-200" 
-                  : "bg-white border-gray-100 hover:border-gray-200"
-              }`}
-            >
-              <button
-                onClick={() => toggleFAQ(index)}
-                className="w-full flex justify-between items-center p-6 text-left focus:outline-none group"
-              >
-                <h3 className="text-xl font-medium text-gray-800 group-hover:text-gray-900 transition-colors">{faq.question}</h3>
-                <div
-                  className={`w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 ${
-                    openIndex === index 
-                      ? "bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500 shadow-lg" 
-                      : "bg-gray-100 group-hover:bg-gray-200"
-                  }`}
+          <div className="space-y-3">
+            {faqs.map((faq, index) => (
+              <div key={index} className="overflow-hidden rounded-[1.5rem] border border-[#e8efe8] bg-[#fcfbf7]">
+                <button
+                  onClick={() => toggleFAQ(index)}
+                  className="flex w-full items-center justify-between gap-3 p-5 text-left"
                 >
-                  {openIndex === index ? (
-                    <ArrowUp className="h-5 w-5 text-white" />
-                  ) : (
-                    <ArrowDown className="h-5 w-5 text-gray-600" />
-                  )}
+                  <h3 className="text-base font-semibold text-[#292524] sm:text-lg">{faq.question}</h3>
+                  <div className={`flex h-10 w-10 items-center justify-center rounded-full ${openIndex === index ? 'bg-[#292524] text-white' : 'bg-[#e8efe8] text-[#292524]'}`}>
+                    {openIndex === index ? <ArrowUp className="h-4 w-4" /> : <ArrowDown className="h-4 w-4" />}
+                  </div>
+                </button>
+                <div className={`overflow-hidden transition-all duration-300 ${openIndex === index ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'}`}>
+                  <div className="px-5 pb-5 text-sm leading-7 text-[#78716c]">{faq.answer}</div>
                 </div>
-              </button>
-              <div
-                className={`overflow-hidden transition-all duration-300 ${
-                  openIndex === index ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-                }`}
-              >
-                <div className="p-6 pt-0 text-gray-600 leading-relaxed">{faq.answer}</div>
               </div>
+            ))}
+          </div>
+
+          <div className="mt-8 rounded-[1.75rem] border border-[#e8efe8] bg-[#fdfcf8] p-6">
+            <h3 className="text-2xl font-semibold text-[#292524]">Still have questions?</h3>
+            <p className="mt-3 text-sm leading-7 text-[#78716c]">
+              Our team is ready to help with any additional questions about the event and the experience in {Conference.venue.location}.
+            </p>
+            <div className="mt-5 flex flex-col gap-3 text-sm font-medium text-[#292524] sm:flex-row sm:items-center sm:gap-6">
+              <a className="inline-flex items-center gap-2" href="mailto:info@emergingtrendsconference.com">
+                <Mail className="h-4 w-4 text-[#ff7a6a]" /> info@emergingtrendsconference.com
+              </a>
+              <span className="inline-flex items-center gap-2">
+                <Phone className="h-4 w-4 text-[#ff7a6a]" /> +91 82600 80050
+              </span>
             </div>
-          ))}
+            <Link href="/contact">
+              <Button className="mt-5 rounded-full bg-[#292524] px-5 text-white hover:bg-[#1f1c1a]">
+                Contact us
+              </Button>
+            </Link>
+          </div>
         </div>
-
-        {/* Contact Section */}
-        <div className="mt-12 bg-gradient-to-br from-gray-50 to-white rounded-2xl p-6 md:p-8 border border-gray-100">
-          <h3 className="text-2xl font-bold text-gray-800 mb-4">Still have questions?</h3>
-          <p className="text-gray-600 mb-6">
-            Our team is ready to assist you with any additional questions or concerns you may have about {Conference.shortForm} {Conference.year} in {Conference.venue.location}.
-          </p>
-         <div className="flex flex-col  text-lg font-bold " >
-          <a className="inline-flex gap-2 items-center " >
-           <Mail/> info@emergingtrendsconference.com
-          </a>
-          <span  className="inline-flex gap-2 items-center mt-4 ">
-            <Phone/>
-            +91 82600 80050
-          </span>
-          <Link href={'/contact'}>
-          <Button className={'mt-4 ml-8 '} >
-            Contact us 
-          </Button>
-          </Link>
-         </div>
-        </div>
-
-        {/* Ways to Participate */}
-  
       </div>
-    </div>
+    </section>
   )
 }

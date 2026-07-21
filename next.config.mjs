@@ -7,6 +7,7 @@ const nextConfig = {
         'plus.unsplash.com',
         'icetmr-icgewee.pockethost.io',
         'zep-research.pockethost.io',
+        'pocketbase.icetmr.zepresearch.com'
       ],
     },
     experimental: {

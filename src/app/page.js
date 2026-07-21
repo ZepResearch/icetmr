@@ -15,8 +15,8 @@ export default function Home() {
     <main>
       
       <Hero/>
-      {/* <CPD/> */}
-      {/* <Organizer/> */}
+      <CPD/>
+      <Organizer/>
       <About/>
       <Buttons/>
       <ConferenceTimeline/>

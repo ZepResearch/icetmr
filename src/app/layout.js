@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Outfit, Reenie_Beanie } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import ConferenceFooter from "@/components/Footer";
@@ -14,6 +14,19 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const outfit = Outfit({
+  variable: "--font-outfit",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const reenieBeanie = Reenie_Beanie({
+  variable: "--font-reenie",
+  subsets: ["latin"],
+  weight: ["400"],
+  display: "swap",
 });
 
 export const metadata = {
@@ -74,7 +87,7 @@ export default function RootLayout({ children }) {
         ></script>
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${outfit.variable} ${reenieBeanie.variable} antialiased`}
       >
         <div className="sticky top-0 z-50 bg-white drop-shadow-lg">
         <GoogleTranslate/>

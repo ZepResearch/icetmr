@@ -3,146 +3,79 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Calendar, Clock, MapPin, Navigation, Building, Wifi, Coffee, Users, ArrowRight } from "lucide-react"
+import { Calendar, MapPin, Navigation, Building, Wifi, Coffee, Users } from "lucide-react"
 import { Conference } from "@/constants/conference"
 
 export default function ConferenceVenue() {
-  const venueFeatures = [
-    {
-      title: "Main Conference Hall",
-      description: "State-of-the-art auditorium with seating for 800+ attendees and advanced presentation technology.",
-      image:
-        "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-    },
-    {
-      title: "Workshop Spaces",
-      description:
-        "Multiple configurable rooms for interactive workshops and breakout sessions on multidisciplinary research topics.",
-      image:
-        "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
-    },
-    {
-      title: "Networking Terrace",
-      description: "Beautiful outdoor space with tropical garden views designed for networking between sessions.",
-      image:
-        "https://images.unsplash.com/photo-1740478296042-392fa8498069?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-  ]
-
   return (
-    <div className="w-full py-16 px-4 md:px-8 lg:px-16 bg-white">
-      <div className="max-w-7xl mx-auto">
-        {/* Section Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-medium text-gray-800 mb-4">
-            Conference
-            <span className="relative inline-block mx-2">
-              <span className="relative z-10 bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500 text-transparent bg-clip-text">Venue</span>
-            </span>
-          </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            Join us at our premier venue in beautiful {Conference.venue.location} designed to inspire innovation and foster 
-            multidisciplinary collaboration in a tropical paradise setting.
-          </p>
-        </div>
+    <section className="px-4 py-16 md:px-6 md:py-20 lg:px-8 lg:py-24">
+      <div className="mx-auto max-w-7xl">
+        <div className="section-shell reveal-on-scroll overflow-hidden p-6 sm:p-8 lg:p-10">
+          <div className="mb-8 text-center">
+            <span className="eyebrow">Venue</span>
+            <h2 className="mt-4 text-3xl font-semibold text-[#292524] sm:text-4xl">
+              A setting that supports ideas and connection
+            </h2>
+            <p className="mx-auto mt-3 max-w-2xl text-sm leading-7 text-[#78716c] sm:text-base">
+              Join us in {Conference.venue.location} for an inspiring environment designed for thoughtful exchange and multidisciplinary collaboration.
+            </p>
+          </div>
 
-        {/* Main Venue Card */}
-        <div className="bg-gray-50/50 rounded-3xl overflow-hidden mb-12 shadow-sm">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
-            {/* Left side - Venue image */}
-            <div className="relative h-[300px] lg:h-full">
-              <Image
-                src="/venue.avif"
-                alt="ICETMR Conference Venue - Bali International Convention Centre"
-                fill
-                className="object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-gray-900/40 to-transparent"></div>
-
-              {/* Venue name overlay */}
-              <div className="absolute bottom-0 left-0 right-0 p-6">
-                {/* <div className="bg-white/95 backdrop-blur-sm rounded-full py-3 px-6 inline-block shadow-lg">
-                  <span className="text-gray-800 font-medium">Bali International Convention Centre</span>
-                </div> */}
+          <div className="overflow-hidden rounded-[2rem] border border-[#e8efe8] bg-[#fcfbf7]">
+            <div className="grid gap-0 lg:grid-cols-[0.95fr_1.05fr]">
+              <div className="relative min-h-[320px]">
+                <Image src="/venue.avif" alt="Conference venue" fill className="object-cover" />
               </div>
-            </div>
-
-            {/* Right side - Venue details */}
-            <div className="p-8 lg:p-10 bg-white">
-              <div className="space-y-6">
-                <div className="space-y-4">
-                  <div className="flex items-start gap-4">
-                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-neutral-900 text-white shadow-lg">
-                      <Calendar size={20} />
+              <div className="p-6 sm:p-8 lg:p-10">
+                <div className="space-y-5">
+                  <div className="flex items-start gap-3">
+                    <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[#e8efe8] text-[#292524]">
+                      <Calendar className="h-5 w-5" />
                     </div>
                     <div>
-                      <p className="text-sm text-gray-500">Date</p>
-                      <p className="text-gray-800 font-medium">{Conference.date}</p>
-                      <p className="text-sm text-gray-500">2 Days of Research Innovation</p>
+                      <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#78716c]">Date</p>
+                      <p className="text-base font-semibold text-[#292524]">{Conference.date}</p>
                     </div>
                   </div>
-{/* 
-                  <div className="flex items-start gap-4">
-                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-neutral-900 text-white shadow-lg">
-                      <Clock size={20} />
+
+                  <div className="flex items-start gap-3">
+                    <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[#e8efe8] text-[#292524]">
+                      <MapPin className="h-5 w-5" />
                     </div>
                     <div>
-                      <p className="text-sm text-gray-500">Time</p>
-                      <p className="text-gray-800 font-medium">8:30 AM - 6:00 PM </p>
-                      <p className="text-sm text-gray-500">Registration opens at 7:30 AM</p>
-                    </div>
-                  </div> */}
-
-                  <div className="flex items-start gap-4">
-                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-neutral-900 text-white shadow-lg">
-                      <MapPin size={20} />
-                    </div>
-                    <div>
-                      <p className="text-sm text-gray-500">Address</p>
-                      <p className="text-gray-800 font-bold">{Conference.venue.name}</p>
-                      <p className="text-gray-800">{Conference.venue.address}</p>
-
+                      <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#78716c]">Address</p>
+                      <p className="text-base font-semibold text-[#292524]">{Conference.venue.name}</p>
+                      <p className="text-sm leading-7 text-[#78716c]">{Conference.venue.address}</p>
                     </div>
                   </div>
                 </div>
 
-                <div className="h-px w-full bg-gray-200"></div>
+                <div className="mt-6 h-px w-full bg-[#e8efe8]" />
 
-                <div>
-                  <h4 className="text-lg font-medium text-gray-800 mb-4">Venue Amenities</h4>
-                  <div className="grid grid-cols-2 gap-3">
-                    <div className="flex items-center gap-2 text-gray-600">
-                      <Wifi size={16} className="text-gray-500" />
-                      <span>High-speed WiFi</span>
-                    </div>
-                    <div className="flex items-center gap-2 text-gray-600">
-                      <Building size={16} className="text-gray-500" />
-                      <span>Modern Facilities</span>
-                    </div>
-                    <div className="flex items-center gap-2 text-gray-600">
-                      <Coffee size={16} className="text-gray-500" />
-                      <span>Balinese Cuisine</span>
-                    </div>
-                    <div className="flex items-center gap-2 text-gray-600">
-                      <Users size={16} className="text-gray-500" />
-                      <span>Luxury Lounges</span>
-                    </div>
+                <div className="mt-6 grid gap-3 sm:grid-cols-2">
+                  <div className="flex items-center gap-2 rounded-[1rem] bg-[#fdfcf8] p-3 text-sm text-[#78716c]">
+                    <Wifi className="h-4 w-4 text-[#ff7a6a]" /> High-speed WiFi
+                  </div>
+                  <div className="flex items-center gap-2 rounded-[1rem] bg-[#fdfcf8] p-3 text-sm text-[#78716c]">
+                    <Building className="h-4 w-4 text-[#ff7a6a]" /> Modern facilities
+                  </div>
+                  <div className="flex items-center gap-2 rounded-[1rem] bg-[#fdfcf8] p-3 text-sm text-[#78716c]">
+                    <Coffee className="h-4 w-4 text-[#ff7a6a]" /> Local hospitality
+                  </div>
+                  <div className="flex items-center gap-2 rounded-[1rem] bg-[#fdfcf8] p-3 text-sm text-[#78716c]">
+                    <Users className="h-4 w-4 text-[#ff7a6a]" /> Networking spaces
                   </div>
                 </div>
 
-                <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                <div className="mt-6 flex flex-col gap-3 sm:flex-row">
                   <Link href="https://maps.app.goo.gl/koqWFRepp7oiffUq6" target="_blank" rel="noopener noreferrer">
-                  <Button className="bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500 hover:from-pink-600 hover:via-red-600 hover:to-yellow-600 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300">
-                    <Navigation className="mr-2 h-5 w-5" />
-                    Get Directions
-                  </Button>
+                    <Button className="rounded-full bg-[#292524] px-5 text-white hover:bg-[#1f1c1a]">
+                      <Navigation className="mr-2 h-4 w-4" /> Get directions
+                    </Button>
                   </Link>
                   <Link href="/venue">
-                    <Button
-                      variant="outline"
-                      className="border-gray-300 text-gray-700 hover:bg-gray-50 rounded-full"
-                    >
-                      Venue Details
+                    <Button variant="outline" className="rounded-full border-[#d8d0c7] bg-white px-5 text-[#292524] hover:bg-[#efedf4]">
+                      Venue details
                     </Button>
                   </Link>
                 </div>
@@ -150,79 +83,7 @@ export default function ConferenceVenue() {
             </div>
           </div>
         </div>
-
-   
-
-        {/* Research Focus Areas */}
-        <div className="bg-gray-50/50 rounded-3xl p-8">
-          <div className="mb-6">
-            <h3 className="text-2xl font-bold text-gray-800 mb-2">Research Focus Areas</h3>
-            <p className="text-gray-600">
-              Explore cutting-edge research across multiple disciplines and discover innovative solutions 
-              to global challenges through interdisciplinary collaboration.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100">
-              <div className="p-6">
-                <h4 className="text-xl font-bold text-gray-800 mb-2">Technology & AI</h4>
-                <p className="text-gray-600 mb-4">
-                  Discover the latest breakthroughs in artificial intelligence, machine learning, and emerging 
-                  technologies that are shaping our future.
-                </p>
-              
-              </div>
-              <div className="relative h-48">
-                <Image
-                  src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-                  alt="Technology & AI Research"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            </div>
-
-            <div className="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100">
-              <div className="p-6">
-                <h4 className="text-xl font-bold text-gray-800 mb-2">Health & Life Sciences</h4>
-                <p className="text-gray-600 mb-4">
-                  Explore innovative research in biotechnology, medical sciences, and healthcare solutions 
-                  that improve quality of life globally.
-                </p>
-                
-              </div>
-              <div className="relative h-48">
-                <Image
-                  src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80"
-                  alt="Health & Life Sciences Research"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            </div>
-
-            <div className="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100">
-              <div className="p-6">
-                <h4 className="text-xl font-bold text-gray-800 mb-2">Social Innovation</h4>
-                <p className="text-gray-600 mb-4">
-                  Examine groundbreaking research in social sciences, education, and community development 
-                  that addresses societal challenges.
-                </p>
-                
-              </div>
-              <div className="relative h-48">
-                <Image
-                  src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-                  alt="Social Innovation Research"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
-    </div>
+    </section>
   )
 }
