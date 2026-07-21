@@ -13,7 +13,7 @@ export default function ConferenceFAQ() {
     {
       question: "How can I register for the conference?",
       answer:
-        `Registration for ${Conference.shortForm} ${Conference.year} is available through our online portal. Early bird registration is open until ${Conference.date}. You can choose between in-person attendance in ${Conference.venue.location} or virtual participation. Group discounts are available for institutions sending 5 or more participants.`,
+        `Registration for ${Conference.shortForm} ${Conference.year} is available through our online portal.  You can choose between in-person attendance in ${Conference.venue.location} or virtual participation. Group discounts are available for institutions sending 5 or more participants.`,
     },
     {
       question: "What are the submission guidelines for research papers?",
