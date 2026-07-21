@@ -222,7 +222,7 @@ export default function PrivacyPolicy() {
                   >
                    info@emergingtrendsconference.com
                   </a>{" "}
-                  or call us at +91 78488 54815.
+                  or call us at +91 82600 80050.
                 </p>
                 <div className="space-y-2 text-sm text-gray-500">
                   <p>Last updated: {new Date().toLocaleDateString()}</p>
