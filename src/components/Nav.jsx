@@ -1,15 +1,7 @@
 "use client"
-import { Activity, BrainCircuit, ChartNoAxesColumnIncreasingIcon, Menu, TrendingUp } from 'lucide-react'
-import React, { useState } from 'react'
+import { Activity, ChevronDown, Menu } from 'lucide-react'
+import React, { useRef, useState } from 'react'
 import { Button } from './ui/button'
-import {
-  NavigationMenu,
-  NavigationMenuList,
-  NavigationMenuItem,
-  NavigationMenuTrigger,
-  NavigationMenuContent,
-  NavigationMenuLink,
-} from './ui/navigation-menu'
 import { Sheet, SheetTrigger, SheetContent } from './ui/sheet'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -34,7 +26,14 @@ const navLinks = [
       { href: '/schedule', title: 'Conference Schedule' },
       { title: 'gallery', href: '/gallery' },
       { title: 'awards', href: '/awards' },
-
+    ],
+  },
+  {
+    title: 'SPEAKERS',
+    href: '#',
+    dropdown: [
+      { href: '/key-speaker', title: 'Keynote Speakers' },
+      { href: '/distinct-speakers', title: 'Distinguished  Speakers' },
     ],
   },
   { title: 'COMMITTEE', href: '/committee' },
@@ -47,52 +46,73 @@ const navLinks = [
 ]
 
 function Nav() {
+  const [openDropdown, setOpenDropdown] = useState(null)
+  const closeTimeout = useRef(null)
+
+  const handleEnter = (title) => {
+    if (closeTimeout.current) clearTimeout(closeTimeout.current)
+    setOpenDropdown(title)
+  }
+
+  const handleLeave = () => {
+    closeTimeout.current = setTimeout(() => setOpenDropdown(null), 150)
+  }
+
   return (
     <div className="max-w-screen-2xl mx-auto">
       <header className="flex items-center justify-between px-4 py-4 lg:px-6">
         <Link href={"/"}>
           <div className="flex items-center space-x-2 mr-4">
             <Image src={"/logo.svg"} alt='logo' height={300} width={300} className=" text-white" />
-            {/* <TrendingUp className="w-6 h-6 text-white" /> */}
-            {/* <span className="text-xl font-semibold text-gray-900 ">Emerging Trends <span className="bg-clip-text text-transparent bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500  " >Conf.</span></span> */}
           </div>
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-7 bg-gray-50 px-8 py-3 rounded-full border text-xs">
-          <NavigationMenu>
-            <NavigationMenuList>
-              {navLinks.map((link) =>
-                link.dropdown ? (
-                  <NavigationMenuItem key={link.title}>
-                    <NavigationMenuTrigger className={`text-xs`}>{link.title}</NavigationMenuTrigger>
-                    <NavigationMenuContent className="min-w-[200px]">
-                      <div className="flex flex-col py-2">
-                        {link.dropdown.map((item) => (
-                          <NavigationMenuLink
-                            key={item.href}
-                            href={item.href}
-                            className="px-4 py-2 hover:bg-gray-100 rounded text-gray-700 text-xs"
-                          >
-                            {item.title}
-                          </NavigationMenuLink>
-                        ))}
-                      </div>
-                    </NavigationMenuContent>
-                  </NavigationMenuItem>
-                ) : (
-                  <NavigationMenuItem key={link.title}>
-                    <NavigationMenuLink
-                      href={link.href}
-                      className="px-4 py-2 hover:bg-gray-100 rounded text-gray-700 text-xs"
-                    >
-                      {link.title}
-                    </NavigationMenuLink>
-                  </NavigationMenuItem>
-                )
-              )}
-            </NavigationMenuList>
-          </NavigationMenu>
+        <nav className="hidden md:flex items-center gap-1 bg-gray-50 px-8 py-3 rounded-full border text-xs">
+          {navLinks.map((link) =>
+            link.dropdown ? (
+              <div
+                key={link.title}
+                className="relative"
+                onMouseEnter={() => handleEnter(link.title)}
+                onMouseLeave={handleLeave}
+              >
+                <button
+                  type="button"
+                  className="flex items-center gap-1 px-4 py-2 hover:bg-gray-100 rounded text-gray-700 text-xs"
+                  aria-expanded={openDropdown === link.title}
+                >
+                  {link.title}
+                  <ChevronDown
+                    className={`w-3 h-3 transition-transform ${openDropdown === link.title ? 'rotate-180' : ''
+                      }`}
+                  />
+                </button>
+
+                {openDropdown === link.title && (
+                  <div className="absolute left-0 top-full mt-1.5 min-w-[200px] bg-white border rounded-md shadow-lg py-2 z-50">
+                    {link.dropdown.map((item) => (
+                      <Link
+                        key={item.href}
+                        href={item.href}
+                        className="block px-4 py-2 hover:bg-gray-100 rounded text-gray-700 text-xs"
+                      >
+                        {item.title}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ) : (
+              <Link
+                key={link.title}
+                href={link.href}
+                className="px-4 py-2 hover:bg-gray-100 rounded text-gray-700 text-xs"
+              >
+                {link.title}
+              </Link>
+            )
+          )}
         </nav>
 
         {/* Mobile Hamburger Menu */}

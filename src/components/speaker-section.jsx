@@ -8,12 +8,12 @@ import { Button } from "@/components/ui/button"
 import { pb } from "@/lib/pocketbase"
 
 // Speaker categories
-const speakerCategories = [
+export const speakerCategories = [
    { id: "Guest Speaker", title: "Guest Speaker" },
   { id: "Organizing Secretary", title: "Organizing Secretary" },
   { id: "Conference Chair", title: "Conference Chair" },
   { id: "Conference Co-Chair", title: "Conference Co-Chair" },
-  { id: "Keynote Speaker", title: "Keynote Speaker" },
+  // { id: "Keynote Speaker", title: "Keynote Speaker" },
   { id: "Session Chair", title: "Session Chair" },
   { id: "Panel Speaker", title: "Panel Speaker" },
 
@@ -141,13 +141,29 @@ const SpeakerDrawer = ({ isOpen, onClose, speaker }) => (
   </AnimatePresence>
 )
 
-export function SpeakerSection() {
-  const [activeCategory, setActiveCategory] = useState("Organizing Secretary")
+export function SpeakerSection({
+  title = "Distinguished Speakers",
+  description = "Meet the brilliant minds shaping the future of multidisciplinary research and innovation",
+  filterCategories = null,
+  displayTabs = true,
+  defaultCategory = "Organizing Secretary",
+}) {
+  const [activeCategory, setActiveCategory] = useState(defaultCategory)
   const [selectedSpeaker, setSelectedSpeaker] = useState(null)
   const [isDrawerOpen, setIsDrawerOpen] = useState(false)
   const [speakers, setSpeakers] = useState()
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
+
+  const visibleCategories = filterCategories
+    ? speakerCategories.filter((category) => filterCategories.includes(category.id))
+    : speakerCategories
+
+  useEffect(() => {
+    if (visibleCategories.length > 0 && !visibleCategories.some((category) => category.id === activeCategory)) {
+      setActiveCategory(visibleCategories[0].id)
+    }
+  }, [activeCategory, visibleCategories])
 
   useEffect(() => {
     const fetchSpeakers = async () => {
@@ -161,27 +177,29 @@ export function SpeakerSection() {
         if (records && records.length > 0) {
           // Group speakers by category
           const groupedSpeakers = records.reduce((acc, speaker) => {
-            const category = speaker.category;
-            if (!acc[category]) {
-              acc[category] = []
-            }
+            const category = speaker.category
+            if (!filterCategories || filterCategories.includes(category)) {
+              if (!acc[category]) {
+                acc[category] = []
+              }
 
-            acc[category].push({
-              name: speaker.name,
-              role: speaker.role,
-              image: speaker.image,
-              bio: speaker.bio,
-              id: speaker.id,
-              collectionId: speaker.collectionId,
-              college: speaker.college,
-              country: speaker.country,
-            })
+              acc[category].push({
+                name: speaker.name,
+                role: speaker.role,
+                image: speaker.image,
+                bio: speaker.bio,
+                id: speaker.id,
+                collectionId: speaker.collectionId,
+                college: speaker.college,
+                country: speaker.country,
+              })
+            }
 
             return acc
           }, {})
 
-          // Ensure all categories exist in the grouped speakers object
-          speakerCategories.forEach(({ id }) => {
+          // Ensure all visible categories exist in the grouped speakers object
+          visibleCategories.forEach(({ id }) => {
             if (!groupedSpeakers[id]) {
               groupedSpeakers[id] = []
             }
@@ -198,7 +216,7 @@ export function SpeakerSection() {
     }
 
     fetchSpeakers()
-  }, [])
+  }, [filterCategories, visibleCategories])
 
   const handleMoreInfo = (speaker) => {
     setSelectedSpeaker(speaker)
@@ -215,34 +233,36 @@ export function SpeakerSection() {
         {/* Section header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-medium text-pretty mb-6 text-gray-900">
-            Distinguished Speakers
+            {title}
           </h2>
 
           <div className="h-1 w-20 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 mx-auto mb-8 rounded-full"></div>
 
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Meet the brilliant minds shaping the future of multidisciplinary research and innovation
+            {description}
           </p>
         </div>
 
         {/* Category tabs */}
-        <div className="flex flex-wrap justify-center gap-3 mb-12">
-          {speakerCategories.map((category) => (
-            <motion.button
-              key={category.id}
-              onClick={() => setActiveCategory(category.id)}
-              whileHover={{ y: -2 }}
-              whileTap={{ scale: 0.98 }}
-              className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 ${
-                activeCategory === category.id
-                  ? "bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500 text-white shadow-lg shadow-pink-500/20"
-                  : "bg-white text-gray-700 border border-gray-200 hover:bg-gray-50"
-              }`}
-            >
-              {category.title}
-            </motion.button>
-          ))}
-        </div>
+        {displayTabs && (
+          <div className="flex flex-wrap justify-center gap-3 mb-12">
+            {visibleCategories.map((category) => (
+              <motion.button
+                key={category.id}
+                onClick={() => setActiveCategory(category.id)}
+                whileHover={{ y: -2 }}
+                whileTap={{ scale: 0.98 }}
+                className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 ${
+                  activeCategory === category.id
+                    ? "bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500 text-white shadow-lg shadow-pink-500/20"
+                    : "bg-white text-gray-700 border border-gray-200 hover:bg-gray-50"
+                }`}
+              >
+                {category.title}
+              </motion.button>
+            ))}
+          </div>
+        )}
 
         {/* Loading state */}
         {loading && (
