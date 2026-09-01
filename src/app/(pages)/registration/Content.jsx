@@ -486,7 +486,7 @@ const createTicketFromPricing = (categoryData, priceType, participantType, accom
       </span>
     </div>
   )}
-  {categoryData.earlyBird && (
+  {/* {categoryData.earlyBird && (
     <div className="flex justify-between items-center bg-orange-50 border border-orange-200 rounded-xl px-3 py-2 mt-1">
       <span className="text-sm font-semibold text-orange-700 flex items-center gap-1">
         <Sparkles className="h-3.5 w-3.5" />
@@ -496,7 +496,7 @@ const createTicketFromPricing = (categoryData, priceType, participantType, accom
         {getCurrencySymbol(categoryData.earlyBird.currency)}{categoryData.earlyBird.price}
       </span>
     </div>
-  )}
+  )} */}
 </div>
         </div>
 
@@ -544,7 +544,7 @@ const createTicketFromPricing = (categoryData, priceType, participantType, accom
                 Virtual - {getCurrencySymbol(categoryData.virtual.currency)}{categoryData.virtual.price}
               </Button>
             )}
-            {categoryData.earlyBird && (
+            {/* {categoryData.earlyBird && (
               <Button
                 onClick={() => handleTicketSelect(createTicketFromPricing(categoryData, "earlyBird", participantType, accommodationType))}
                 className="w-full bg-emerald-500 hover:bg-emerald-600 text-white rounded-full border-0"
@@ -552,7 +552,7 @@ const createTicketFromPricing = (categoryData, priceType, participantType, accom
                 <Sparkles className="mr-2 h-4 w-4 text-white" />
                 Early Bird - {getCurrencySymbol(categoryData.earlyBird.currency)}{categoryData.earlyBird.price}
               </Button>
-            )}
+            )} */}
           </div>
         </div>
       </div>

@@ -102,7 +102,7 @@ export default  function ConferenceTimeline() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {timelineItems.map((item, index) => {
             const IconComponent = getIconForTitle(item.title)
-            const isExpired = index === 4 // First item is expired if keep 0 then 1 iteam is expired
+            const isExpired = index === 0 // First item is expired if keep 0 then 1 iteam is expired
             
             return (
               <div key={item.id} className="group">
