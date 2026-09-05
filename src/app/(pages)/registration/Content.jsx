@@ -606,6 +606,18 @@ const createTicketFromPricing = (categoryData, priceType, participantType, accom
                 </p>
               </div>
 
+              {/* International Participants */}
+              <div className="mb-12">
+                <h4 className="text-xl  font-bold text-gray-900 mb-6 text-center">
+                  <Globe className="inline mr-2 h-5 w-5" />
+                  International Participants
+                </h4>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                  {pricingData.physicalNoAccommodation.international.map((categoryData) => 
+                    renderPricingCard(categoryData, "international", "no-accommodation")
+                  )}
+                </div>
+              </div>
               {/* Local Participants */}
               <div className="mb-12">
                 <h4 className="text-xl font-bold text-gray-900 mb-6 text-center">
@@ -619,18 +631,7 @@ const createTicketFromPricing = (categoryData, priceType, participantType, accom
                 </div>
               </div>
 
-              {/* International Participants */}
-              <div>
-                <h4 className="text-xl font-bold text-gray-900 mb-6 text-center">
-                  <Globe className="inline mr-2 h-5 w-5" />
-                  International Participants
-                </h4>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                  {pricingData.physicalNoAccommodation.international.map((categoryData) => 
-                    renderPricingCard(categoryData, "international", "no-accommodation")
-                  )}
-                </div>
-              </div>
+             
             </TabsContent>
 
             <TabsContent value="physical-with-accommodation" className="mt-0">
