@@ -91,7 +91,7 @@ export default function AwardsPage() {
                     </p>
                     <div className="bg-white rounded-lg p-4 border border-pink-200">
                       <p className="font-medium text-gray-900">
-                        Special Award: A 50% fee refund will be provided to the best paper and best presenter
+                        Special Award: A upto 20% fee refund will be provided to the best paper and best presenter
                         recipients.
                       </p>
                     </div>
