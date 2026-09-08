@@ -16,9 +16,9 @@ const organizersData = [
   //   mandate: "Sulu State College is mandated to provide higher technological, professional, and vocational instruction and training in science, agricultural, and industrial fields, as well as short-term technical or vocational courses. It shall promote research, advanced studies, and progressive leadership in its areas of specialization (Philippine Batas Pambansa Blg. 208 Section 2).To the latter ends, the college believes in a system of management devolution to affect an efficient and effective supervision of processes and resources for a sustained delivery of quality outputs, the generation of knowledge on a more global orientation, and the provision of its academic resources, to the extent feasible, to institutions, both local and international, that are involved in development activities. ",
   //   coreValues: [
   //     { letter: 'S', value: 'Solidarity', color: 'bg-yellow-400' },
-  //     { letter: 'P', value: 'Professionalism', color: 'bg-blue-900' },
+  //     { letter: 'P', value: 'Professionalism', color: 'bg-green-900' },
   //     { letter: 'I', value: 'Integrity', color: 'bg-yellow-400' },
-  //     { letter: 'C', value: 'Commitment', color: 'bg-blue-900' },
+  //     { letter: 'C', value: 'Commitment', color: 'bg-green-900' },
   //     { letter: 'E', value: 'Excellence', color: 'bg-yellow-400' }
   //   ],
   //   culture: [
@@ -45,8 +45,8 @@ const organizersData = [
   //     website: "sulustatecollege.edu.ph"
   //   },
   //   theme: {
-  //     primary: 'blue',
-  //     gradient: 'from-blue-900 to-blue-600'
+  //     primary: 'green',
+  //     gradient: 'from-green-900 to-green-600'
   //   }
   // },
   // {
@@ -90,6 +90,37 @@ const organizersData = [
   //   }
   // },
   {
+    id: 4,
+    name: "Sultan Kudarat State University",
+    logo: "/co-org/SKSU.png",
+    image: "",
+    about: "The Sultan Kudarat State University (SKSU) formerly Sultan Kudarat Polytechnic State College was established on December 5, 1990, by virtue of a bill authored in Congress by then Cong. Estanislao V. Valdez and sponsored in the Senate by then Sen. Edgardo J. Angara.",
+    vision: "A leading University in advancing scholarly innovation, multi-cultural convergence, and responsive public service in a borderless Region.",
+    mission: "The University shall primarily provide advanced instruction and professional training in science and technology, agriculture, fisheries, education and other relevant fields of study. It shall also undertake research and extension services, and provide progressive leadership in its areas of specialization.",
+    qualityPolicy: "The Sultan Kudarat State University is committed to provide inclusive quality instruction, innovative research and extension, efficient management service to all stakeholders, and comply with applicable requirements for continuous improvement.",
+    mandate: "Sultan Kudarat State University is to primarily provide advanced instruction and professional training in science and technology, agriculture, fisheries, education, and other relevant fields of study.",
+    coreFunctions: [
+      { title: "Instruction", description: "Offer robust professional and technical training programs." },
+      { title: "Research", description: "Undertake scientific and technological studies to foster innovation." },
+      { title: "Extension", description: "Disseminate knowledge, skills, and proactive technologies for regional growth." },
+      { title: "Resource Generation", description: "Sustain institutional development and community programs." }
+    ],
+    coreValues: [],
+    culture: [],
+    competencies: [],
+    accreditations: [],
+    contact: {
+      website: "https://sksu.edu.ph/",
+       phone:"(064) 200-7336",
+      email: "officeofthepresident@sksu.edu.ph",
+      facebook: "https://www.facebook.com/theSKSUPRIOofficial"
+    },
+    theme: {
+      primary: 'green',
+      gradient: 'from-green-900 to-green-600'
+    }
+  },
+  {
     id: 3,
     name: "Asia Pacific Society of Educators, Researchers and Professionals",
     logo: "/co-org/PCERP.jpeg",
@@ -99,11 +130,11 @@ const organizersData = [
     mission: "To foster partnerships, organize knowledge-sharing events, and support research initiatives that elevate teaching and learning across the region.",
     mandate: "APSERP is committed to strengthening education by creating platforms for collaboration, professional development, and research dissemination.",
     coreValues: [
-      { letter: 'A', value: 'Academia', color: 'bg-emerald-600' },
-      { letter: 'P', value: 'Partnership', color: 'bg-blue-700' },
-      { letter: 'S', value: 'Service', color: 'bg-emerald-600' },
-      { letter: 'E', value: 'Excellence', color: 'bg-blue-700' },
-      { letter: 'R', value: 'Research', color: 'bg-emerald-600' }
+      { letter: 'A', value: 'Academia', color: 'bg-yellow-600' },
+      { letter: 'P', value: 'Partnership', color: 'bg-green-700' },
+      { letter: 'S', value: 'Service', color: 'bg-yellow-600' },
+      { letter: 'E', value: 'Excellence', color: 'bg-green-700' },
+      { letter: 'R', value: 'Research', color: 'bg-yellow-600' }
     ],
     culture: [
       "Collaborative Research",
@@ -126,8 +157,8 @@ const organizersData = [
       facebook: "www.facebook.com/profile.php?id=61572166725005"
     },
     theme: {
-      primary: 'emerald',
-      gradient: 'from-emerald-700 to-emerald-400'
+      primary: 'yellow',
+      gradient: 'from-yellow-700 to-yellow-400'
     }
   },
   // {
@@ -141,9 +172,9 @@ const organizersData = [
   //   mandate: "FEATI is mandated to provide technological and professional education geared towards producing globally competitive graduates.",
   //   coreValues: [
   //     { letter: 'F', value: 'Faith', color: 'bg-yellow-500' },
-  //     { letter: 'E', value: 'Excellence', color: 'bg-blue-700' },
+  //     { letter: 'E', value: 'Excellence', color: 'bg-green-700' },
   //     { letter: 'A', value: 'Accountability', color: 'bg-yellow-500' },
-  //     { letter: 'T', value: 'Teamwork', color: 'bg-blue-700' },
+  //     { letter: 'T', value: 'Teamwork', color: 'bg-green-700' },
   //     { letter: 'I', value: 'Integrity', color: 'bg-yellow-500' }
   //   ],
   //   culture: [
@@ -424,6 +455,14 @@ function Dialog({ organizer, onClose }) {
               content={organizer.mission}
             />
 
+            {organizer.qualityPolicy && (
+              <InfoSection
+                icon="✅"
+                title="Quality Policy"
+                content={organizer.qualityPolicy}
+              />
+            )}
+
             {/* Mandate */}
             {organizer.mandate && (
               <InfoSection
@@ -431,6 +470,20 @@ function Dialog({ organizer, onClose }) {
                 title="Mandate"
                 content={organizer.mandate}
               />
+            )}
+
+            {organizer.coreFunctions?.length > 0 && (
+              <div>
+                <SectionHeader icon="🏫" title="Core Functions" />
+                <div className="mt-4 space-y-4">
+                  {organizer.coreFunctions.map((item) => (
+                    <div key={item.title}>
+                      <h4 className="font-semibold text-gray-800">{item.title}</h4>
+                      <p className="mt-1 text-gray-700">{item.description}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
             )}
 
             {/* Core Values */}
@@ -507,7 +560,7 @@ function Dialog({ organizer, onClose }) {
                     icon="🌐"
                     label="Website"
                     value={organizer.contact.website}
-                    href={`https://${organizer.contact.website}`}
+                    href={organizer.contact.website}
                     gradient={organizer.theme.gradient}
                   />
                 )}
@@ -520,12 +573,21 @@ function Dialog({ organizer, onClose }) {
                     gradient={organizer.theme.gradient}
                   />
                 )}
+                {organizer.contact.phone && (
+                  <ContactLink
+                    icon="📞"
+                    label="Phone"
+                    value={organizer.contact.phone}
+                    href={`tel:${organizer.contact.phone}`}
+                    gradient={organizer.theme.gradient}
+                  />
+                )}
                 {organizer.contact.facebook && (
                   <ContactLink
                     icon="📘"
                     label="Facebook"
                     value="Visit our page"
-                    href={`https://${organizer.contact.facebook}`}
+                    href={organizer.contact.facebook}
                     gradient={organizer.theme.gradient}
                   />
                 )}
@@ -561,9 +623,11 @@ function SectionHeader({ icon, title }) {
 }
 
 function ContactLink({ icon, label, value, href, gradient }) {
+  const contactHref = /^(https?:|mailto:|tel:)/.test(href) ? href : `https://${href}`;
+
   return (
     <a
-      href={href}
+      href={contactHref}
       target="_blank"
       rel="noopener noreferrer"
       className={`flex items-center gap-4 p-4 rounded-xl bg-gradient-to-r ${gradient} text-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group`}
