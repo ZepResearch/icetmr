@@ -101,7 +101,7 @@ export default function AwardsPage() {
                 <div className="grid grid-cols-1 md:grid-cols-1 gap-4 mt-10">
                   <div className="bg-gray-50 rounded-xl border border-gray-200 p-4">
                     <div className="text-3xl font-bold bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500 bg-clip-text text-transparent mb-1">
-                      50%
+                      20%
                     </div>
                     <div className="text-gray-700">Fee Refund Available</div>
                   </div>
