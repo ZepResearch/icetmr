@@ -272,6 +272,31 @@ const organizersData = [
       gradient: 'from-yellow-700 to-gray-900'
     }
   },
+   {
+  id: 6,
+  name: "Bukidnon State University (BukSU)",
+  logo: "/co-org/BSU.jpeg",
+  image: "",
+  about: "Bukidnon State University is located in the capital town of Malaybalay City, Bukidnon and is strategically positioned to serve Region 10, the CARAGA Region, and other cities and provinces of Mindanao. It is one of the leading educational institutions serving the people not only in Mindanao but also the country in general.",
+  vision: "A premier institution of innovative and ethical leaders for sustainable development.",
+  mission: " To develop competitive professionals who are committed to build a sustainable life for all through quality instruction, research, extension and production",
+  mandate: "",
+  coreValues: [],
+  culture: [],
+  competencies: [],
+  accreditations: [],
+  contact: {
+    website: "https://buksu.edu.ph",
+    email: "",
+    phone: "+63-88-813-5661 to 5663",
+    facebook: "https://www.facebook.com/officialbuksu",
+    address: "Fortich St., Malaybalay City, Bukidnon, Philippines"
+  },
+  theme: {
+    primary: "black",
+    gradient: " from-black to-gray-700"
+  }
+},
 ];
 
 export default function CoOrganizerSection() {
