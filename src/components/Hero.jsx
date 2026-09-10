@@ -86,12 +86,11 @@ export default function Hero() {
           
              {/* <ReserveButton/> */}
             </div>
-             <div
+             {/* <div
               className="mt-4 relative max-w-xl overflow-hidden rounded-2xl bg-gradient-to-r from-yellow-400 via-yellow-500 to-orange-500 p-1 shadow-lg"
             
             >
               <div className="bg-white rounded-xl p-4 relative">
-                {/* Decorative corner element */}
                 <div className="absolute -top-1 -right-1 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-xl">
                   LIMITED
                 </div>
@@ -116,7 +115,6 @@ export default function Hero() {
                   </Link>
                 </div>
 
-                {/* Countdown or expiry text */}
                 <div className="mt-2 flex items-center gap-2 text-xs text-gray-500">
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -134,7 +132,7 @@ export default function Hero() {
              <span className=" flex items-center justify-center text-center font-bold text-lg bg-orange-600 rounded-3xl my-4 text-white px-4" >
               14 CPD Hours</span>
             </div>
-            </div>
+            </div> */}
             </div>
 
             <div className="relative flex justify-center items-center lg:justify-end">
