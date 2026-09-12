@@ -91,7 +91,7 @@ export default function AwardsPage() {
                     </p>
                     <div className="bg-white rounded-lg p-4 border border-pink-200">
                       <p className="font-medium text-gray-900">
-                        Special Award: A fee refund of up to 20% will be provided to the best paper and best presenter recipients.
+                        Upto 20% Discount on the next registration will be provided to the best paper and best paper presenters. Scholarships cover full or partial conference registration fees based on fund availability.
                       </p>
                     </div>
                   </div>
@@ -100,9 +100,9 @@ export default function AwardsPage() {
                 <div className="grid grid-cols-1 md:grid-cols-1 gap-4 mt-10">
                   <div className="bg-gray-50 rounded-xl border border-gray-200 p-4">
                     <div className="text-3xl font-bold bg-gradient-to-bl from-pink-500 via-red-500 to-yellow-500 bg-clip-text text-transparent mb-1">
-                      UPTO 20%
+                      Upto 20% Discount
                     </div>
-                    <div className="text-gray-700">Fee Refund Available</div>
+                    <div className="text-gray-700">On the next registration</div>
                   </div>
 
                   {/* <div className="bg-gray-50 rounded-xl border border-gray-200 p-4">
